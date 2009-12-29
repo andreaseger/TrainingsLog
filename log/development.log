@@ -1,0 +1,2480 @@
+/!\ FAILSAFE /!\  2009-12-28 21:54:48 +0100
+  Status: 500 Internal Server Error
+  no driver for sqlite3 found
+    C:/Ruby19/lib/ruby/gems/1.9.1/gems/sqlite3-ruby-1.2.5-x86-mingw32/lib/sqlite3/database.rb:627:in `load_driver'
+    C:/Ruby19/lib/ruby/gems/1.9.1/gems/sqlite3-ruby-1.2.5-x86-mingw32/lib/sqlite3/database.rb:72:in `initialize'
+    C:/Ruby19/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/sqlite3_adapter.rb:13:in `new'
+    C:/Ruby19/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/sqlite3_adapter.rb:13:in `sqlite3_connection'
+    C:/Ruby19/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:223:in `new_connection'
+    C:/Ruby19/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:245:in `checkout_new_connection'
+    C:/Ruby19/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:188:in `block (2 levels) in checkout'
+    C:/Ruby19/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:184:in `loop'
+    C:/Ruby19/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:184:in `block in checkout'
+    C:/Ruby19/lib/ruby/1.9.1/monitor.rb:190:in `mon_synchronize'
+    C:/Ruby19/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:183:in `checkout'
+    C:/Ruby19/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:98:in `connection'
+    C:/Ruby19/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:326:in `retrieve_connection'
+    C:/Ruby19/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_specification.rb:123:in `retrieve_connection'
+    C:/Ruby19/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_specification.rb:115:in `connection'
+    C:/Ruby19/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:9:in `cache'
+    C:/Ruby19/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:28:in `call'
+    C:/Ruby19/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+    C:/Ruby19/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/string_coercion.rb:25:in `call'
+    C:/Ruby19/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/head.rb:9:in `call'
+    C:/Ruby19/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/methodoverride.rb:24:in `call'
+    C:/Ruby19/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/params_parser.rb:15:in `call'
+    C:/Ruby19/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/session/cookie_store.rb:93:in `call'
+    C:/Ruby19/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/failsafe.rb:26:in `call'
+    C:/Ruby19/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/lock.rb:11:in `block in call'
+    <internal:prelude>:8:in `synchronize'
+    C:/Ruby19/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+    C:/Ruby19/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:114:in `block in call'
+    C:/Ruby19/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/reloader.rb:34:in `run'
+    C:/Ruby19/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:108:in `call'
+    C:/Ruby19/lib/ruby/gems/1.9.1/gems/rails-2.3.5/lib/rails/rack/static.rb:31:in `call'
+    C:/Ruby19/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/urlmap.rb:46:in `block in call'
+    C:/Ruby19/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `each'
+    C:/Ruby19/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `call'
+    C:/Ruby19/lib/ruby/gems/1.9.1/gems/rails-2.3.5/lib/rails/rack/log_tailer.rb:17:in `call'
+    C:/Ruby19/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/content_length.rb:13:in `call'
+    C:/Ruby19/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/handler/webrick.rb:50:in `service'
+    C:/Ruby19/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+    C:/Ruby19/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+    C:/Ruby19/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+/!\ FAILSAFE /!\  2009-12-28 21:55:00 +0100
+  Status: 500 Internal Server Error
+  no driver for sqlite3 found
+    C:/Ruby19/lib/ruby/gems/1.9.1/gems/sqlite3-ruby-1.2.5-x86-mingw32/lib/sqlite3/database.rb:627:in `load_driver'
+    C:/Ruby19/lib/ruby/gems/1.9.1/gems/sqlite3-ruby-1.2.5-x86-mingw32/lib/sqlite3/database.rb:72:in `initialize'
+    C:/Ruby19/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/sqlite3_adapter.rb:13:in `new'
+    C:/Ruby19/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/sqlite3_adapter.rb:13:in `sqlite3_connection'
+    C:/Ruby19/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:223:in `new_connection'
+    C:/Ruby19/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:245:in `checkout_new_connection'
+    C:/Ruby19/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:188:in `block (2 levels) in checkout'
+    C:/Ruby19/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:184:in `loop'
+    C:/Ruby19/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:184:in `block in checkout'
+    C:/Ruby19/lib/ruby/1.9.1/monitor.rb:190:in `mon_synchronize'
+    C:/Ruby19/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:183:in `checkout'
+    C:/Ruby19/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:98:in `connection'
+    C:/Ruby19/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:326:in `retrieve_connection'
+    C:/Ruby19/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_specification.rb:123:in `retrieve_connection'
+    C:/Ruby19/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_specification.rb:115:in `connection'
+    C:/Ruby19/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:9:in `cache'
+    C:/Ruby19/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:28:in `call'
+    C:/Ruby19/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+    C:/Ruby19/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/string_coercion.rb:25:in `call'
+    C:/Ruby19/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/head.rb:9:in `call'
+    C:/Ruby19/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/methodoverride.rb:24:in `call'
+    C:/Ruby19/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/params_parser.rb:15:in `call'
+    C:/Ruby19/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/session/cookie_store.rb:93:in `call'
+    C:/Ruby19/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/failsafe.rb:26:in `call'
+    C:/Ruby19/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/lock.rb:11:in `block in call'
+    <internal:prelude>:8:in `synchronize'
+    C:/Ruby19/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+    C:/Ruby19/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:114:in `block in call'
+    C:/Ruby19/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/reloader.rb:34:in `run'
+    C:/Ruby19/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:108:in `call'
+    C:/Ruby19/lib/ruby/gems/1.9.1/gems/rails-2.3.5/lib/rails/rack/static.rb:31:in `call'
+    C:/Ruby19/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/urlmap.rb:46:in `block in call'
+    C:/Ruby19/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `each'
+    C:/Ruby19/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `call'
+    C:/Ruby19/lib/ruby/gems/1.9.1/gems/rails-2.3.5/lib/rails/rack/log_tailer.rb:17:in `call'
+    C:/Ruby19/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/content_length.rb:13:in `call'
+    C:/Ruby19/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/handler/webrick.rb:50:in `service'
+    C:/Ruby19/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+    C:/Ruby19/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+    C:/Ruby19/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+/!\ FAILSAFE /!\  2009-12-28 22:00:45 +0100
+  Status: 500 Internal Server Error
+  no driver for sqlite3 found
+    C:/Ruby19/lib/ruby/gems/1.9.1/gems/sqlite3-ruby-1.2.5-x86-mingw32/lib/sqlite3/database.rb:627:in `load_driver'
+    C:/Ruby19/lib/ruby/gems/1.9.1/gems/sqlite3-ruby-1.2.5-x86-mingw32/lib/sqlite3/database.rb:72:in `initialize'
+    C:/Ruby19/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/sqlite3_adapter.rb:13:in `new'
+    C:/Ruby19/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/sqlite3_adapter.rb:13:in `sqlite3_connection'
+    C:/Ruby19/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:223:in `new_connection'
+    C:/Ruby19/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:245:in `checkout_new_connection'
+    C:/Ruby19/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:188:in `block (2 levels) in checkout'
+    C:/Ruby19/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:184:in `loop'
+    C:/Ruby19/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:184:in `block in checkout'
+    C:/Ruby19/lib/ruby/1.9.1/monitor.rb:190:in `mon_synchronize'
+    C:/Ruby19/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:183:in `checkout'
+    C:/Ruby19/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:98:in `connection'
+    C:/Ruby19/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:326:in `retrieve_connection'
+    C:/Ruby19/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_specification.rb:123:in `retrieve_connection'
+    C:/Ruby19/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_specification.rb:115:in `connection'
+    C:/Ruby19/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:9:in `cache'
+    C:/Ruby19/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:28:in `call'
+    C:/Ruby19/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+    C:/Ruby19/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/string_coercion.rb:25:in `call'
+    C:/Ruby19/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/head.rb:9:in `call'
+    C:/Ruby19/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/methodoverride.rb:24:in `call'
+    C:/Ruby19/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/params_parser.rb:15:in `call'
+    C:/Ruby19/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/session/cookie_store.rb:93:in `call'
+    C:/Ruby19/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/failsafe.rb:26:in `call'
+    C:/Ruby19/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/lock.rb:11:in `block in call'
+    <internal:prelude>:8:in `synchronize'
+    C:/Ruby19/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+    C:/Ruby19/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:114:in `block in call'
+    C:/Ruby19/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/reloader.rb:34:in `run'
+    C:/Ruby19/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:108:in `call'
+    C:/Ruby19/lib/ruby/gems/1.9.1/gems/rails-2.3.5/lib/rails/rack/static.rb:31:in `call'
+    C:/Ruby19/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/urlmap.rb:46:in `block in call'
+    C:/Ruby19/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `each'
+    C:/Ruby19/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `call'
+    C:/Ruby19/lib/ruby/gems/1.9.1/gems/rails-2.3.5/lib/rails/rack/log_tailer.rb:17:in `call'
+    C:/Ruby19/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/content_length.rb:13:in `call'
+    C:/Ruby19/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/handler/webrick.rb:50:in `service'
+    C:/Ruby19/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+    C:/Ruby19/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+    C:/Ruby19/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+/!\ FAILSAFE /!\  2009-12-28 22:01:20 +0100
+  Status: 500 Internal Server Error
+  no driver for sqlite3 found
+    C:/Ruby19/lib/ruby/gems/1.9.1/gems/sqlite3-ruby-1.2.5-x86-mingw32/lib/sqlite3/database.rb:627:in `load_driver'
+    C:/Ruby19/lib/ruby/gems/1.9.1/gems/sqlite3-ruby-1.2.5-x86-mingw32/lib/sqlite3/database.rb:72:in `initialize'
+    C:/Ruby19/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/sqlite3_adapter.rb:13:in `new'
+    C:/Ruby19/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/sqlite3_adapter.rb:13:in `sqlite3_connection'
+    C:/Ruby19/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:223:in `new_connection'
+    C:/Ruby19/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:245:in `checkout_new_connection'
+    C:/Ruby19/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:188:in `block (2 levels) in checkout'
+    C:/Ruby19/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:184:in `loop'
+    C:/Ruby19/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:184:in `block in checkout'
+    C:/Ruby19/lib/ruby/1.9.1/monitor.rb:190:in `mon_synchronize'
+    C:/Ruby19/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:183:in `checkout'
+    C:/Ruby19/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:98:in `connection'
+    C:/Ruby19/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:326:in `retrieve_connection'
+    C:/Ruby19/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_specification.rb:123:in `retrieve_connection'
+    C:/Ruby19/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_specification.rb:115:in `connection'
+    C:/Ruby19/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:9:in `cache'
+    C:/Ruby19/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:28:in `call'
+    C:/Ruby19/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+    C:/Ruby19/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/string_coercion.rb:25:in `call'
+    C:/Ruby19/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/head.rb:9:in `call'
+    C:/Ruby19/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/methodoverride.rb:24:in `call'
+    C:/Ruby19/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/params_parser.rb:15:in `call'
+    C:/Ruby19/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/session/cookie_store.rb:93:in `call'
+    C:/Ruby19/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/failsafe.rb:26:in `call'
+    C:/Ruby19/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/lock.rb:11:in `block in call'
+    <internal:prelude>:8:in `synchronize'
+    C:/Ruby19/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+    C:/Ruby19/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:114:in `block in call'
+    C:/Ruby19/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/reloader.rb:34:in `run'
+    C:/Ruby19/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:108:in `call'
+    C:/Ruby19/lib/ruby/gems/1.9.1/gems/rails-2.3.5/lib/rails/rack/static.rb:31:in `call'
+    C:/Ruby19/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/urlmap.rb:46:in `block in call'
+    C:/Ruby19/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `each'
+    C:/Ruby19/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `call'
+    C:/Ruby19/lib/ruby/gems/1.9.1/gems/rails-2.3.5/lib/rails/rack/log_tailer.rb:17:in `call'
+    C:/Ruby19/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/content_length.rb:13:in `call'
+    C:/Ruby19/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/handler/webrick.rb:50:in `service'
+    C:/Ruby19/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+    C:/Ruby19/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+    C:/Ruby19/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+
+Processing SchedulesController#index (for 127.0.0.1 at 2009-12-28 22:04:50) [GET]
+  [4;36;1mSchedule Load (0.0ms)[0m   [0;1mSQLite3::SQLException: no such table: schedules: SELECT * FROM "schedules" [0m
+
+ActiveRecord::StatementInvalid (SQLite3::SQLException: no such table: schedules: SELECT * FROM "schedules" ):
+  app/controllers/schedules_controller.rb:3:in `index'
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby19/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby19/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby19/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (164.0ms)
+Rendered rescues/_request_and_response (3.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SchedulesController#index (for 127.0.0.1 at 2009-12-28 22:06:09) [GET]
+  [4;36;1mSchedule Load (0.0ms)[0m   [0;1mSQLite3::SQLException: no such table: schedules: SELECT * FROM "schedules" [0m
+
+ActiveRecord::StatementInvalid (SQLite3::SQLException: no such table: schedules: SELECT * FROM "schedules" ):
+  app/controllers/schedules_controller.rb:3:in `index'
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby19/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby19/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby19/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (170.0ms)
+Rendered rescues/_request_and_response (2.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (1.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mselect sqlite_version(*)[0m
+  [4;36;1mSQL (100.0ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (120.0ms)[0m   [0mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (3.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateSchedules (20091228205119)
+  [4;36;1mSQL (3.0ms)[0m   [0;1mCREATE TABLE "schedules" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "body" text, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20091228205119')[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("schedules")[0m
+
+
+Processing SchedulesController#index (for 127.0.0.1 at 2009-12-28 22:07:21) [GET]
+  [4;35;1mSchedule Load (1.0ms)[0m   [0mSELECT * FROM "schedules" [0m
+Rendering schedules/index
+
+ActionView::TemplateError (undefined method `title' for #<ActionView::Base:0x4dec480>) on line #1 of app/views/schedules/index.html.erb:
+1: <% title "Schedules" %>
+2: 
+3: <table>
+4:   <tr>
+
+    app/views/schedules/index.html.erb:1
+    <internal:prelude>:8:in `synchronize'
+    C:/Ruby19/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+    C:/Ruby19/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+    C:/Ruby19/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (145.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SchedulesController#index (for 127.0.0.1 at 2009-12-28 22:08:55) [GET]
+  [4;36;1mSchedule Load (1.0ms)[0m   [0;1mSELECT * FROM "schedules" [0m
+Rendering template within layouts/application
+Rendering schedules/index
+Completed in 248ms (View: 237, DB: 1) | 200 OK [http://localhost/schedules]
+
+
+Processing SchedulesController#new (for 127.0.0.1 at 2009-12-28 22:08:57) [GET]
+Rendering template within layouts/application
+Rendering schedules/new
+Rendered schedules/_form (7.0ms)
+Completed in 49ms (View: 37, DB: 0) | 200 OK [http://localhost/schedules/new]
+
+
+Processing SchedulesController#create (for 127.0.0.1 at 2009-12-28 22:09:18) [POST]
+  Parameters: {"authenticity_token"=>"OAaMmuzjcadjCkLyNZKGLoDsi1F38ORHRe1xGjiGSB0=", "schedule"=>{"title"=>"blub", "body"=>"poasfasfbas\r\n\r\nasdf\r\nsdafasdf\r\n   asdfasf\r\nasdfas\r\naf  \r\nasdf \r\n   sdfasd\r\n   sdfas\r\n   asdfas\r\nadsfa\r\n"}, "commit"=>"Submit"}
+  [4;35;1mSchedule Create (16.0ms)[0m   [0mINSERT INTO "schedules" ("title", "body", "created_at", "updated_at") VALUES('blub', 'poasfasfbas
+
+asdf
+sdafasdf
+ asdfasf
+asdfas
+af 
+asdf 
+ sdfasd
+ sdfas
+ asdfas
+adsfa
+', '2009-12-28 21:09:18', '2009-12-28 21:09:18')[0m
+Redirected to http://localhost:3000/schedules
+Completed in 297ms (DB: 16) | 302 Found [http://localhost/schedules]
+
+
+Processing SchedulesController#index (for 127.0.0.1 at 2009-12-28 22:09:19) [GET]
+  [4;36;1mSchedule Load (1.0ms)[0m   [0;1mSELECT * FROM "schedules" [0m
+Rendering template within layouts/application
+Rendering schedules/index
+Completed in 79ms (View: 68, DB: 1) | 200 OK [http://localhost/schedules]
+
+
+Processing SchedulesController#index (for 127.0.0.1 at 2009-12-28 22:22:42) [GET]
+  [4;35;1mSchedule Load (1.0ms)[0m   [0mSELECT * FROM "schedules" [0m
+Rendering template within layouts/application
+Rendering schedules/index
+
+ActionView::TemplateError (undefined local variable or method `schedule' for #<ActionView::Base:0x4dc6800>) on line #6 of app/views/schedules/index.html.erb:
+3: <%= render :partial => @schedule %>
+4: 
+5: <p>
+6: 	<%= link_to "Edit", edit_schedule_path(schedule) %>
+7: 	<%= link_to "Destroy", schedule, :confirm => 'Are you sure?', :method => :delete %>
+8: </p>
+9: 
+
+    app/views/schedules/index.html.erb:6
+    <internal:prelude>:8:in `synchronize'
+    C:/Ruby19/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+    C:/Ruby19/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+    C:/Ruby19/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (121.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SchedulesController#index (for 127.0.0.1 at 2009-12-28 22:24:22) [GET]
+  [4;36;1mSchedule Load (1.0ms)[0m   [0;1mSELECT * FROM "schedules" [0m
+Rendering template within layouts/application
+Rendering schedules/index
+Rendered schedules/_schedule (7.0ms)
+Completed in 58ms (View: 45, DB: 1) | 200 OK [http://localhost/schedules]
+
+
+Processing SchedulesController#show (for 127.0.0.1 at 2009-12-28 22:24:25) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mSQL (1.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+
+NoMethodError (undefined method `Find' for #<Class:0x37ad940>):
+  app/controllers/schedules_controller.rb:7:in `show'
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby19/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby19/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby19/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (148.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SchedulesController#show (for 127.0.0.1 at 2009-12-28 22:24:57) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mSchedule Load (1.0ms)[0m   [0;1mSELECT * FROM "schedules" WHERE ("schedules"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering schedules/show
+
+ActionView::TemplateError (undefined local variable or method `schedule' for #<ActionView::Base:0x4daeac0>) on line #3 of app/views/schedules/show.html.erb:
+1: <%= render :partial => @schedule %>
+2: <p>
+3: 	<%= link_to "Edit", edit_schedule_path(schedule) %>
+4: 	<%= link_to "Destroy", schedule, :confirm => 'Are you sure?', :method => :delete %>
+5: 	<%= link_to "See All Schedules", schedules_path %>
+6: </p>
+
+    app/views/schedules/show.html.erb:3
+    <internal:prelude>:8:in `synchronize'
+    C:/Ruby19/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+    C:/Ruby19/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+    C:/Ruby19/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (121.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SchedulesController#index (for 127.0.0.1 at 2009-12-28 22:26:22) [GET]
+  [4;35;1mSchedule Load (1.0ms)[0m   [0mSELECT * FROM "schedules" [0m
+Rendering template within layouts/application
+Rendering schedules/index
+Rendered schedules/_schedule (4.0ms)
+Completed in 19ms (View: 9, DB: 1) | 200 OK [http://localhost/schedules]
+
+
+Processing SchedulesController#index (for 127.0.0.1 at 2009-12-28 22:26:30) [GET]
+  [4;36;1mSchedule Load (1.0ms)[0m   [0;1mSELECT * FROM "schedules" [0m
+Rendering template within layouts/application
+Rendering schedules/index
+Rendered schedules/_schedule (4.0ms)
+Completed in 21ms (View: 10, DB: 1) | 200 OK [http://localhost/schedules]
+
+
+Processing SchedulesController#show (for 127.0.0.1 at 2009-12-28 22:26:32) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mSchedule Load (0.0ms)[0m   [0mSELECT * FROM "schedules" WHERE ("schedules"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering schedules/show
+
+ActionView::TemplateError (edit_schedule_url failed to generate from {:controller=>"schedules", :action=>"edit", :id=>nil}, expected: {:controller=>"schedules", :action=>"edit"}, diff: {:id=>nil}) on line #3 of app/views/schedules/show.html.erb:
+1: <%= render :partial => @schedule %>
+2: <p>
+3: 	<%= link_to "Edit", edit_schedule_path(@schedule) %>
+4: 	<%= link_to "Destroy", @schedule, :confirm => 'Are you sure?', :method => :delete %>
+5: 	<%= link_to "See All Schedules", schedules_path %>
+6: </p>
+
+    (eval):16:in `edit_schedule_path'
+    app/views/schedules/show.html.erb:3
+    <internal:prelude>:8:in `synchronize'
+    C:/Ruby19/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+    C:/Ruby19/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+    C:/Ruby19/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (191.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SchedulesController#show (for 127.0.0.1 at 2009-12-28 22:27:56) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mSchedule Load (1.0ms)[0m   [0;1mSELECT * FROM "schedules" WHERE ("schedules"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering schedules/show
+
+ActionView::TemplateError (edit_schedule_url failed to generate from {:controller=>"schedules", :action=>"edit", :id=>nil}, expected: {:controller=>"schedules", :action=>"edit"}, diff: {:id=>nil}) on line #4 of app/views/schedules/show.html.erb:
+1: <%= render :partial => @schedule %>
+2: 
+3: <p>
+4: 	<%= link_to "Edit", edit_schedule_path(@schedule) %> |
+5: 	<%= link_to "Destroy", @schedule, :confirm => 'Are you sure?', :method => :delete %> |
+6: 	<%= link_to "See All Schedules", schedules_path %>
+7: </p>
+
+    (eval):16:in `edit_schedule_path'
+    app/views/schedules/show.html.erb:4
+    <internal:prelude>:8:in `synchronize'
+    C:/Ruby19/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+    C:/Ruby19/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+    C:/Ruby19/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (136.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SchedulesController#show (for 127.0.0.1 at 2009-12-28 22:28:44) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mSchedule Load (0.0ms)[0m   [0mSELECT * FROM "schedules" WHERE ("schedules"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering schedules/show
+
+ActionView::TemplateError (edit_schedule_url failed to generate from {:controller=>"schedules", :action=>"edit", :id=>nil}, expected: {:controller=>"schedules", :action=>"edit"}, diff: {:id=>nil}) on line #4 of app/views/schedules/show.html.erb:
+1: <%= render :partial => @schedule %>
+2: 
+3: <p>
+4: 	<%= link_to "Edit", edit_schedule_path(@schedule) %> |
+5: 	<%= link_to "Destroy", @schedule, :confirm => 'Are you sure?', :method => :delete %> |
+6: 	<%= link_to "See All Schedules", schedules_path %>
+7: </p>
+
+    (eval):16:in `edit_schedule_path'
+    app/views/schedules/show.html.erb:4
+    <internal:prelude>:8:in `synchronize'
+    C:/Ruby19/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+    C:/Ruby19/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+    C:/Ruby19/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (182.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SchedulesController#show (for 127.0.0.1 at 2009-12-28 22:28:51) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mSchedule Load (0.0ms)[0m   [0;1mSELECT * FROM "schedules" WHERE ("schedules"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering schedules/show
+
+ActionView::TemplateError (edit_schedule_url failed to generate from {:controller=>"schedules", :action=>"edit", :id=>nil}, expected: {:controller=>"schedules", :action=>"edit"}, diff: {:id=>nil}) on line #4 of app/views/schedules/show.html.erb:
+1: <%= render :partial => @schedule %>
+2: 
+3: <p>
+4: 	<%= link_to "Edit", edit_schedule_path(@schedule) %> |
+5: 	<%= link_to "Destroy", @schedule, :confirm => 'Are you sure?', :method => :delete %> |
+6: 	<%= link_to "See All Schedules", schedules_path %>
+7: </p>
+
+    (eval):16:in `edit_schedule_path'
+    app/views/schedules/show.html.erb:4
+    <internal:prelude>:8:in `synchronize'
+    C:/Ruby19/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+    C:/Ruby19/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+    C:/Ruby19/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (126.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SchedulesController#index (for 127.0.0.1 at 2009-12-28 22:28:54) [GET]
+  [4;35;1mSchedule Load (2.0ms)[0m   [0mSELECT * FROM "schedules" [0m
+Rendering template within layouts/application
+Rendering schedules/index
+Rendered schedules/_schedule (5.0ms)
+Completed in 21ms (View: 10, DB: 2) | 200 OK [http://localhost/schedules]
+
+
+Processing SchedulesController#index (for 127.0.0.1 at 2009-12-28 22:28:57) [GET]
+  [4;36;1mSchedule Load (1.0ms)[0m   [0;1mSELECT * FROM "schedules" [0m
+Rendering template within layouts/application
+Rendering schedules/index
+Rendered schedules/_schedule (5.0ms)
+Completed in 83ms (View: 10, DB: 1) | 200 OK [http://localhost/schedules]
+
+
+Processing SchedulesController#show (for 127.0.0.1 at 2009-12-28 22:29:04) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mSchedule Load (0.0ms)[0m   [0mSELECT * FROM "schedules" WHERE ("schedules"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering schedules/show
+
+ActionView::TemplateError (Called id for nil, which would mistakenly be 4 -- if you really wanted the id of nil, use object_id) on line #4 of app/views/schedules/show.html.erb:
+1: <%= render :partial => @schedule %>
+2: 
+3: <p>
+4: 	<%= link_to "Edit", edit_schedule_path(@schedule.id) %> |
+5: 	<%= link_to "Destroy", @schedule, :confirm => 'Are you sure?', :method => :delete %> |
+6: 	<%= link_to "See All Schedules", schedules_path %>
+7: </p>
+
+    app/views/schedules/show.html.erb:4
+    <internal:prelude>:8:in `synchronize'
+    C:/Ruby19/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+    C:/Ruby19/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+    C:/Ruby19/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (112.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SchedulesController#show (for 127.0.0.1 at 2009-12-28 22:29:51) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mSchedule Load (0.0ms)[0m   [0;1mSELECT * FROM "schedules" WHERE ("schedules"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering schedules/show
+Rendered schedules/_schedule (5.0ms)
+Completed in 151ms (View: 138, DB: 0) | 200 OK [http://localhost/schedules/1]
+
+
+Processing SchedulesController#index (for 127.0.0.1 at 2009-12-28 22:29:55) [GET]
+  [4;35;1mSchedule Load (1.0ms)[0m   [0mSELECT * FROM "schedules" [0m
+Rendering template within layouts/application
+Rendering schedules/index
+Rendered schedules/_schedule (4.0ms)
+Completed in 21ms (View: 9, DB: 1) | 200 OK [http://localhost/schedules]
+
+
+Processing SchedulesController#show (for 127.0.0.1 at 2009-12-28 22:29:57) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mSchedule Load (0.0ms)[0m   [0;1mSELECT * FROM "schedules" WHERE ("schedules"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering schedules/show
+Rendered schedules/_schedule (3.0ms)
+Completed in 20ms (View: 8, DB: 0) | 200 OK [http://localhost/schedules/1]
+
+
+Processing SchedulesController#index (for 127.0.0.1 at 2009-12-28 22:30:12) [GET]
+  [4;35;1mSchedule Load (1.0ms)[0m   [0mSELECT * FROM "schedules" [0m
+Rendering template within layouts/application
+Rendering schedules/index
+Rendered schedules/_schedule (4.0ms)
+Completed in 20ms (View: 9, DB: 1) | 200 OK [http://localhost/schedules]
+
+
+Processing SchedulesController#index (for 127.0.0.1 at 2009-12-28 22:30:39) [GET]
+  [4;36;1mSchedule Load (1.0ms)[0m   [0;1mSELECT * FROM "schedules" [0m
+Rendering template within layouts/application
+Rendering schedules/index
+Rendered schedules/_schedule (64.0ms)
+Completed in 93ms (View: 82, DB: 1) | 200 OK [http://localhost/schedules]
+
+
+Processing SchedulesController#show (for 127.0.0.1 at 2009-12-28 22:30:45) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mSchedule Load (0.0ms)[0m   [0mSELECT * FROM "schedules" WHERE ("schedules"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering schedules/show
+Rendered schedules/_schedule (4.0ms)
+Completed in 21ms (View: 9, DB: 0) | 200 OK [http://localhost/schedules/1]
+
+
+Processing SchedulesController#index (for 127.0.0.1 at 2009-12-28 22:30:52) [GET]
+  [4;36;1mSchedule Load (1.0ms)[0m   [0;1mSELECT * FROM "schedules" [0m
+Rendering template within layouts/application
+Rendering schedules/index
+Rendered schedules/_schedule (5.0ms)
+Completed in 21ms (View: 10, DB: 1) | 200 OK [http://localhost/schedules]
+
+
+Processing SchedulesController#index (for 127.0.0.1 at 2009-12-28 22:33:23) [GET]
+  [4;35;1mSchedule Load (1.0ms)[0m   [0mSELECT * FROM "schedules" [0m
+Rendering template within layouts/application
+Rendering schedules/index
+
+ActionView::TemplateError (Called id for nil, which would mistakenly be 4 -- if you really wanted the id of nil, use object_id) on line #3 of app/views/schedules/index.html.erb:
+1: <% title "Schedules" %>
+2: 
+3: <% div_for @schedule do%>
+4: 	<h2><%=link_to_unless_current h(@schedule.title),schedule%></h2>
+5: 	<%=simple_format h(@schedule.body) %>
+6: <% end %>
+
+    app/views/schedules/index.html.erb:3
+    <internal:prelude>:8:in `synchronize'
+    C:/Ruby19/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+    C:/Ruby19/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+    C:/Ruby19/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (256.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SchedulesController#index (for 127.0.0.1 at 2009-12-28 22:33:39) [GET]
+  [4;36;1mSchedule Load (1.0ms)[0m   [0;1mSELECT * FROM "schedules" [0m
+Rendering template within layouts/application
+Rendering schedules/index
+
+ActionView::TemplateError (undefined method `id' for #<Array:0x379e640>) on line #3 of app/views/schedules/index.html.erb:
+1: <% title "Schedules" %>
+2: 
+3: <% div_for @schedules do%>
+4: 	<h2><%=link_to_unless_current h(@schedules.title),schedule%></h2>
+5: 	<%=simple_format h(@schedules.body) %>
+6: <% end %>
+
+    app/views/schedules/index.html.erb:3
+    <internal:prelude>:8:in `synchronize'
+    C:/Ruby19/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+    C:/Ruby19/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+    C:/Ruby19/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (188.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SchedulesController#index (for 127.0.0.1 at 2009-12-28 22:34:31) [GET]
+  [4;35;1mSchedule Load (1.0ms)[0m   [0mSELECT * FROM "schedules" [0m
+Rendering template within layouts/application
+Rendering schedules/index
+
+ActionView::TemplateError (undefined local variable or method `schedules' for #<ActionView::Base:0x49e2400>) on line #5 of app/views/schedules/index.html.erb:
+2: 
+3: <% for schedule in @schedules do %>
+4: <% div_for schedule do%>
+5: 	<h2><%=link_to_unless_current h(schedules.title),schedule%></h2>
+6: 	<%=simple_format h(schedules.body) %>
+7: <% end %>
+8: <% end %>
+
+    app/views/schedules/index.html.erb:5:in `block (2 levels) in _run_erb_app47views47schedules47index46html46erb'
+    app/views/schedules/index.html.erb:4:in `block in _run_erb_app47views47schedules47index46html46erb'
+    app/views/schedules/index.html.erb:3:in `each'
+    app/views/schedules/index.html.erb:3
+    <internal:prelude>:8:in `synchronize'
+    C:/Ruby19/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+    C:/Ruby19/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+    C:/Ruby19/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (128.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SchedulesController#index (for 127.0.0.1 at 2009-12-28 22:34:50) [GET]
+  [4;36;1mSchedule Load (1.0ms)[0m   [0;1mSELECT * FROM "schedules" [0m
+Rendering template within layouts/application
+Rendering schedules/index
+Completed in 33ms (View: 22, DB: 1) | 200 OK [http://localhost/schedules]
+
+
+Processing SchedulesController#show (for 127.0.0.1 at 2009-12-28 22:34:53) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mSchedule Load (0.0ms)[0m   [0mSELECT * FROM "schedules" WHERE ("schedules"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering schedules/show
+
+ActionView::TemplateError (undefined local variable or method `schedule' for #<ActionView::Base:0x4aa6800>) on line #1 of app/views/schedules/show.html.erb:
+1: <% title schedule.title %>
+2: 
+3: <% div_for @schedule do%>
+4: 	<%=simple_format h(schedule.body) %>
+
+    app/views/schedules/show.html.erb:1
+    <internal:prelude>:8:in `synchronize'
+    C:/Ruby19/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+    C:/Ruby19/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+    C:/Ruby19/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (124.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SchedulesController#show (for 127.0.0.1 at 2009-12-28 22:35:28) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mSchedule Load (0.0ms)[0m   [0;1mSELECT * FROM "schedules" WHERE ("schedules"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering schedules/show
+
+ActionView::TemplateError (undefined local variable or method `schedule' for #<ActionView::Base:0x3a6ca00>) on line #4 of app/views/schedules/show.html.erb:
+1: <% title @schedule.title %>
+2: 
+3: <% div_for @schedule do%>
+4: 	<%=simple_format h(schedule.body) %>
+5: <% end %>
+6: <p>
+7: 	<%= link_to "Edit", edit_schedule_path(@schedule.id) %> |
+
+    app/views/schedules/show.html.erb:4:in `block in _run_erb_app47views47schedules47show46html46erb'
+    app/views/schedules/show.html.erb:3
+    <internal:prelude>:8:in `synchronize'
+    C:/Ruby19/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+    C:/Ruby19/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+    C:/Ruby19/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (190.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SchedulesController#show (for 127.0.0.1 at 2009-12-28 22:35:42) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mSchedule Load (0.0ms)[0m   [0mSELECT * FROM "schedules" WHERE ("schedules"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering schedules/show
+Completed in 33ms (View: 21, DB: 0) | 200 OK [http://localhost/schedules/1]
+
+
+Processing SchedulesController#index (for 127.0.0.1 at 2009-12-28 22:35:44) [GET]
+  [4;36;1mSchedule Load (1.0ms)[0m   [0;1mSELECT * FROM "schedules" [0m
+Rendering template within layouts/application
+Rendering schedules/index
+Completed in 33ms (View: 22, DB: 1) | 200 OK [http://localhost/schedules]
+
+
+Processing SchedulesController#new (for 127.0.0.1 at 2009-12-28 22:35:46) [GET]
+Rendering template within layouts/application
+Rendering schedules/new
+Rendered schedules/_form (5.0ms)
+Completed in 21ms (View: 10, DB: 0) | 200 OK [http://localhost/schedules/new]
+
+
+Processing SchedulesController#create (for 127.0.0.1 at 2009-12-28 22:35:49) [POST]
+  Parameters: {"authenticity_token"=>"OAaMmuzjcadjCkLyNZKGLoDsi1F38ORHRe1xGjiGSB0=", "schedule"=>{"title"=>"erdsf", "body"=>""}, "commit"=>"Submit"}
+Rendering template within layouts/application
+Rendering schedules/new
+Rendered schedules/_form (19.0ms)
+Completed in 37ms (View: 23, DB: 0) | 200 OK [http://localhost/schedules]
+
+
+Processing SchedulesController#create (for 127.0.0.1 at 2009-12-28 22:35:51) [POST]
+  Parameters: {"authenticity_token"=>"OAaMmuzjcadjCkLyNZKGLoDsi1F38ORHRe1xGjiGSB0=", "schedule"=>{"title"=>"erdsf", "body"=>"sdfsdf"}, "commit"=>"Submit"}
+  [4;35;1mSchedule Create (3.0ms)[0m   [0mINSERT INTO "schedules" ("title", "body", "created_at", "updated_at") VALUES('erdsf', 'sdfsdf', '2009-12-28 21:35:51', '2009-12-28 21:35:51')[0m
+Redirected to http://localhost:3000/schedules
+Completed in 240ms (DB: 3) | 302 Found [http://localhost/schedules]
+
+
+Processing SchedulesController#index (for 127.0.0.1 at 2009-12-28 22:35:53) [GET]
+  [4;36;1mSchedule Load (1.0ms)[0m   [0;1mSELECT * FROM "schedules" [0m
+Rendering template within layouts/application
+Rendering schedules/index
+Completed in 22ms (View: 12, DB: 1) | 200 OK [http://localhost/schedules]
+
+
+Processing SchedulesController#show (for 127.0.0.1 at 2009-12-28 22:35:56) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mSchedule Load (0.0ms)[0m   [0mSELECT * FROM "schedules" WHERE ("schedules"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering schedules/show
+Completed in 19ms (View: 7, DB: 0) | 200 OK [http://localhost/schedules/1]
+
+
+Processing SchedulesController#edit (for 127.0.0.1 at 2009-12-28 22:36:08) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mSchedule Load (1.0ms)[0m   [0;1mSELECT * FROM "schedules" WHERE ("schedules"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering schedules/edit
+Rendered schedules/_form (6.0ms)
+Completed in 36ms (View: 24, DB: 1) | 200 OK [http://localhost/schedules/1/edit]
+
+
+Processing SchedulesController#update (for 127.0.0.1 at 2009-12-28 22:36:13) [PUT]
+  Parameters: {"authenticity_token"=>"OAaMmuzjcadjCkLyNZKGLoDsi1F38ORHRe1xGjiGSB0=", "schedule"=>{"title"=>"blub", "body"=>"poasfasfbas\r\n\r\nasdf\r\nsdafasdf\r\n   asdfasf\r\nasdfas\r\naf  \r\nasdf \r\n   sdfasd\r\n   sdfas\r\n   asdfas\r\nadsfa\r\n"}, "commit"=>"Submit", "id"=>"1"}
+  [4;35;1mSchedule Load (0.0ms)[0m   [0mSELECT * FROM "schedules" WHERE ("schedules"."id" = 1) [0m
+Redirected to http://localhost:3000/schedules
+Completed in 20ms (DB: 0) | 302 Found [http://localhost/schedules/1]
+
+
+Processing SchedulesController#index (for 127.0.0.1 at 2009-12-28 22:36:14) [GET]
+  [4;36;1mSchedule Load (1.0ms)[0m   [0;1mSELECT * FROM "schedules" [0m
+Rendering template within layouts/application
+Rendering schedules/index
+Completed in 21ms (View: 10, DB: 1) | 200 OK [http://localhost/schedules]
+
+
+Processing SchedulesController#show (for 127.0.0.1 at 2009-12-28 22:38:41) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mSchedule Load (0.0ms)[0m   [0mSELECT * FROM "schedules" WHERE ("schedules"."id" = 2) [0m
+Rendering template within layouts/application
+Rendering schedules/show
+Completed in 19ms (View: 7, DB: 0) | 200 OK [http://localhost/schedules/2]
+
+
+Processing SchedulesController#edit (for 127.0.0.1 at 2009-12-28 22:38:43) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mSchedule Load (1.0ms)[0m   [0;1mSELECT * FROM "schedules" WHERE ("schedules"."id" = 2) [0m
+Rendering template within layouts/application
+Rendering schedules/edit
+Rendered schedules/_form (5.0ms)
+Completed in 21ms (View: 9, DB: 1) | 200 OK [http://localhost/schedules/2/edit]
+
+
+Processing SchedulesController#update (for 127.0.0.1 at 2009-12-28 22:38:48) [PUT]
+  Parameters: {"authenticity_token"=>"OAaMmuzjcadjCkLyNZKGLoDsi1F38ORHRe1xGjiGSB0=", "schedule"=>{"title"=>"erdsf", "body"=>"sdfsdf\r\n\xC3\xB6ksabf\xC3\xB6f\r\nak\xC3\xB6sdbfk\xC3\xB6asd"}, "commit"=>"Submit", "id"=>"2"}
+  [4;35;1mSchedule Load (1.0ms)[0m   [0mSELECT * FROM "schedules" WHERE ("schedules"."id" = 2) [0m
+  [4;36;1mSchedule Update (2.0ms)[0m   [0;1mUPDATE "schedules" SET "body" = 'sdfsdf
+öksabföf
+akösdbfköasd', "updated_at" = '2009-12-28 21:38:48' WHERE "id" = 2[0m
+
+ActionView::MissingTemplate (Missing template schedules/update.erb in view path app/views):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby19/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby19/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby19/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SchedulesController#edit (for 127.0.0.1 at 2009-12-28 22:39:17) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mSchedule Load (1.0ms)[0m   [0mSELECT * FROM "schedules" WHERE ("schedules"."id" = 2) [0m
+Rendering template within layouts/application
+Rendering schedules/edit
+Rendered schedules/_form (5.0ms)
+Completed in 20ms (View: 9, DB: 1) | 200 OK [http://localhost/schedules/2/edit]
+
+
+Processing SchedulesController#update (for 127.0.0.1 at 2009-12-28 22:39:18) [PUT]
+  Parameters: {"authenticity_token"=>"OAaMmuzjcadjCkLyNZKGLoDsi1F38ORHRe1xGjiGSB0=", "schedule"=>{"title"=>"erdsf", "body"=>"sdfsdf\r\n\xC3\xB6ksabf\xC3\xB6f\r\nak\xC3\xB6sdbfk\xC3\xB6asd"}, "commit"=>"Submit", "id"=>"2"}
+  [4;36;1mSchedule Load (1.0ms)[0m   [0;1mSELECT * FROM "schedules" WHERE ("schedules"."id" = 2) [0m
+
+ActionView::MissingTemplate (Missing template schedules/update.erb in view path app/views):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby19/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby19/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby19/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SchedulesController#edit (for 127.0.0.1 at 2009-12-28 22:39:22) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mSchedule Load (0.0ms)[0m   [0mSELECT * FROM "schedules" WHERE ("schedules"."id" = 2) [0m
+Rendering template within layouts/application
+Rendering schedules/edit
+Rendered schedules/_form (5.0ms)
+Completed in 21ms (View: 9, DB: 0) | 200 OK [http://localhost/schedules/2/edit]
+
+
+Processing SchedulesController#index (for 127.0.0.1 at 2009-12-28 22:39:23) [GET]
+  [4;36;1mSchedule Load (1.0ms)[0m   [0;1mSELECT * FROM "schedules" [0m
+Rendering template within layouts/application
+Rendering schedules/index
+Completed in 20ms (View: 8, DB: 1) | 200 OK [http://localhost/schedules]
+
+
+Processing SchedulesController#show (for 127.0.0.1 at 2009-12-28 22:39:25) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mSchedule Load (1.0ms)[0m   [0mSELECT * FROM "schedules" WHERE ("schedules"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering schedules/show
+Completed in 19ms (View: 7, DB: 1) | 200 OK [http://localhost/schedules/1]
+
+
+Processing SchedulesController#edit (for 127.0.0.1 at 2009-12-28 22:39:26) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mSchedule Load (1.0ms)[0m   [0;1mSELECT * FROM "schedules" WHERE ("schedules"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering schedules/edit
+Rendered schedules/_form (6.0ms)
+Completed in 34ms (View: 11, DB: 1) | 200 OK [http://localhost/schedules/1/edit]
+
+
+Processing SchedulesController#update (for 127.0.0.1 at 2009-12-28 22:39:29) [PUT]
+  Parameters: {"authenticity_token"=>"OAaMmuzjcadjCkLyNZKGLoDsi1F38ORHRe1xGjiGSB0=", "schedule"=>{"title"=>"blub", "body"=>"poasfasfbas\r\n\r\nasdf\r\nsdafasdf\r\n   asdfasf\r\nasdfas\r\naf  \r\nasdf \r\n   sdfasd\r\n   sdfas\r\n   asdfas\r\nadsfa\r\ns"}, "commit"=>"Submit", "id"=>"1"}
+  [4;35;1mSchedule Load (0.0ms)[0m   [0mSELECT * FROM "schedules" WHERE ("schedules"."id" = 1) [0m
+  [4;36;1mSchedule Update (3.0ms)[0m   [0;1mUPDATE "schedules" SET "body" = 'poasfasfbas
+
+asdf
+sdafasdf
+ asdfasf
+asdfas
+af 
+asdf 
+ sdfasd
+ sdfas
+ asdfas
+adsfa
+s', "updated_at" = '2009-12-28 21:39:29' WHERE "id" = 1[0m
+
+ActionView::MissingTemplate (Missing template schedules/update.erb in view path app/views):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby19/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby19/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby19/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SchedulesController#edit (for 127.0.0.1 at 2009-12-28 22:39:37) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mSchedule Load (1.0ms)[0m   [0mSELECT * FROM "schedules" WHERE ("schedules"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering schedules/edit
+Rendered schedules/_form (5.0ms)
+Completed in 21ms (View: 10, DB: 1) | 200 OK [http://localhost/schedules/1/edit]
+
+
+Processing SchedulesController#show (for 127.0.0.1 at 2009-12-28 22:39:38) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mSchedule Load (1.0ms)[0m   [0;1mSELECT * FROM "schedules" WHERE ("schedules"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering schedules/show
+Completed in 19ms (View: 7, DB: 1) | 200 OK [http://localhost/schedules/1]
+
+
+Processing SchedulesController#edit (for 127.0.0.1 at 2009-12-28 22:39:40) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mSchedule Load (1.0ms)[0m   [0mSELECT * FROM "schedules" WHERE ("schedules"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering schedules/edit
+Rendered schedules/_form (5.0ms)
+Completed in 22ms (View: 10, DB: 1) | 200 OK [http://localhost/schedules/1/edit]
+
+
+Processing SchedulesController#update (for 127.0.0.1 at 2009-12-28 22:39:42) [PUT]
+  Parameters: {"authenticity_token"=>"OAaMmuzjcadjCkLyNZKGLoDsi1F38ORHRe1xGjiGSB0=", "schedule"=>{"title"=>"blub", "body"=>"poasfasfbas\r\n\r\nasdf\r\nsdafasdf\r\n   asdfasf\r\nasdfas\r\naf  \r\nasdf \r\n   sdfasd\r\n   sdfas\r\n   asdfas\r\nadsfa\r\nsasda"}, "commit"=>"Submit", "id"=>"1"}
+  [4;36;1mSchedule Load (0.0ms)[0m   [0;1mSELECT * FROM "schedules" WHERE ("schedules"."id" = 1) [0m
+  [4;35;1mSchedule Update (2.0ms)[0m   [0mUPDATE "schedules" SET "body" = 'poasfasfbas
+
+asdf
+sdafasdf
+ asdfasf
+asdfas
+af 
+asdf 
+ sdfasd
+ sdfas
+ asdfas
+adsfa
+sasda', "updated_at" = '2009-12-28 21:39:42' WHERE "id" = 1[0m
+Redirected to http://localhost:3000/schedules/1
+Completed in 177ms (DB: 2) | 302 Found [http://localhost/schedules/1]
+
+
+Processing SchedulesController#show (for 127.0.0.1 at 2009-12-28 22:39:43) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mSchedule Load (1.0ms)[0m   [0;1mSELECT * FROM "schedules" WHERE ("schedules"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering schedules/show
+Completed in 22ms (View: 8, DB: 1) | 200 OK [http://localhost/schedules/1]
+
+
+Processing SchedulesController#index (for 127.0.0.1 at 2009-12-28 22:40:10) [GET]
+  [4;35;1mSchedule Load (1.0ms)[0m   [0mSELECT * FROM "schedules" [0m
+Rendering template within layouts/application
+Rendering schedules/index
+Completed in 21ms (View: 10, DB: 1) | 200 OK [http://localhost/schedules]
+  [4;36;1mSQL (1.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateSchedules (20091228205119)
+Migrating to CreateComments (20091228214313)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (3.0ms)[0m   [0mCREATE TABLE "comments" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "schedule_id" integer, "body" text, "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20091228214313')[0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("comments")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("schedules")[0m
+
+
+Processing SchedulesController#index (for 127.0.0.1 at 2009-12-28 23:00:55) [GET]
+  [4;36;1mSchedule Load (1.0ms)[0m   [0;1mSELECT * FROM "schedules" [0m
+Rendering template within layouts/application
+Rendering schedules/index
+Completed in 96ms (View: 30, DB: 1) | 200 OK [http://localhost/schedules]
+
+
+Processing SchedulesController#show (for 127.0.0.1 at 2009-12-28 23:00:57) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mSchedule Load (0.0ms)[0m   [0mSELECT * FROM "schedules" WHERE ("schedules"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering schedules/show
+  [4;36;1mComment Load (1.0ms)[0m   [0;1mSELECT * FROM "comments" WHERE ("comments".schedule_id = 1) [0m
+Completed in 160ms (View: 146, DB: 1) | 200 OK [http://localhost/schedules/1]
+
+
+Processing CommentsController#create (for 127.0.0.1 at 2009-12-28 23:01:02) [POST]
+  Parameters: {"authenticity_token"=>"OAaMmuzjcadjCkLyNZKGLoDsi1F38ORHRe1xGjiGSB0=", "comment"=>{"body"=>"aldsfklasflkn"}, "commit"=>"Add Comment", "_"=>"", "schedule_id"=>"1"}
+  [4;35;1mSchedule Load (0.0ms)[0m   [0mSELECT * FROM "schedules" WHERE ("schedules"."id" = 1) [0m
+  [4;36;1mComment Create (3.0ms)[0m   [0;1mINSERT INTO "comments" ("schedule_id", "body", "created_at", "updated_at") VALUES(1, 'aldsfklasflkn', '2009-12-28 22:01:02', '2009-12-28 22:01:02')[0m
+
+ArgumentError (respond_to takes either types or a block, never both):
+  app/controllers/comments_controller.rb:6:in `create'
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby19/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby19/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby19/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (90.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing CommentsController#create (for 127.0.0.1 at 2009-12-28 23:01:09) [POST]
+  Parameters: {"authenticity_token"=>"OAaMmuzjcadjCkLyNZKGLoDsi1F38ORHRe1xGjiGSB0=", "comment"=>{"body"=>"aldsfklasflkn"}, "commit"=>"Add Comment", "_"=>"", "schedule_id"=>"1"}
+  [4;35;1mSchedule Load (1.0ms)[0m   [0mSELECT * FROM "schedules" WHERE ("schedules"."id" = 1) [0m
+  [4;36;1mComment Create (4.0ms)[0m   [0;1mINSERT INTO "comments" ("schedule_id", "body", "created_at", "updated_at") VALUES(1, 'aldsfklasflkn', '2009-12-28 22:01:09', '2009-12-28 22:01:09')[0m
+
+ArgumentError (respond_to takes either types or a block, never both):
+  app/controllers/comments_controller.rb:6:in `create'
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby19/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby19/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby19/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (85.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SchedulesController#show (for 127.0.0.1 at 2009-12-28 23:01:12) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mSchedule Load (1.0ms)[0m   [0mSELECT * FROM "schedules" WHERE ("schedules"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering schedules/show
+  [4;36;1mComment Load (0.0ms)[0m   [0;1mSELECT * FROM "comments" WHERE ("comments".schedule_id = 1) [0m
+ERROR: compiling _run_erb_app47views47comments47_comment46html46erb_locals_comment_comment_counter_object RAISED C:/projects/WebLog/app/views/comments/_comment.html.erb:3: syntax error, unexpected tIDENTIFIER, expecting ')'
+...n_words(comment.created_at) ago).to_s); @output_buffer.conca...
+...                               ^
+Function body:           def _run_erb_app47views47comments47_comment46html46erb_locals_comment_comment_counter_object(local_assigns)
+            old_output_buffer = output_buffer;comment_counter = local_assigns[:comment_counter];comment = local_assigns[:comment];object = local_assigns[:object];;@output_buffer = '';  __in_erb_template=true ;  div_for comment do ; @output_buffer.concat "\n\t<p>\n\t\t<strong>Posted "
+
+; @output_buffer.concat(( time_ago_in_words(comment.created_at) ago).to_s); @output_buffer.concat "</strong><br />\n\t\t"
+; @output_buffer.concat(( h(comment.body)).to_s); @output_buffer.concat "\n\t</p>\n"
+
+;  end ; @output_buffer.force_encoding(__ENCODING__)
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: C:/Ruby19/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_view/renderable.rb:77:in `module_eval'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_view/renderable.rb:77:in `compile!'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_view/renderable.rb:61:in `compile'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_view/renderable.rb:28:in `render'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_view/renderable_partial.rb:20:in `block in render'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:26:in `block in benchmark'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `block in ms'
+C:/Ruby19/lib/ruby/1.9.1/benchmark.rb:309:in `realtime'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:26:in `benchmark'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_view/renderable_partial.rb:19:in `render'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_view/template.rb:205:in `render_template'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_view/renderable_partial.rb:44:in `render_partial'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_view/partials.rb:221:in `block in render_partial_collection'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/associations/association_collection.rb:369:in `block in method_missing'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/associations/association_proxy.rb:215:in `block in method_missing'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/associations/association_proxy.rb:215:in `map'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/associations/association_proxy.rb:215:in `method_missing'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/associations/association_collection.rb:369:in `method_missing'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_view/partials.rb:216:in `render_partial_collection'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_view/partials.rb:195:in `render_partial'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_view/base.rb:267:in `render'
+C:/projects/WebLog/app/views/schedules/show.html.erb:14:in `_run_erb_app47views47schedules47show46html46erb'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_view/renderable.rb:34:in `block in render'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_view/base.rb:306:in `with_template'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_view/renderable.rb:30:in `render'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_view/template.rb:205:in `render_template'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_view/base.rb:265:in `render'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_view/base.rb:348:in `_render_with_layout'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_view/base.rb:262:in `render'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/base.rb:1250:in `render_for_file'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/base.rb:945:in `render'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:51:in `block in render_with_benchmark'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `block in ms'
+C:/Ruby19/lib/ruby/1.9.1/benchmark.rb:309:in `realtime'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:51:in `render_with_benchmark'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/base.rb:1326:in `default_render'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/base.rb:1332:in `perform_action'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/filters.rb:617:in `call_filters'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/filters.rb:610:in `perform_action_with_filters'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:68:in `block in perform_action_with_benchmark'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `block in ms'
+C:/Ruby19/lib/ruby/1.9.1/benchmark.rb:309:in `realtime'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:68:in `perform_action_with_benchmark'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/rescue.rb:160:in `perform_action_with_rescue'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/flash.rb:146:in `perform_action_with_flash'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/base.rb:532:in `process'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/filters.rb:606:in `process_with_filters'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/base.rb:391:in `process'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/base.rb:386:in `call'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/routing/route_set.rb:437:in `call'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:87:in `dispatch'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:121:in `_call'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:130:in `block in build_middleware_stack'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:29:in `call'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:29:in `block in call'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:9:in `cache'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:28:in `call'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/string_coercion.rb:25:in `call'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/head.rb:9:in `call'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/methodoverride.rb:24:in `call'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/params_parser.rb:15:in `call'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/session/cookie_store.rb:93:in `call'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/failsafe.rb:26:in `call'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/lock.rb:11:in `block in call'
+<internal:prelude>:8:in `synchronize'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:114:in `block in call'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/reloader.rb:34:in `run'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:108:in `call'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/rails-2.3.5/lib/rails/rack/static.rb:31:in `call'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/urlmap.rb:46:in `block in call'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `each'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `call'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/rails-2.3.5/lib/rails/rack/log_tailer.rb:17:in `call'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/content_length.rb:13:in `call'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/handler/webrick.rb:50:in `service'
+C:/Ruby19/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+C:/Ruby19/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+C:/Ruby19/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+ActionView::TemplateError (C:/projects/WebLog/app/views/comments/_comment.html.erb:3: syntax error, unexpected tIDENTIFIER, expecting ')'
+...n_words(comment.created_at) ago).to_s); @output_buffer.conca...
+...                               ^) on line #3 of app/views/comments/_comment.html.erb:
+1: <% div_for comment do %>
+2: 	<p>
+3: 		<strong>Posted <%= time_ago_in_words(comment.created_at) ago%></strong><br />
+4: 		<%= h(comment.body)%>
+5: 	</p>
+6: <% end %>
+
+    app/views/schedules/show.html.erb:14
+    <internal:prelude>:8:in `synchronize'
+    C:/Ruby19/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+    C:/Ruby19/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+    C:/Ruby19/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (228.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SchedulesController#show (for 127.0.0.1 at 2009-12-28 23:02:07) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mSchedule Load (1.0ms)[0m   [0mSELECT * FROM "schedules" WHERE ("schedules"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering schedules/show
+  [4;36;1mComment Load (0.0ms)[0m   [0;1mSELECT * FROM "comments" WHERE ("comments".schedule_id = 1) [0m
+ERROR: compiling _run_erb_app47views47comments47_comment46html46erb_locals_comment_comment_counter_object RAISED C:/projects/WebLog/app/views/comments/_comment.html.erb:3: syntax error, unexpected tIDENTIFIER, expecting ')'
+...n_words(comment.created_at) ago).to_s); @output_buffer.conca...
+...                               ^
+Function body:           def _run_erb_app47views47comments47_comment46html46erb_locals_comment_comment_counter_object(local_assigns)
+            old_output_buffer = output_buffer;comment_counter = local_assigns[:comment_counter];comment = local_assigns[:comment];object = local_assigns[:object];;@output_buffer = '';  __in_erb_template=true ;  div_for comment do ; @output_buffer.concat "\n\t<p>\n\t\t<strong>Posted "
+
+; @output_buffer.concat(( time_ago_in_words(comment.created_at) ago).to_s); @output_buffer.concat "</strong><br />\n\t\t"
+; @output_buffer.concat(( h(comment.body)).to_s); @output_buffer.concat "\n\t</p>\n"
+
+;  end ; @output_buffer.force_encoding(__ENCODING__)
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: C:/Ruby19/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_view/renderable.rb:77:in `module_eval'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_view/renderable.rb:77:in `compile!'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_view/renderable.rb:61:in `compile'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_view/renderable.rb:28:in `render'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_view/renderable_partial.rb:20:in `block in render'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:26:in `block in benchmark'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `block in ms'
+C:/Ruby19/lib/ruby/1.9.1/benchmark.rb:309:in `realtime'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:26:in `benchmark'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_view/renderable_partial.rb:19:in `render'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_view/template.rb:205:in `render_template'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_view/renderable_partial.rb:44:in `render_partial'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_view/partials.rb:221:in `block in render_partial_collection'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/associations/association_collection.rb:369:in `block in method_missing'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/associations/association_proxy.rb:215:in `block in method_missing'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/associations/association_proxy.rb:215:in `map'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/associations/association_proxy.rb:215:in `method_missing'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/associations/association_collection.rb:369:in `method_missing'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_view/partials.rb:216:in `render_partial_collection'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_view/partials.rb:195:in `render_partial'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_view/base.rb:267:in `render'
+C:/projects/WebLog/app/views/schedules/show.html.erb:14:in `_run_erb_app47views47schedules47show46html46erb'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_view/renderable.rb:34:in `block in render'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_view/base.rb:306:in `with_template'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_view/renderable.rb:30:in `render'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_view/template.rb:205:in `render_template'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_view/base.rb:265:in `render'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_view/base.rb:348:in `_render_with_layout'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_view/base.rb:262:in `render'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/base.rb:1250:in `render_for_file'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/base.rb:945:in `render'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:51:in `block in render_with_benchmark'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `block in ms'
+C:/Ruby19/lib/ruby/1.9.1/benchmark.rb:309:in `realtime'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:51:in `render_with_benchmark'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/base.rb:1326:in `default_render'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/base.rb:1332:in `perform_action'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/filters.rb:617:in `call_filters'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/filters.rb:610:in `perform_action_with_filters'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:68:in `block in perform_action_with_benchmark'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `block in ms'
+C:/Ruby19/lib/ruby/1.9.1/benchmark.rb:309:in `realtime'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:68:in `perform_action_with_benchmark'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/rescue.rb:160:in `perform_action_with_rescue'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/flash.rb:146:in `perform_action_with_flash'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/base.rb:532:in `process'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/filters.rb:606:in `process_with_filters'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/base.rb:391:in `process'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/base.rb:386:in `call'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/routing/route_set.rb:437:in `call'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:87:in `dispatch'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:121:in `_call'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:130:in `block in build_middleware_stack'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:29:in `call'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:29:in `block in call'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:9:in `cache'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:28:in `call'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/string_coercion.rb:25:in `call'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/head.rb:9:in `call'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/methodoverride.rb:24:in `call'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/params_parser.rb:15:in `call'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/session/cookie_store.rb:93:in `call'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/failsafe.rb:26:in `call'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/lock.rb:11:in `block in call'
+<internal:prelude>:8:in `synchronize'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:114:in `block in call'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/reloader.rb:34:in `run'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:108:in `call'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/rails-2.3.5/lib/rails/rack/static.rb:31:in `call'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/urlmap.rb:46:in `block in call'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `each'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `call'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/rails-2.3.5/lib/rails/rack/log_tailer.rb:17:in `call'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/content_length.rb:13:in `call'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/handler/webrick.rb:50:in `service'
+C:/Ruby19/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+C:/Ruby19/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+C:/Ruby19/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+ActionView::TemplateError (C:/projects/WebLog/app/views/comments/_comment.html.erb:3: syntax error, unexpected tIDENTIFIER, expecting ')'
+...n_words(comment.created_at) ago).to_s); @output_buffer.conca...
+...                               ^) on line #3 of app/views/comments/_comment.html.erb:
+1: <% div_for comment do %>
+2: 	<p>
+3: 		<strong>Posted <%= time_ago_in_words(comment.created_at) ago%></strong><br />
+4: 		<%= h(comment.body)%>
+5: 	</p>
+6: <% end %>
+
+    app/views/schedules/show.html.erb:14
+    <internal:prelude>:8:in `synchronize'
+    C:/Ruby19/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+    C:/Ruby19/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+    C:/Ruby19/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (245.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SchedulesController#index (for 127.0.0.1 at 2009-12-28 23:02:12) [GET]
+  [4;35;1mSchedule Load (1.0ms)[0m   [0mSELECT * FROM "schedules" [0m
+Rendering template within layouts/application
+Rendering schedules/index
+Completed in 25ms (View: 14, DB: 1) | 200 OK [http://localhost/schedules]
+
+
+Processing SchedulesController#show (for 127.0.0.1 at 2009-12-28 23:02:16) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mSchedule Load (1.0ms)[0m   [0;1mSELECT * FROM "schedules" WHERE ("schedules"."id" = 2) [0m
+Rendering template within layouts/application
+Rendering schedules/show
+  [4;35;1mComment Load (1.0ms)[0m   [0mSELECT * FROM "comments" WHERE ("comments".schedule_id = 2) [0m
+Completed in 41ms (View: 25, DB: 2) | 200 OK [http://localhost/schedules/2]
+
+
+Processing SchedulesController#index (for 127.0.0.1 at 2009-12-28 23:02:19) [GET]
+  [4;36;1mSchedule Load (1.0ms)[0m   [0;1mSELECT * FROM "schedules" [0m
+Rendering template within layouts/application
+Rendering schedules/index
+Completed in 27ms (View: 14, DB: 1) | 200 OK [http://localhost/schedules]
+
+
+Processing SchedulesController#show (for 127.0.0.1 at 2009-12-28 23:02:21) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mSchedule Load (1.0ms)[0m   [0mSELECT * FROM "schedules" WHERE ("schedules"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering schedules/show
+  [4;36;1mComment Load (0.0ms)[0m   [0;1mSELECT * FROM "comments" WHERE ("comments".schedule_id = 1) [0m
+ERROR: compiling _run_erb_app47views47comments47_comment46html46erb_locals_comment_comment_counter_object RAISED C:/projects/WebLog/app/views/comments/_comment.html.erb:3: syntax error, unexpected tIDENTIFIER, expecting ')'
+...n_words(comment.created_at) ago).to_s); @output_buffer.conca...
+...                               ^
+Function body:           def _run_erb_app47views47comments47_comment46html46erb_locals_comment_comment_counter_object(local_assigns)
+            old_output_buffer = output_buffer;comment_counter = local_assigns[:comment_counter];comment = local_assigns[:comment];object = local_assigns[:object];;@output_buffer = '';  __in_erb_template=true ;  div_for comment do ; @output_buffer.concat "\n\t<p>\n\t\t<strong>Posted "
+
+; @output_buffer.concat(( time_ago_in_words(comment.created_at) ago).to_s); @output_buffer.concat "</strong><br />\n\t\t"
+; @output_buffer.concat(( h(comment.body)).to_s); @output_buffer.concat "\n\t</p>\n"
+
+;  end ; @output_buffer.force_encoding(__ENCODING__)
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: C:/Ruby19/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_view/renderable.rb:77:in `module_eval'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_view/renderable.rb:77:in `compile!'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_view/renderable.rb:61:in `compile'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_view/renderable.rb:28:in `render'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_view/renderable_partial.rb:20:in `block in render'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:26:in `block in benchmark'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `block in ms'
+C:/Ruby19/lib/ruby/1.9.1/benchmark.rb:309:in `realtime'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:26:in `benchmark'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_view/renderable_partial.rb:19:in `render'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_view/template.rb:205:in `render_template'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_view/renderable_partial.rb:44:in `render_partial'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_view/partials.rb:221:in `block in render_partial_collection'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/associations/association_collection.rb:369:in `block in method_missing'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/associations/association_proxy.rb:215:in `block in method_missing'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/associations/association_proxy.rb:215:in `map'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/associations/association_proxy.rb:215:in `method_missing'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/associations/association_collection.rb:369:in `method_missing'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_view/partials.rb:216:in `render_partial_collection'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_view/partials.rb:195:in `render_partial'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_view/base.rb:267:in `render'
+C:/projects/WebLog/app/views/schedules/show.html.erb:14:in `_run_erb_app47views47schedules47show46html46erb'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_view/renderable.rb:34:in `block in render'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_view/base.rb:306:in `with_template'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_view/renderable.rb:30:in `render'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_view/template.rb:205:in `render_template'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_view/base.rb:265:in `render'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_view/base.rb:348:in `_render_with_layout'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_view/base.rb:262:in `render'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/base.rb:1250:in `render_for_file'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/base.rb:945:in `render'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:51:in `block in render_with_benchmark'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `block in ms'
+C:/Ruby19/lib/ruby/1.9.1/benchmark.rb:309:in `realtime'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:51:in `render_with_benchmark'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/base.rb:1326:in `default_render'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/base.rb:1332:in `perform_action'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/filters.rb:617:in `call_filters'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/filters.rb:610:in `perform_action_with_filters'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:68:in `block in perform_action_with_benchmark'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `block in ms'
+C:/Ruby19/lib/ruby/1.9.1/benchmark.rb:309:in `realtime'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:68:in `perform_action_with_benchmark'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/rescue.rb:160:in `perform_action_with_rescue'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/flash.rb:146:in `perform_action_with_flash'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/base.rb:532:in `process'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/filters.rb:606:in `process_with_filters'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/base.rb:391:in `process'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/base.rb:386:in `call'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/routing/route_set.rb:437:in `call'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:87:in `dispatch'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:121:in `_call'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:130:in `block in build_middleware_stack'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:29:in `call'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:29:in `block in call'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:9:in `cache'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:28:in `call'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/string_coercion.rb:25:in `call'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/head.rb:9:in `call'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/methodoverride.rb:24:in `call'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/params_parser.rb:15:in `call'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/session/cookie_store.rb:93:in `call'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/failsafe.rb:26:in `call'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/lock.rb:11:in `block in call'
+<internal:prelude>:8:in `synchronize'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:114:in `block in call'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/reloader.rb:34:in `run'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:108:in `call'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/rails-2.3.5/lib/rails/rack/static.rb:31:in `call'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/urlmap.rb:46:in `block in call'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `each'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `call'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/rails-2.3.5/lib/rails/rack/log_tailer.rb:17:in `call'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/content_length.rb:13:in `call'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/handler/webrick.rb:50:in `service'
+C:/Ruby19/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+C:/Ruby19/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+C:/Ruby19/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+ActionView::TemplateError (C:/projects/WebLog/app/views/comments/_comment.html.erb:3: syntax error, unexpected tIDENTIFIER, expecting ')'
+...n_words(comment.created_at) ago).to_s); @output_buffer.conca...
+...                               ^) on line #3 of app/views/comments/_comment.html.erb:
+1: <% div_for comment do %>
+2: 	<p>
+3: 		<strong>Posted <%= time_ago_in_words(comment.created_at) ago%></strong><br />
+4: 		<%= h(comment.body)%>
+5: 	</p>
+6: <% end %>
+
+    app/views/schedules/show.html.erb:14
+    <internal:prelude>:8:in `synchronize'
+    C:/Ruby19/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+    C:/Ruby19/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+    C:/Ruby19/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (160.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SchedulesController#show (for 127.0.0.1 at 2009-12-28 23:03:47) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mSchedule Load (1.0ms)[0m   [0mSELECT * FROM "schedules" WHERE ("schedules"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering schedules/show
+  [4;36;1mComment Load (0.0ms)[0m   [0;1mSELECT * FROM "comments" WHERE ("comments".schedule_id = 1) [0m
+Rendered comments/_comment (412.0ms)
+Rendered comments/_comment (1.0ms)
+Completed in 459ms (View: 447, DB: 1) | 200 OK [http://localhost/schedules/1]
+
+
+Processing ApplicationController#create (for 127.0.0.1 at 2009-12-28 23:04:59) [POST]
+  Parameters: {"authenticity_token"=>"OAaMmuzjcadjCkLyNZKGLoDsi1F38ORHRe1xGjiGSB0=", "comment"=>{"body"=>"blub\n"}, "commit"=>"Add Comment", "_"=>"", "schedule_id"=>"1"}
+
+SyntaxError (C:/projects/WebLog/app/controllers/comments_controller.rb:11: syntax error, unexpected keyword_end, expecting $end):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby19/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby19/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby19/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (97.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SchedulesController#show (for 127.0.0.1 at 2009-12-28 23:05:01) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mSchedule Load (1.0ms)[0m   [0mSELECT * FROM "schedules" WHERE ("schedules"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering schedules/show
+  [4;36;1mComment Load (1.0ms)[0m   [0;1mSELECT * FROM "comments" WHERE ("comments".schedule_id = 1) [0m
+Rendered comments/_comment (21.0ms)
+Rendered comments/_comment (1.0ms)
+Completed in 66ms (View: 49, DB: 2) | 200 OK [http://localhost/schedules/1]
+
+
+Processing SchedulesController#show (for 127.0.0.1 at 2009-12-28 23:07:06) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mSchedule Load (1.0ms)[0m   [0mSELECT * FROM "schedules" WHERE ("schedules"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering schedules/show
+  [4;36;1mComment Load (1.0ms)[0m   [0;1mSELECT * FROM "comments" WHERE ("comments".schedule_id = 1) [0m
+Rendered comments/_comment (15.0ms)
+Rendered comments/_comment (0.0ms)
+Completed in 57ms (View: 41, DB: 2) | 200 OK [http://localhost/schedules/1]
+
+
+Processing ApplicationController#create (for 127.0.0.1 at 2009-12-28 23:07:10) [POST]
+  Parameters: {"authenticity_token"=>"OAaMmuzjcadjCkLyNZKGLoDsi1F38ORHRe1xGjiGSB0=", "comment"=>{"body"=>"edfesfs"}, "commit"=>"Add Comment", "_"=>"", "schedule_id"=>"1"}
+
+SyntaxError (C:/projects/WebLog/app/controllers/comments_controller.rb:11: syntax error, unexpected keyword_end, expecting $end):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby19/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby19/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby19/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (82.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SchedulesController#index (for 127.0.0.1 at 2009-12-28 23:07:13) [GET]
+  [4;35;1mSchedule Load (1.0ms)[0m   [0mSELECT * FROM "schedules" [0m
+Rendering template within layouts/application
+Rendering schedules/index
+Completed in 23ms (View: 11, DB: 1) | 200 OK [http://localhost/schedules]
+
+
+Processing SchedulesController#show (for 127.0.0.1 at 2009-12-28 23:07:14) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mSchedule Load (1.0ms)[0m   [0;1mSELECT * FROM "schedules" WHERE ("schedules"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering schedules/show
+  [4;35;1mComment Load (1.0ms)[0m   [0mSELECT * FROM "comments" WHERE ("comments".schedule_id = 1) [0m
+Rendered comments/_comment (14.0ms)
+Rendered comments/_comment (0.0ms)
+Completed in 53ms (View: 38, DB: 2) | 200 OK [http://localhost/schedules/1]
+
+
+Processing ApplicationController#create (for 127.0.0.1 at 2009-12-28 23:07:20) [POST]
+  Parameters: {"authenticity_token"=>"OAaMmuzjcadjCkLyNZKGLoDsi1F38ORHRe1xGjiGSB0=", "comment"=>{"body"=>"ddefcadscfsdcasdcfasd"}, "commit"=>"Add Comment", "_"=>"", "schedule_id"=>"1"}
+
+SyntaxError (C:/projects/WebLog/app/controllers/comments_controller.rb:11: syntax error, unexpected keyword_end, expecting $end):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby19/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby19/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby19/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (83.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ApplicationController#create (for 127.0.0.1 at 2009-12-28 23:07:21) [POST]
+  Parameters: {"authenticity_token"=>"OAaMmuzjcadjCkLyNZKGLoDsi1F38ORHRe1xGjiGSB0=", "comment"=>{"body"=>"ddefcadscfsdcasdcfasd"}, "commit"=>"Add Comment", "_"=>"", "schedule_id"=>"1"}
+
+SyntaxError (C:/projects/WebLog/app/controllers/comments_controller.rb:11: syntax error, unexpected keyword_end, expecting $end):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby19/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby19/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby19/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (141.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ApplicationController#create (for 127.0.0.1 at 2009-12-28 23:07:22) [POST]
+  Parameters: {"authenticity_token"=>"OAaMmuzjcadjCkLyNZKGLoDsi1F38ORHRe1xGjiGSB0=", "comment"=>{"body"=>"ddefcadscfsdcasdcfasd"}, "commit"=>"Add Comment", "_"=>"", "schedule_id"=>"1"}
+
+SyntaxError (C:/projects/WebLog/app/controllers/comments_controller.rb:11: syntax error, unexpected keyword_end, expecting $end):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby19/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby19/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby19/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (83.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ApplicationController#create (for 127.0.0.1 at 2009-12-28 23:07:22) [POST]
+  Parameters: {"authenticity_token"=>"OAaMmuzjcadjCkLyNZKGLoDsi1F38ORHRe1xGjiGSB0=", "comment"=>{"body"=>"ddefcadscfsdcasdcfasd"}, "commit"=>"Add Comment", "_"=>"", "schedule_id"=>"1"}
+
+SyntaxError (C:/projects/WebLog/app/controllers/comments_controller.rb:11: syntax error, unexpected keyword_end, expecting $end):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby19/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby19/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby19/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (86.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ApplicationController#create (for 127.0.0.1 at 2009-12-28 23:07:22) [POST]
+  Parameters: {"authenticity_token"=>"OAaMmuzjcadjCkLyNZKGLoDsi1F38ORHRe1xGjiGSB0=", "comment"=>{"body"=>"ddefcadscfsdcasdcfasd"}, "commit"=>"Add Comment", "_"=>"", "schedule_id"=>"1"}
+
+SyntaxError (C:/projects/WebLog/app/controllers/comments_controller.rb:11: syntax error, unexpected keyword_end, expecting $end):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby19/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby19/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby19/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (81.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ApplicationController#create (for 127.0.0.1 at 2009-12-28 23:07:23) [POST]
+  Parameters: {"authenticity_token"=>"OAaMmuzjcadjCkLyNZKGLoDsi1F38ORHRe1xGjiGSB0=", "comment"=>{"body"=>"ddefcadscfsdcasdcfasd"}, "commit"=>"Add Comment", "_"=>"", "schedule_id"=>"1"}
+
+SyntaxError (C:/projects/WebLog/app/controllers/comments_controller.rb:11: syntax error, unexpected keyword_end, expecting $end):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby19/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby19/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby19/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (95.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SchedulesController#show (for 127.0.0.1 at 2009-12-28 23:07:26) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mSchedule Load (0.0ms)[0m   [0;1mSELECT * FROM "schedules" WHERE ("schedules"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering schedules/show
+  [4;35;1mComment Load (1.0ms)[0m   [0mSELECT * FROM "comments" WHERE ("comments".schedule_id = 1) [0m
+Rendered comments/_comment (25.0ms)
+Rendered comments/_comment (0.0ms)
+Completed in 91ms (View: 75, DB: 1) | 200 OK [http://localhost/schedules/1]
+
+
+Processing CommentsController#create (for 127.0.0.1 at 2009-12-28 23:07:47) [POST]
+  Parameters: {"authenticity_token"=>"OAaMmuzjcadjCkLyNZKGLoDsi1F38ORHRe1xGjiGSB0=", "comment"=>{"body"=>"ethergfh"}, "commit"=>"Add Comment", "_"=>"", "schedule_id"=>"1"}
+  [4;36;1mSchedule Load (1.0ms)[0m   [0;1mSELECT * FROM "schedules" WHERE ("schedules"."id" = 1) [0m
+  [4;35;1mComment Create (3.0ms)[0m   [0mINSERT INTO "comments" ("schedule_id", "body", "created_at", "updated_at") VALUES(1, 'ethergfh', '2009-12-28 22:07:47', '2009-12-28 22:07:47')[0m
+
+ArgumentError (respond_to takes either types or a block, never both):
+  app/controllers/comments_controller.rb:6:in `create'
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby19/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby19/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby19/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (146.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SchedulesController#show (for 127.0.0.1 at 2009-12-28 23:07:52) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mSchedule Load (1.0ms)[0m   [0;1mSELECT * FROM "schedules" WHERE ("schedules"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering schedules/show
+  [4;35;1mComment Load (0.0ms)[0m   [0mSELECT * FROM "comments" WHERE ("comments".schedule_id = 1) [0m
+Rendered comments/_comment (16.0ms)
+Rendered comments/_comment (1.0ms)
+Rendered comments/_comment (1.0ms)
+Completed in 54ms (View: 41, DB: 1) | 200 OK [http://localhost/schedules/1]
+
+
+Processing SchedulesController#show (for 127.0.0.1 at 2009-12-28 23:11:31) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mSchedule Load (1.0ms)[0m   [0;1mSELECT * FROM "schedules" WHERE ("schedules"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering schedules/show
+  [4;35;1mComment Load (1.0ms)[0m   [0mSELECT * FROM "comments" WHERE ("comments".schedule_id = 1) [0m
+Rendered comments/_comment (15.0ms)
+Rendered comments/_comment (0.0ms)
+Rendered comments/_comment (2.0ms)
+Completed in 57ms (View: 41, DB: 2) | 200 OK [http://localhost/schedules/1]
+
+
+Processing ApplicationController#create (for 127.0.0.1 at 2009-12-28 23:11:34) [POST]
+  Parameters: {"authenticity_token"=>"OAaMmuzjcadjCkLyNZKGLoDsi1F38ORHRe1xGjiGSB0=", "comment"=>{"body"=>"rgfsgf"}, "commit"=>"Add Comment", "_"=>"", "schedule_id"=>"1"}
+
+SyntaxError (C:/projects/WebLog/app/controllers/comments_controller.rb:10: syntax error, unexpected keyword_end, expecting $end):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby19/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby19/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby19/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (84.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SchedulesController#show (for 127.0.0.1 at 2009-12-28 23:11:37) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mSchedule Load (1.0ms)[0m   [0;1mSELECT * FROM "schedules" WHERE ("schedules"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering schedules/show
+  [4;35;1mComment Load (1.0ms)[0m   [0mSELECT * FROM "comments" WHERE ("comments".schedule_id = 1) [0m
+Rendered comments/_comment (14.0ms)
+Rendered comments/_comment (0.0ms)
+Rendered comments/_comment (1.0ms)
+Completed in 111ms (View: 97, DB: 2) | 200 OK [http://localhost/schedules/1]
+
+
+Processing SchedulesController#show (for 127.0.0.1 at 2009-12-28 23:13:12) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mSchedule Load (0.0ms)[0m   [0;1mSELECT * FROM "schedules" WHERE ("schedules"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering schedules/show
+  [4;35;1mComment Load (0.0ms)[0m   [0mSELECT * FROM "comments" WHERE ("comments".schedule_id = 1) [0m
+Rendered comments/_comment (5.0ms)
+Rendered comments/_comment (1.0ms)
+Rendered comments/_comment (1.0ms)
+Completed in 58ms (View: 43, DB: 0) | 200 OK [http://localhost/schedules/1]
+
+
+Processing ApplicationController#create (for 127.0.0.1 at 2009-12-28 23:13:15) [POST]
+  Parameters: {"authenticity_token"=>"OAaMmuzjcadjCkLyNZKGLoDsi1F38ORHRe1xGjiGSB0=", "comment"=>{"body"=>"fgsdgf"}, "commit"=>"Add Comment", "_"=>"", "schedule_id"=>"1"}
+
+SyntaxError (C:/projects/WebLog/app/controllers/comments_controller.rb:10: syntax error, unexpected keyword_end, expecting $end):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby19/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby19/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby19/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (84.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SchedulesController#show (for 127.0.0.1 at 2009-12-28 23:13:20) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mSchedule Load (1.0ms)[0m   [0;1mSELECT * FROM "schedules" WHERE ("schedules"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering schedules/show
+  [4;35;1mComment Load (1.0ms)[0m   [0mSELECT * FROM "comments" WHERE ("comments".schedule_id = 1) [0m
+Rendered comments/_comment (30.0ms)
+Rendered comments/_comment (1.0ms)
+Rendered comments/_comment (1.0ms)
+Completed in 157ms (View: 138, DB: 2) | 200 OK [http://localhost/schedules/1]
+
+
+Processing SchedulesController#index (for 127.0.0.1 at 2009-12-28 23:13:23) [GET]
+  [4;36;1mSchedule Load (3.0ms)[0m   [0;1mSELECT * FROM "schedules" [0m
+Rendering template within layouts/application
+Rendering schedules/index
+Completed in 47ms (View: 22, DB: 3) | 200 OK [http://localhost/schedules]
+
+
+Processing SchedulesController#show (for 127.0.0.1 at 2009-12-28 23:13:25) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mSchedule Load (0.0ms)[0m   [0mSELECT * FROM "schedules" WHERE ("schedules"."id" = 2) [0m
+Rendering template within layouts/application
+Rendering schedules/show
+  [4;36;1mComment Load (0.0ms)[0m   [0;1mSELECT * FROM "comments" WHERE ("comments".schedule_id = 2) [0m
+Completed in 115ms (View: 101, DB: 0) | 200 OK [http://localhost/schedules/2]
+
+
+Processing ApplicationController#create (for 127.0.0.1 at 2009-12-28 23:13:30) [POST]
+  Parameters: {"authenticity_token"=>"OAaMmuzjcadjCkLyNZKGLoDsi1F38ORHRe1xGjiGSB0=", "comment"=>{"body"=>"hallo\n"}, "commit"=>"Add Comment", "_"=>"", "schedule_id"=>"2"}
+
+SyntaxError (C:/projects/WebLog/app/controllers/comments_controller.rb:10: syntax error, unexpected keyword_end, expecting $end):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby19/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby19/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby19/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (82.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SchedulesController#show (for 127.0.0.1 at 2009-12-28 23:13:34) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mSchedule Load (2.0ms)[0m   [0mSELECT * FROM "schedules" WHERE ("schedules"."id" = 2) [0m
+Rendering template within layouts/application
+Rendering schedules/show
+  [4;36;1mComment Load (0.0ms)[0m   [0;1mSELECT * FROM "comments" WHERE ("comments".schedule_id = 2) [0m
+Completed in 44ms (View: 26, DB: 2) | 200 OK [http://localhost/schedules/2]
+
+
+Processing SchedulesController#show (for 127.0.0.1 at 2009-12-28 23:14:12) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mSchedule Load (0.0ms)[0m   [0mSELECT * FROM "schedules" WHERE ("schedules"."id" = 2) [0m
+Rendering template within layouts/application
+Rendering schedules/show
+  [4;36;1mComment Load (1.0ms)[0m   [0;1mSELECT * FROM "comments" WHERE ("comments".schedule_id = 2) [0m
+Completed in 37ms (View: 24, DB: 1) | 200 OK [http://localhost/schedules/2]
+
+
+Processing ApplicationController#create (for 127.0.0.1 at 2009-12-28 23:14:16) [POST]
+  Parameters: {"authenticity_token"=>"OAaMmuzjcadjCkLyNZKGLoDsi1F38ORHRe1xGjiGSB0=", "comment"=>{"body"=>"sdadas"}, "commit"=>"Add Comment", "_"=>"", "schedule_id"=>"2"}
+
+SyntaxError (C:/projects/WebLog/app/controllers/comments_controller.rb:10: syntax error, unexpected keyword_end, expecting $end):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby19/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby19/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby19/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (141.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SchedulesController#show (for 127.0.0.1 at 2009-12-28 23:14:24) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mSchedule Load (0.0ms)[0m   [0mSELECT * FROM "schedules" WHERE ("schedules"."id" = 2) [0m
+Rendering template within layouts/application
+Rendering schedules/show
+  [4;36;1mComment Load (0.0ms)[0m   [0;1mSELECT * FROM "comments" WHERE ("comments".schedule_id = 2) [0m
+Completed in 36ms (View: 23, DB: 0) | 200 OK [http://localhost/schedules/2]
+
+
+Processing SchedulesController#index (for 127.0.0.1 at 2009-12-28 23:14:26) [GET]
+  [4;35;1mSchedule Load (1.0ms)[0m   [0mSELECT * FROM "schedules" [0m
+Rendering template within layouts/application
+Rendering schedules/index
+Completed in 23ms (View: 11, DB: 1) | 200 OK [http://localhost/schedules]
+
+
+Processing SchedulesController#show (for 127.0.0.1 at 2009-12-28 23:14:28) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mSchedule Load (0.0ms)[0m   [0;1mSELECT * FROM "schedules" WHERE ("schedules"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering schedules/show
+  [4;35;1mComment Load (0.0ms)[0m   [0mSELECT * FROM "comments" WHERE ("comments".schedule_id = 1) [0m
+Rendered comments/_comment (18.0ms)
+Rendered comments/_comment (1.0ms)
+Rendered comments/_comment (1.0ms)
+Completed in 58ms (View: 44, DB: 0) | 200 OK [http://localhost/schedules/1]
+
+
+Processing ApplicationController#create (for 127.0.0.1 at 2009-12-28 23:14:33) [POST]
+  Parameters: {"authenticity_token"=>"OAaMmuzjcadjCkLyNZKGLoDsi1F38ORHRe1xGjiGSB0=", "comment"=>{"body"=>"hallo"}, "commit"=>"Add Comment", "_"=>"", "schedule_id"=>"1"}
+
+SyntaxError (C:/projects/WebLog/app/controllers/comments_controller.rb:10: syntax error, unexpected keyword_end, expecting $end):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby19/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby19/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby19/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (82.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SchedulesController#show (for 127.0.0.1 at 2009-12-28 23:14:39) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mSchedule Load (0.0ms)[0m   [0;1mSELECT * FROM "schedules" WHERE ("schedules"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering schedules/show
+  [4;35;1mComment Load (1.0ms)[0m   [0mSELECT * FROM "comments" WHERE ("comments".schedule_id = 1) [0m
+Rendered comments/_comment (15.0ms)
+Rendered comments/_comment (0.0ms)
+Rendered comments/_comment (0.0ms)
+Completed in 54ms (View: 39, DB: 1) | 200 OK [http://localhost/schedules/1]
+
+
+Processing ApplicationController#create (for 127.0.0.1 at 2009-12-28 23:15:18) [POST]
+  Parameters: {"authenticity_token"=>"OAaMmuzjcadjCkLyNZKGLoDsi1F38ORHRe1xGjiGSB0=", "comment"=>{"body"=>""}, "commit"=>"Add Comment", "_"=>"", "schedule_id"=>"1"}
+
+SyntaxError (C:/projects/WebLog/app/controllers/comments_controller.rb:10: syntax error, unexpected keyword_end, expecting $end):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby19/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby19/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby19/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (83.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SchedulesController#index (for 127.0.0.1 at 2009-12-28 23:16:20) [GET]
+  [4;36;1mSchedule Load (1.0ms)[0m   [0;1mSELECT * FROM "schedules" [0m
+Rendering template within layouts/application
+Rendering schedules/index
+Completed in 26ms (View: 12, DB: 1) | 200 OK [http://localhost/schedules]
+
+
+Processing SchedulesController#show (for 127.0.0.1 at 2009-12-28 23:16:21) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mSchedule Load (0.0ms)[0m   [0mSELECT * FROM "schedules" WHERE ("schedules"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering schedules/show
+  [4;36;1mComment Load (1.0ms)[0m   [0;1mSELECT * FROM "comments" WHERE ("comments".schedule_id = 1) [0m
+Rendered comments/_comment (18.0ms)
+Rendered comments/_comment (1.0ms)
+Rendered comments/_comment (0.0ms)
+Completed in 56ms (View: 43, DB: 1) | 200 OK [http://localhost/schedules/1]
+
+
+Processing ApplicationController#create (for 127.0.0.1 at 2009-12-28 23:16:24) [POST]
+  Parameters: {"authenticity_token"=>"r8gc5ZQTBTfXVhW5r1+v6A/xbDo2KbvjTD6wIqgSleM=", "comment"=>{"body"=>"dfbdxcvfxc"}, "commit"=>"Add Comment", "schedule_id"=>"1"}
+
+SyntaxError (C:/projects/WebLog/app/controllers/comments_controller.rb:10: syntax error, unexpected keyword_end, expecting $end):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby19/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby19/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby19/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (89.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SchedulesController#show (for 127.0.0.1 at 2009-12-28 23:16:27) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mSchedule Load (0.0ms)[0m   [0mSELECT * FROM "schedules" WHERE ("schedules"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering schedules/show
+  [4;36;1mComment Load (1.0ms)[0m   [0;1mSELECT * FROM "comments" WHERE ("comments".schedule_id = 1) [0m
+Rendered comments/_comment (15.0ms)
+Rendered comments/_comment (1.0ms)
+Rendered comments/_comment (0.0ms)
+Completed in 51ms (View: 37, DB: 1) | 200 OK [http://localhost/schedules/1]
+
+
+Processing SchedulesController#show (for 127.0.0.1 at 2009-12-28 23:16:34) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mSchedule Load (1.0ms)[0m   [0mSELECT * FROM "schedules" WHERE ("schedules"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering schedules/show
+  [4;36;1mComment Load (1.0ms)[0m   [0;1mSELECT * FROM "comments" WHERE ("comments".schedule_id = 1) [0m
+Rendered comments/_comment (14.0ms)
+Rendered comments/_comment (1.0ms)
+Rendered comments/_comment (1.0ms)
+Completed in 52ms (View: 38, DB: 2) | 200 OK [http://localhost/schedules/1]
+
+
+Processing ApplicationController#create (for 127.0.0.1 at 2009-12-28 23:16:37) [POST]
+  Parameters: {"authenticity_token"=>"r8gc5ZQTBTfXVhW5r1+v6A/xbDo2KbvjTD6wIqgSleM=", "comment"=>{"body"=>"khjkb"}, "commit"=>"Add Comment", "schedule_id"=>"1"}
+
+SyntaxError (C:/projects/WebLog/app/controllers/comments_controller.rb:10: syntax error, unexpected keyword_end, expecting $end):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby19/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby19/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby19/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (84.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SchedulesController#show (for 127.0.0.1 at 2009-12-28 23:17:18) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mSchedule Load (0.0ms)[0m   [0mSELECT * FROM "schedules" WHERE ("schedules"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering schedules/show
+  [4;36;1mComment Load (1.0ms)[0m   [0;1mSELECT * FROM "comments" WHERE ("comments".schedule_id = 1) [0m
+Rendered comments/_comment (17.0ms)
+Rendered comments/_comment (1.0ms)
+Rendered comments/_comment (1.0ms)
+Completed in 63ms (View: 48, DB: 1) | 200 OK [http://localhost/schedules/1]
+
+
+Processing SchedulesController#show (for 127.0.0.1 at 2009-12-28 23:17:20) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mSchedule Load (1.0ms)[0m   [0mSELECT * FROM "schedules" WHERE ("schedules"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering schedules/show
+  [4;36;1mComment Load (1.0ms)[0m   [0;1mSELECT * FROM "comments" WHERE ("comments".schedule_id = 1) [0m
+Rendered comments/_comment (15.0ms)
+Rendered comments/_comment (1.0ms)
+Rendered comments/_comment (0.0ms)
+Completed in 54ms (View: 40, DB: 2) | 200 OK [http://localhost/schedules/1]
+
+
+Processing CommentsController#create (for 127.0.0.1 at 2009-12-28 23:17:23) [POST]
+  Parameters: {"authenticity_token"=>"r8gc5ZQTBTfXVhW5r1+v6A/xbDo2KbvjTD6wIqgSleM=", "comment"=>{"body"=>"gnfgh"}, "commit"=>"Add Comment", "schedule_id"=>"1"}
+  [4;35;1mSchedule Load (0.0ms)[0m   [0mSELECT * FROM "schedules" WHERE ("schedules"."id" = 1) [0m
+  [4;36;1mComment Create (2.0ms)[0m   [0;1mINSERT INTO "comments" ("schedule_id", "body", "created_at", "updated_at") VALUES(1, 'gnfgh', '2009-12-28 22:17:23', '2009-12-28 22:17:23')[0m
+Redirected to http://localhost:3000/schedules/1
+Completed in 154ms (DB: 2) | 302 Found [http://localhost/schedules/1/comments]
+
+
+Processing SchedulesController#show (for 127.0.0.1 at 2009-12-28 23:17:23) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mSchedule Load (1.0ms)[0m   [0mSELECT * FROM "schedules" WHERE ("schedules"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering schedules/show
+  [4;36;1mComment Load (1.0ms)[0m   [0;1mSELECT * FROM "comments" WHERE ("comments".schedule_id = 1) [0m
+Rendered comments/_comment (16.0ms)
+Rendered comments/_comment (0.0ms)
+Rendered comments/_comment (1.0ms)
+Rendered comments/_comment (0.0ms)
+Completed in 55ms (View: 41, DB: 2) | 200 OK [http://localhost/schedules/1]
+
+
+Processing SchedulesController#show (for 127.0.0.1 at 2009-12-28 23:17:32) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mSchedule Load (1.0ms)[0m   [0mSELECT * FROM "schedules" WHERE ("schedules"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering schedules/show
+  [4;36;1mComment Load (1.0ms)[0m   [0;1mSELECT * FROM "comments" WHERE ("comments".schedule_id = 1) [0m
+Rendered comments/_comment (15.0ms)
+Rendered comments/_comment (1.0ms)
+Rendered comments/_comment (1.0ms)
+Rendered comments/_comment (0.0ms)
+Completed in 51ms (View: 38, DB: 2) | 200 OK [http://localhost/schedules/1]
+
+
+Processing CommentsController#create (for 127.0.0.1 at 2009-12-28 23:17:34) [POST]
+  Parameters: {"authenticity_token"=>"r8gc5ZQTBTfXVhW5r1+v6A/xbDo2KbvjTD6wIqgSleM=", "comment"=>{"body"=>"zfguhj"}, "commit"=>"Add Comment", "schedule_id"=>"1"}
+  [4;35;1mSchedule Load (1.0ms)[0m   [0mSELECT * FROM "schedules" WHERE ("schedules"."id" = 1) [0m
+  [4;36;1mComment Create (2.0ms)[0m   [0;1mINSERT INTO "comments" ("schedule_id", "body", "created_at", "updated_at") VALUES(1, 'zfguhj', '2009-12-28 22:17:34', '2009-12-28 22:17:34')[0m
+Rendering comments/create
+Rendered comments/_comment (13.0ms)
+Completed in 187ms (View: 32, DB: 3) | 200 OK [http://localhost/schedules/1/comments]
+
+
+Processing SchedulesController#index (for 127.0.0.1 at 2009-12-28 23:17:56) [GET]
+  [4;35;1mSchedule Load (1.0ms)[0m   [0mSELECT * FROM "schedules" [0m
+Rendering template within layouts/application
+Rendering schedules/index
+Completed in 29ms (View: 14, DB: 1) | 200 OK [http://localhost/schedules]
+
+
+Processing SchedulesController#show (for 127.0.0.1 at 2009-12-28 23:17:59) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mSchedule Load (1.0ms)[0m   [0;1mSELECT * FROM "schedules" WHERE ("schedules"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering schedules/show
+  [4;35;1mComment Load (1.0ms)[0m   [0mSELECT * FROM "comments" WHERE ("comments".schedule_id = 1) [0m
+Rendered comments/_comment (15.0ms)
+Rendered comments/_comment (1.0ms)
+Rendered comments/_comment (1.0ms)
+Rendered comments/_comment (0.0ms)
+Rendered comments/_comment (1.0ms)
+Completed in 58ms (View: 43, DB: 2) | 200 OK [http://localhost/schedules/1]
+
+
+Processing CommentsController#create (for 127.0.0.1 at 2009-12-28 23:18:03) [POST]
+  Parameters: {"authenticity_token"=>"OAaMmuzjcadjCkLyNZKGLoDsi1F38ORHRe1xGjiGSB0=", "comment"=>{"body"=>"blub"}, "commit"=>"Add Comment", "_"=>"", "schedule_id"=>"1"}
+  [4;36;1mSchedule Load (1.0ms)[0m   [0;1mSELECT * FROM "schedules" WHERE ("schedules"."id" = 1) [0m
+  [4;35;1mComment Create (3.0ms)[0m   [0mINSERT INTO "comments" ("schedule_id", "body", "created_at", "updated_at") VALUES(1, 'blub', '2009-12-28 22:18:03', '2009-12-28 22:18:03')[0m
+Rendering comments/create
+Rendered comments/_comment (12.0ms)
+Completed in 164ms (View: 16, DB: 4) | 200 OK [http://localhost/schedules/1/comments]
+  [4;36;1mSQL (1.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateSchedules (20091228205119)
+Migrating to CreateComments (20091228214313)
+Migrating to CreateUsers (20091228222817)
+  [4;36;1mSQL (10.0ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (3.0ms)[0m   [0mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "username" varchar(255), "email" varchar(255), "password_hash" varchar(255), "password_salt" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (4.0ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20091228222817')[0m
+  [4;35;1mSQL (3.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (1.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("comments")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("schedules")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("users")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (1.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (98.0ms)[0m   [0;1mCREATE TABLE "comments" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "schedule_id" integer, "body" text, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (1.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (141.0ms)[0m   [0;1mCREATE TABLE "schedules" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "body" text, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (3.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (115.0ms)[0m   [0;1mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "username" varchar(255), "email" varchar(255), "password_hash" varchar(255), "password_salt" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (151.0ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (139.0ms)[0m   [0mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSELECT version FROM "schema_migrations"[0m
+  [4;36;1mSQL (126.0ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20091228222817')[0m
+  [4;35;1mSQL (172.0ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('20091228205119')[0m
+  [4;36;1mSQL (132.0ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20091228214313')[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mselect sqlite_version(*)[0m
+  [4;36;1mSQL (135.0ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (112.0ms)[0m   [0mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateSchedules (20091228205119)
+  [4;36;1mSQL (3.0ms)[0m   [0;1mCREATE TABLE "schedules" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "body" text, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (1.0ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20091228205119')[0m
+Migrating to CreateComments (20091228214313)
+  [4;36;1mSQL (4.0ms)[0m   [0;1mCREATE TABLE "comments" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "schedule_id" integer, "body" text, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (1.0ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20091228214313')[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("comments")[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mPRAGMA index_list("schedules")[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateSchedules (20091228205119)
+Migrating to CreateComments (20091228214313)
+Migrating to CreateUsers (20091228224358)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (3.0ms)[0m   [0mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "username" varchar(255), "email" varchar(255), "crypted_password" varchar(255), "password_salt" varchar(255), "persistence_token" varchar(255), "login_count" integer DEFAULT 0 NOT NULL, "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20091228224358')[0m
+  [4;35;1mSQL (9.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (1.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("comments")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("schedules")[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mPRAGMA index_list("users")[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateSchedules (20091228205119)
+Migrating to CreateComments (20091228214313)
+Migrating to CreateUsers (20091228224358)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("comments")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("schedules")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("users")[0m
+
+
+Processing SchedulesController#index (for 127.0.0.1 at 2009-12-28 23:59:32) [GET]
+  Parameters: {"controller"=>"schedules", "action"=>"index"}
+  [4;36;1mSchedule Load (1.0ms)[0m   [0;1mSELECT * FROM "schedules" [0m
+Rendering template within layouts/application
+Rendering schedules/index
+Completed in 290ms (View: 160, DB: 1) | 200 OK [http://localhost/schedules]
+
+
+Processing SchedulesController#new (for 127.0.0.1 at 2009-12-28 23:59:35) [GET]
+  Parameters: {"controller"=>"schedules", "action"=>"new"}
+Rendering template within layouts/application
+Rendering schedules/new
+Rendered schedules/_form (8.0ms)
+Completed in 77ms (View: 66, DB: 0) | 200 OK [http://localhost/schedules/new]
+
+
+Processing SchedulesController#create (for 127.0.0.1 at 2009-12-29 00:00:20) [POST]
+  Parameters: {"authenticity_token"=>"r8gc5ZQTBTfXVhW5r1+v6A/xbDo2KbvjTD6wIqgSleM=", "schedule"=>{"title"=>"first task", "body"=>"400\r\n2*200\r\n12*50\r\n5*100\r\n200\r\n200\r\n200\r\n"}, "commit"=>"Submit", "controller"=>"schedules", "action"=>"create"}
+  [4;35;1mSchedule Create (3.0ms)[0m   [0mINSERT INTO "schedules" ("title", "body", "created_at", "updated_at") VALUES('first task', '400
+2*200
+12*50
+5*100
+200
+200
+200
+', '2009-12-28 23:00:20', '2009-12-28 23:00:20')[0m
+Redirected to http://localhost:3000/schedules/1
+Completed in 181ms (DB: 3) | 302 Found [http://localhost/schedules]
+
+
+Processing SchedulesController#show (for 127.0.0.1 at 2009-12-29 00:00:20) [GET]
+  Parameters: {"controller"=>"schedules", "action"=>"show", "id"=>"1"}
+  [4;36;1mSchedule Load (1.0ms)[0m   [0;1mSELECT * FROM "schedules" WHERE ("schedules"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering schedules/show
+  [4;35;1mComment Load (1.0ms)[0m   [0mSELECT * FROM "comments" WHERE ("comments".schedule_id = 1) [0m
+Completed in 155ms (View: 141, DB: 2) | 200 OK [http://localhost/schedules/1]
+
+
+Processing SchedulesController#index (for 127.0.0.1 at 2009-12-29 00:00:24) [GET]
+  Parameters: {"controller"=>"schedules", "action"=>"index"}
+  [4;36;1mSchedule Load (2.0ms)[0m   [0;1mSELECT * FROM "schedules" [0m
+Rendering template within layouts/application
+Rendering schedules/index
+Completed in 49ms (View: 37, DB: 2) | 200 OK [http://localhost/schedules]
+
+
+Processing UsersController#new (for 127.0.0.1 at 2009-12-29 00:00:35) [GET]
+  Parameters: {"controller"=>"users", "action"=>"new"}
+Rendering template within layouts/application
+Rendering users/new
+Rendered users/_form (10.0ms)
+Completed in 74ms (View: 49, DB: 0) | 200 OK [http://localhost/users/new]
+
+
+Processing UsersController#create (for 127.0.0.1 at 2009-12-29 00:00:57) [POST]
+  Parameters: {"authenticity_token"=>"r8gc5ZQTBTfXVhW5r1+v6A/xbDo2KbvjTD6wIqgSleM=", "user"=>{"username"=>"sch1zo", "email"=>"blub@foo.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Submit", "controller"=>"users", "action"=>"create"}
+WARNING: Can't mass-assign these protected attributes: password_confirmation
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'blub@foo.com') LIMIT 1[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."username") = 'sch1zo') LIMIT 1[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT "users".id FROM "users" WHERE ("users"."persistence_token" = 'd6440e9590a3cbeb654c823cd2f8dae7b294acf50f07bb0bf61a228767175be9dc0475846aa2161b4c2db98b98bba71fb047bcec4698f828ead5d7d69ce69261') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering users/new
+Rendered users/_form (12.0ms)
+Completed in 4913ms (View: 29, DB: 1) | 200 OK [http://localhost/users]
+
+
+Processing UsersController#create (for 127.0.0.1 at 2009-12-29 00:01:17) [POST]
+  Parameters: {"authenticity_token"=>"r8gc5ZQTBTfXVhW5r1+v6A/xbDo2KbvjTD6wIqgSleM=", "user"=>{"username"=>"sch1zo", "email"=>"blub@foo.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Submit", "controller"=>"users", "action"=>"create"}
+WARNING: Can't mass-assign these protected attributes: password_confirmation
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'blub@foo.com') LIMIT 1[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."username") = 'sch1zo') LIMIT 1[0m
+  [4;36;1mUser Load (1.0ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE ("users"."persistence_token" = 'a46fcec253a1cf97105d51c459ec70e8d9755779a16779216e6e7ceab7ebdc98878c5a8884f4946366b4048c809c590a3bca022b113f3bb3cff09a8d779ba149') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering users/new
+Rendered users/_form (7.0ms)
+Completed in 55ms (View: 20, DB: 1) | 200 OK [http://localhost/users]
+
+
+Processing SchedulesController#index (for 127.0.0.1 at 2009-12-29 00:02:30) [GET]
+  Parameters: {"controller"=>"schedules", "action"=>"index"}
+  [4;35;1mSchedule Load (1.0ms)[0m   [0mSELECT * FROM "schedules" [0m
+Rendering template within layouts/application
+Rendering schedules/index
+Completed in 51ms (View: 39, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing SchedulesController#index (for 127.0.0.1 at 2009-12-29 00:02:33) [GET]
+  Parameters: {"controller"=>"schedules", "action"=>"index"}
+  [4;36;1mSchedule Load (1.0ms)[0m   [0;1mSELECT * FROM "schedules" [0m
+Rendering template within layouts/application
+Rendering schedules/index
+Completed in 53ms (View: 40, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing SchedulesController#index (for 127.0.0.1 at 2009-12-29 00:02:35) [GET]
+  Parameters: {"controller"=>"schedules", "action"=>"index"}
+  [4;35;1mSchedule Load (1.0ms)[0m   [0mSELECT * FROM "schedules" [0m
+Rendering template within layouts/application
+Rendering schedules/index
+Completed in 52ms (View: 39, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing SchedulesController#index (for 127.0.0.1 at 2009-12-29 00:04:11) [GET]
+  Parameters: {"controller"=>"schedules", "action"=>"index"}
+  [4;36;1mSchedule Load (1.0ms)[0m   [0;1mSELECT * FROM "schedules" [0m
+Rendering template within layouts/application
+Rendering schedules/index
+Completed in 65ms (View: 53, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing SchedulesController#index (for 127.0.0.1 at 2009-12-29 00:04:13) [GET]
+  Parameters: {"controller"=>"schedules", "action"=>"index"}
+  [4;35;1mSchedule Load (1.0ms)[0m   [0mSELECT * FROM "schedules" [0m
+Rendering template within layouts/application
+Rendering schedules/index
+Completed in 48ms (View: 36, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing SchedulesController#index (for 127.0.0.1 at 2009-12-29 00:09:13) [GET]
+  Parameters: {"controller"=>"schedules", "action"=>"index"}
+  [4;36;1mSchedule Load (1.0ms)[0m   [0;1mSELECT * FROM "schedules" [0m
+Rendering template within layouts/application
+Rendering schedules/index
+Completed in 110ms (View: 96, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing UsersController#new (for 127.0.0.1 at 2009-12-29 00:09:15) [GET]
+  Parameters: {"controller"=>"users", "action"=>"new"}
+Rendering template within layouts/application
+Rendering users/new
+Rendered users/_form (8.0ms)
+Completed in 48ms (View: 21, DB: 0) | 200 OK [http://localhost/users/new]
+
+
+Processing UsersController#create (for 127.0.0.1 at 2009-12-29 00:09:30) [POST]
+  Parameters: {"authenticity_token"=>"IJ78Pg7Mcv5aH5zpdzxnlGboig8rzSCQw81fINjeKU4=", "user"=>{"username"=>"blub", "email"=>"foo@foo.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Submit", "controller"=>"users", "action"=>"create"}
+
+ActionController::InvalidAuthenticityToken (ActionController::InvalidAuthenticityToken):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby19/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby19/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby19/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (92.0ms)
+Rendered rescues/_request_and_response (2.0ms)
+Rendering rescues/layout (unprocessable_entity)
+
+
+Processing UsersController#new (for 127.0.0.1 at 2009-12-29 00:13:12) [GET]
+  Parameters: {"controller"=>"users", "action"=>"new"}
+Rendering template within layouts/application
+Rendering users/new
+Rendered users/_form (7.0ms)
+Completed in 58ms (View: 25, DB: 0) | 200 OK [http://localhost/users/new]
+
+
+Processing UsersController#create (for 127.0.0.1 at 2009-12-29 00:13:25) [POST]
+  Parameters: {"authenticity_token"=>"omXCK2U3X4LtZ44RwCJ8crKJB2G4I18dt1cx4YeLwsE=", "user"=>{"username"=>"asda", "email"=>"asd@foo.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Submit", "controller"=>"users", "action"=>"create"}
+
+ActionController::InvalidAuthenticityToken (ActionController::InvalidAuthenticityToken):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby19/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby19/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby19/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (96.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (unprocessable_entity)
+
+
+Processing UsersController#create (for 127.0.0.1 at 2009-12-29 00:20:01) [POST]
+  Parameters: {"authenticity_token"=>"omXCK2U3X4LtZ44RwCJ8crKJB2G4I18dt1cx4YeLwsE=", "user"=>{"username"=>"asda", "email"=>"asd@foo.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Submit", "controller"=>"users", "action"=>"create"}
+
+ActionController::InvalidAuthenticityToken (ActionController::InvalidAuthenticityToken):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby19/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby19/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby19/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (106.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (unprocessable_entity)
+
+
+Processing UsersController#create (for 127.0.0.1 at 2009-12-29 00:20:07) [POST]
+  Parameters: {"authenticity_token"=>"omXCK2U3X4LtZ44RwCJ8crKJB2G4I18dt1cx4YeLwsE=", "user"=>{"username"=>"asda", "email"=>"asd@foo.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Submit", "controller"=>"users", "action"=>"create"}
+
+ActionController::InvalidAuthenticityToken (ActionController::InvalidAuthenticityToken):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby19/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby19/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby19/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (169.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (unprocessable_entity)
+
+
+Processing SchedulesController#index (for 127.0.0.1 at 2009-12-29 00:20:11) [GET]
+  Parameters: {"controller"=>"schedules", "action"=>"index"}
+  [4;35;1mSchedule Load (1.0ms)[0m   [0mSELECT * FROM "schedules" [0m
+Rendering template within layouts/application
+Rendering schedules/index
+Completed in 59ms (View: 45, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing SchedulesController#show (for 127.0.0.1 at 2009-12-29 00:20:12) [GET]
+  Parameters: {"controller"=>"schedules", "action"=>"show", "id"=>"1"}
+  [4;36;1mSchedule Load (2.0ms)[0m   [0;1mSELECT * FROM "schedules" WHERE ("schedules"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering schedules/show
+  [4;35;1mComment Load (1.0ms)[0m   [0mSELECT * FROM "comments" WHERE ("comments".schedule_id = 1) [0m
+Completed in 74ms (View: 58, DB: 3) | 200 OK [http://localhost/schedules/1]
+
+
+Processing UsersController#new (for 127.0.0.1 at 2009-12-29 00:20:15) [GET]
+  Parameters: {"controller"=>"users", "action"=>"new"}
+Rendering template within layouts/application
+Rendering users/new
+Rendered users/_form (7.0ms)
+Completed in 49ms (View: 22, DB: 0) | 200 OK [http://localhost/users/new]
+
+
+Processing UsersController#create (for 127.0.0.1 at 2009-12-29 00:20:29) [POST]
+  Parameters: {"authenticity_token"=>"ZVGSLNAJuPAVG4mJuYsXh6CLSck1g5H18uXTjVE0FUg=", "user"=>{"username"=>"blub", "email"=>"blub@foo.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Submit", "controller"=>"users", "action"=>"create"}
+  [4;36;1mUser Load (1.0ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'blub@foo.com') LIMIT 1[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."username") = 'blub') LIMIT 1[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE ("users"."persistence_token" = 'eeb05fcef04663e5ac4961a3f24e73a9c71e6e16c0fe0dce769061b06c7c0a283823ae16ebe1444f8580084ca155610bd65937684031d3c989f07ac84c295efc') LIMIT 1[0m
+  [4;35;1mUser Create (2.0ms)[0m   [0mINSERT INTO "users" ("username", "email", "crypted_password", "password_salt", "persistence_token", "login_count", "created_at", "updated_at") VALUES('blub', 'blub@foo.com', '55c3379abea9db83ed83f60d5e3ae3b5dfbfa2e64c4e3a9c05584585d014a1455b5b172695c89ac1ebe41652b1e2b4cc3c81c992fe1084aa6c4c2e4044142e3e', 'zVLxtFf-g70h0fIdzqDy', 'eeb05fcef04663e5ac4961a3f24e73a9c71e6e16c0fe0dce769061b06c7c0a283823ae16ebe1444f8580084ca155610bd65937684031d3c989f07ac84c295efc', 1, '2009-12-28 23:20:29', '2009-12-28 23:20:29')[0m
+Redirected to http://localhost:3000/
+Completed in 192ms (DB: 3) | 302 Found [http://localhost/users]
+
+
+Processing SchedulesController#index (for 127.0.0.1 at 2009-12-29 00:20:30) [GET]
+  Parameters: {"controller"=>"schedules", "action"=>"index"}
+  [4;36;1mSchedule Load (2.0ms)[0m   [0;1mSELECT * FROM "schedules" [0m
+Rendering template within layouts/application
+Rendering schedules/index
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."persistence_token" = 'eeb05fcef04663e5ac4961a3f24e73a9c71e6e16c0fe0dce769061b06c7c0a283823ae16ebe1444f8580084ca155610bd65937684031d3c989f07ac84c295efc') LIMIT 1[0m
+Completed in 65ms (View: 50, DB: 3) | 200 OK [http://localhost/]
+
+
+Processing SchedulesController#show (for 127.0.0.1 at 2009-12-29 00:20:39) [GET]
+  Parameters: {"controller"=>"schedules", "action"=>"show", "id"=>"1"}
+  [4;36;1mSchedule Load (1.0ms)[0m   [0;1mSELECT * FROM "schedules" WHERE ("schedules"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering schedules/show
+  [4;35;1mComment Load (1.0ms)[0m   [0mSELECT * FROM "comments" WHERE ("comments".schedule_id = 1) [0m
+  [4;36;1mUser Load (1.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."persistence_token" = 'eeb05fcef04663e5ac4961a3f24e73a9c71e6e16c0fe0dce769061b06c7c0a283823ae16ebe1444f8580084ca155610bd65937684031d3c989f07ac84c295efc') LIMIT 1[0m
+Completed in 77ms (View: 60, DB: 3) | 200 OK [http://localhost/schedules/1]
+
+
+Processing SchedulesController#index (for 127.0.0.1 at 2009-12-29 00:20:45) [GET]
+  Parameters: {"controller"=>"schedules", "action"=>"index"}
+  [4;35;1mSchedule Load (1.0ms)[0m   [0mSELECT * FROM "schedules" [0m
+Rendering template within layouts/application
+Rendering schedules/index
+  [4;36;1mUser Load (1.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."persistence_token" = 'eeb05fcef04663e5ac4961a3f24e73a9c71e6e16c0fe0dce769061b06c7c0a283823ae16ebe1444f8580084ca155610bd65937684031d3c989f07ac84c295efc') LIMIT 1[0m
+Completed in 60ms (View: 46, DB: 2) | 200 OK [http://localhost/schedules]
+
+
+Processing SchedulesController#index (for 127.0.0.1 at 2009-12-29 00:22:00) [GET]
+  Parameters: {"controller"=>"schedules", "action"=>"index"}
+  [4;35;1mSchedule Load (1.0ms)[0m   [0mSELECT * FROM "schedules" [0m
+Rendering template within layouts/application
+Rendering schedules/index
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."persistence_token" = 'eeb05fcef04663e5ac4961a3f24e73a9c71e6e16c0fe0dce769061b06c7c0a283823ae16ebe1444f8580084ca155610bd65937684031d3c989f07ac84c295efc') LIMIT 1[0m
+Completed in 63ms (View: 49, DB: 1) | 200 OK [http://localhost/schedules]
+
+
+Processing SchedulesController#index (for 127.0.0.1 at 2009-12-29 00:22:03) [GET]
+  Parameters: {"controller"=>"schedules", "action"=>"index"}
+  [4;35;1mSchedule Load (1.0ms)[0m   [0mSELECT * FROM "schedules" [0m
+Rendering template within layouts/application
+Rendering schedules/index
+  [4;36;1mUser Load (1.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."persistence_token" = 'eeb05fcef04663e5ac4961a3f24e73a9c71e6e16c0fe0dce769061b06c7c0a283823ae16ebe1444f8580084ca155610bd65937684031d3c989f07ac84c295efc') LIMIT 1[0m
+Completed in 58ms (View: 46, DB: 2) | 200 OK [http://localhost/schedules]
+
+
+Processing SchedulesController#index (for 127.0.0.1 at 2009-12-29 00:22:18) [GET]
+  Parameters: {"controller"=>"schedules", "action"=>"index"}
+  [4;35;1mSchedule Load (1.0ms)[0m   [0mSELECT * FROM "schedules" [0m
+Rendering template within layouts/application
+Rendering schedules/index
+  [4;36;1mUser Load (1.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."persistence_token" = 'eeb05fcef04663e5ac4961a3f24e73a9c71e6e16c0fe0dce769061b06c7c0a283823ae16ebe1444f8580084ca155610bd65937684031d3c989f07ac84c295efc') LIMIT 1[0m
+Completed in 112ms (View: 99, DB: 2) | 200 OK [http://localhost/schedules]
+
+
+Processing UsersController#edit (for 127.0.0.1 at 2009-12-29 00:22:25) [GET]
+  Parameters: {"controller"=>"users", "action"=>"edit", "id"=>"current"}
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."persistence_token" = 'eeb05fcef04663e5ac4961a3f24e73a9c71e6e16c0fe0dce769061b06c7c0a283823ae16ebe1444f8580084ca155610bd65937684031d3c989f07ac84c295efc') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering users/edit
+Rendered users/_form (4.0ms)
+Completed in 63ms (View: 23, DB: 1) | 200 OK [http://localhost/users/current/edit]
+
+
+Processing UsersController#update (for 127.0.0.1 at 2009-12-29 00:22:44) [PUT]
+  Parameters: {"_method"=>"put", "authenticity_token"=>"ZVGSLNAJuPAVG4mJuYsXh6CLSck1g5H18uXTjVE0FUg=", "user"=>{"username"=>"blub", "email"=>"blub@foo.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Submit", "controller"=>"users", "action"=>"update", "id"=>"1"}
+  [4;36;1mUser Load (1.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."persistence_token" = 'eeb05fcef04663e5ac4961a3f24e73a9c71e6e16c0fe0dce769061b06c7c0a283823ae16ebe1444f8580084ca155610bd65937684031d3c989f07ac84c295efc') LIMIT 1[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT "users".id FROM "users" WHERE ("users"."persistence_token" = '53967be139fa566b2cbed093b0262618e93d6d1ae3443e08975de343d9e64bb43b3d373d178285e88038180791c2c55b305c182f7361a273c76439c8b3d6a43e' AND "users".id <> 1) LIMIT 1[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."persistence_token" = 'eeb05fcef04663e5ac4961a3f24e73a9c71e6e16c0fe0dce769061b06c7c0a283823ae16ebe1444f8580084ca155610bd65937684031d3c989f07ac84c295efc') LIMIT 1[0m
+  [4;35;1mUser Update (45.0ms)[0m   [0mUPDATE "users" SET "password_salt" = 'EJb1CjtsA14QCvV9Vb_e', "crypted_password" = 'f82c72596a1e7b1eb6ee3b3a788d5942362ccc935159d8bd38f94d9957593ac0042a34d6e4ee1a288d13d7be10507ff6f5794685bf0e5a15f8c0533f0071ccb1', "persistence_token" = '53967be139fa566b2cbed093b0262618e93d6d1ae3443e08975de343d9e64bb43b3d373d178285e88038180791c2c55b305c182f7361a273c76439c8b3d6a43e', "login_count" = 2, "updated_at" = '2009-12-28 23:22:44' WHERE "id" = 1[0m
+Redirected to http://localhost:3000/
+Completed in 211ms (DB: 46) | 302 Found [http://localhost/users/1]
+
+
+Processing SchedulesController#index (for 127.0.0.1 at 2009-12-29 00:22:44) [GET]
+  Parameters: {"controller"=>"schedules", "action"=>"index"}
+  [4;36;1mSchedule Load (1.0ms)[0m   [0;1mSELECT * FROM "schedules" [0m
+Rendering template within layouts/application
+Rendering schedules/index
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+Completed in 61ms (View: 47, DB: 2) | 200 OK [http://localhost/]
+
+
+Processing SchedulesController#show (for 127.0.0.1 at 2009-12-29 00:23:19) [GET]
+  Parameters: {"controller"=>"schedules", "action"=>"show", "id"=>"1"}
+  [4;36;1mSchedule Load (0.0ms)[0m   [0;1mSELECT * FROM "schedules" WHERE ("schedules"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering schedules/show
+  [4;35;1mComment Load (0.0ms)[0m   [0mSELECT * FROM "comments" WHERE ("comments".schedule_id = 1) [0m
+  [4;36;1mUser Load (1.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+Completed in 73ms (View: 59, DB: 1) | 200 OK [http://localhost/schedules/1]
+
+
+Processing CommentsController#create (for 127.0.0.1 at 2009-12-29 00:23:38) [POST]
+  Parameters: {"authenticity_token"=>"ZVGSLNAJuPAVG4mJuYsXh6CLSck1g5H18uXTjVE0FUg=", "comment"=>{"body"=>"geiler plan"}, "commit"=>"Add Comment", "controller"=>"comments", "action"=>"create", "schedule_id"=>"1"}
+  [4;35;1mSchedule Load (1.0ms)[0m   [0mSELECT * FROM "schedules" WHERE ("schedules"."id" = 1) [0m
+  [4;36;1mComment Create (3.0ms)[0m   [0;1mINSERT INTO "comments" ("schedule_id", "body", "created_at", "updated_at") VALUES(1, 'geiler plan', '2009-12-28 23:23:38', '2009-12-28 23:23:38')[0m
+Rendering comments/create
+Rendered comments/_comment (345.0ms)
+Completed in 596ms (View: 444, DB: 4) | 200 OK [http://localhost/schedules/1/comments]

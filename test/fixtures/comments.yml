@@ -1,0 +1,7 @@
+one:
+  schedule_id: 1
+  body: MyText
+
+two:
+  schedule_id: 1
+  body: MyText

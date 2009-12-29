@@ -1,0 +1,4 @@
+<% div_for schedule do%>
+	<h2><%=link_to_unless_current h(schedule.title),schedule%></h2>
+	<%=simple_format h(schedule.body) %>
+<% end %>

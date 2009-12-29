@@ -1,0 +1,24 @@
+<% title @schedule.title %>
+
+<% div_for @schedule do%>
+	<%=simple_format h(@schedule.body) %>
+<% end %>
+<p>
+	<%= link_to "Edit", edit_schedule_path(@schedule.id) %> |
+	<%= link_to "Destroy", @schedule, :confirm => 'Are you sure?', :method => :delete %> |
+	<%= link_to "See All Schedules", schedules_path %>
+</p>
+
+<h2>Comments</h2>
+<div id="comments">
+	<%= render :partial => @schedule.comments %>
+</div>
+
+<% remote_form_for [@schedule, Comment.new] do |f| %>
+  <%= f.error_messages %>
+  <p>
+    <%= f.label :body %><br />
+    <%= f.text_area :body %>
+  </p>
+  <p><%= f.submit "Add Comment" %></p>
+<% end %>
