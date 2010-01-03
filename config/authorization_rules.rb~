@@ -1,0 +1,26 @@
+authorization do
+  group :admin do
+    has_permission_on [:schedules, :comments], :to => [:index, :show, :new, :create, :edit, :update, :destroy]
+  end
+  
+  group :guest do
+    has_permission_on :schedules, :to => [:index, :show]
+    has_permission_on :comments, :to => [:new, :create]
+    has_permission_on :comments, :to => [:edit, :update] do
+      if_attribute :user => is { user }
+    end
+  end
+  
+  group :moderator do
+    includes :guest
+    has_permission_on :comments, :to => [:edit, :update]
+  end
+  
+  group :author do
+    includes :guest
+    has_permission_on :schedules, :to => [:new, :create]
+    has_permission_on :schedules, :to => [:edit, :update] do
+      if_attribute :user => is { user }
+    end
+  end
+end

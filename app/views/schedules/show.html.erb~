@@ -1,0 +1,58 @@
+<% title @schedule.title %>
+
+<% div_for @schedule do%>
+	<%=simple_format h(@schedule.body) %>
+<% end %>
+<p>
+  <% if permitted_to? :edit, @schedule %>
+	<%= link_to "Edit", edit_schedule_path(@schedule.id) %> |
+  <% end %>
+  <% if permitted_to? :destroy, @schedule %>
+	<%= link_to "Destroy", @schedule, :confirm => 'Are you sure?', :method => :delete %> |
+  <% end %>
+	<%= link_to "See All Schedules", schedules_path %>
+</p>
+
+<% unless @schedule.comments.empty? %>
+  <h2><%= pluralize(@schedule.comments.size, 'comment') %></h2>
+
+  <div id="comments">
+  <% for comment in @schedule.comments %>
+    <div class="comment">
+      <% @user = User.find(comment.user_id) %>
+      <strong><%= h(@user.username) %></strong>
+      <em>on <%= comment.created_at.strftime('%b %d, %Y at %H:%M') %></em>
+      <%=simple_format comment.body %>
+      <p>
+        <% if permitted_to? :edit, comment %>
+        <%= link_to "Edit", edit_comment_path(comment) %>
+        <% end %>
+        <% if permitted_to? :destroy, comment %>
+        | <%= link_to "Destroy", comment, :method => :delete, :confirm => "Are you sure?" %>
+        <% end %>
+      </p>
+    </div>
+  <% end %>
+  </div>
+<% end %>
+
+  <!--
+  <h2>Comments</h2>
+  <div id="comments">
+	  <%= render :partial => @schedule.comments %>
+  </div>
+  -->
+
+<% if permitted_to? :create, @comment %>
+  <h3>Add your comment:</h3>
+    <%= render :partial => 'comments/form' %>
+<!--  <% remote_form_for [@schedule, Comment.new] do |f| %>
+    <%= f.error_messages %>
+    <p>
+      <%= f.label :body %><br />
+      <%= f.text_area :body, :rows => '6', :cols => '64' %>
+    </p>
+    <p><%= f.submit "Add Comment" %></p>
+  <% end %>
+-->
+<% end %>
