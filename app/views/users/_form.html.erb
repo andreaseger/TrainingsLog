@@ -9,12 +9,31 @@
     <%= f.text_field :email %>
   </p>
   <p>
-    <%= f.label :password %><br />
-    <%= f.password_field :password %>
+    <%= f.label :groups %><br />
+    <% for group in Group.all %>
+      <%= check_box_tag "user[group_ids][]", group.id, @user.groups.include?(group) %>
+      <%=h group.name %><br />
+    <% end %>
   </p>
+
+  <% if @user.openid_identifier.blank? %>
+    <p>
+      <%= f.label :password %><br />
+      <%= f.password_field :password %>
+    </p>
+    <p>
+      <%= f.label :password_confirmation %><br />
+      <%= f.password_field :password_confirmation %>
+    </p>
+    <p><%= f.submit "Submit" %></p>
+
+    <h2>Or use OpenID</h2>
+  <% end %>
+
   <p>
-    <%= f.label :password_confirmation %><br />
-    <%= f.password_field :password_confirmation %>
+    <%= f.label :openid_identifier, "OpenID URL" %><br />
+    <%= f.text_field :openid_identifier %>
   </p>
   <p><%= f.submit "Submit" %></p>
+
 <% end %>

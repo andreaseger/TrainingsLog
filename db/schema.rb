@@ -9,13 +9,46 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20091228224358) do
+ActiveRecord::Schema.define(:version => 20100103125209) do
 
   create_table "comments", :force => true do |t|
     t.integer  "schedule_id"
     t.text     "body"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "user_id"
+  end
+
+  create_table "groups", :force => true do |t|
+    t.string   "name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "memberships", :force => true do |t|
+    t.integer  "group_id"
+    t.integer  "user_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "open_id_authentication_associations", :force => true do |t|
+    t.binary  "server_url"
+    t.string  "handle"
+    t.binary  "secret"
+    t.integer "issued"
+    t.integer "lifetime"
+    t.string  "assoc_type"
+  end
+
+  create_table "open_id_authentication_nonces", :force => true do |t|
+    t.string  "nonce"
+    t.integer "created"
+  end
+
+  create_table "open_id_authentication_settings", :force => true do |t|
+    t.string "setting"
+    t.binary "value"
   end
 
   create_table "schedules", :force => true do |t|
@@ -23,6 +56,7 @@ ActiveRecord::Schema.define(:version => 20091228224358) do
     t.text     "body"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "user_id"
   end
 
   create_table "users", :force => true do |t|
@@ -34,6 +68,7 @@ ActiveRecord::Schema.define(:version => 20091228224358) do
     t.integer  "login_count",       :default => 0, :null => false
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "openid_identifier"
   end
 
 end

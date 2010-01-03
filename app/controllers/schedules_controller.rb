@@ -1,18 +1,18 @@
 class SchedulesController < ApplicationController
+  filter_resource_access
+
   def index
     @schedules = Schedule.all
   end
   
   def show
-  	@schedule = Schedule.find(params[:id])
   end
   
   def new
-    @schedule = Schedule.new
   end
   
   def create
-    @schedule = Schedule.new(params[:schedule])
+    @schedule.user = current_user
     if @schedule.save
       flash[:notice] = "Successfully created schedule."
       redirect_to @schedule #schedules_url
@@ -22,11 +22,9 @@ class SchedulesController < ApplicationController
   end
   
   def edit
-    @schedule = Schedule.find(params[:id])
   end
   
   def update
-    @schedule = Schedule.find(params[:id])
     if @schedule.update_attributes(params[:schedule])
       flash[:notice] = "Successfully updated schedule."
       redirect_to @schedule #schedules_url
@@ -36,7 +34,6 @@ class SchedulesController < ApplicationController
   end
   
   def destroy
-    @schedule = Schedule.find(params[:id])
     @schedule.destroy
     flash[:notice] = "Successfully destroyed schedule."
     redirect_to root_url

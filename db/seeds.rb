@@ -5,3 +5,8 @@
 #   
 #   cities = City.create([{ :name => 'Chicago' }, { :name => 'Copenhagen' }])
 #   Major.create(:name => 'Daley', :city => cities.first)
+
+
+Group.create!(:name => 'Admin')
+Group.create!(:name => 'Moderator')
+Group.create!(:name => 'Author')

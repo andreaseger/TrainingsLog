@@ -7,7 +7,8 @@
 	<% end %>
 <% end %>
 
+<% if permitted_to? :create, Schedule.new %>
 <p><%= link_to "New Schedule", new_schedule_path %></p>
-
+<% end %>
 
 
