@@ -83,9 +83,36 @@ a {
 #user_nav {
   float: right;
   font-size: 12px;
-  padding: 20px 5px;
+  padding: 18px 5px;
+}
+/*
+#schedules h2 {
+  font-size: 16px;
+  margin-bottom: 2px;
 }
 
+#schedules h2 .comments {
+  font-size: 12px;
+  font-weight: normal;
+}
+#schedules .author {
+  font-style: italic;
+  color: #333;
+}
+
+#comments {
+  font-size: 12px;
+  background-color: #DDD;
+  padding: 0 20px;
+  width: 325px;
+  border: solid 1px #333;
+}
+
+.comment {
+  border-bottom: solid 1px #999;
+  margin: 15px 0;
+}
+*/
 /* embeds the openid image in the text field */
 input#user_openid_identifier, input#user_session_openid_identifier {
   background: url(http://openid.net/images/login-bg.gif) no-repeat;
@@ -94,3 +121,6 @@ input#user_openid_identifier, input#user_session_openid_identifier {
   color: #000;
   padding-left: 18px;
 }
+
+
+

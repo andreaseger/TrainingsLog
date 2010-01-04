@@ -1,8 +1,13 @@
 <% title @schedule.title %>
 
+<% @user = User.find(@schedule.user_id) do %>
+<p class="creator"><em>from <%=h @user.username %></em></p>
+<% end %>
+
 <% div_for @schedule do%>
 	<%=simple_format h(@schedule.body) %>
 <% end %>
+
 <p>
   <% if permitted_to? :edit, @schedule %>
 	<%= link_to "Edit", edit_schedule_path(@schedule.id) %> |
@@ -19,6 +24,7 @@
   <div id="comments">
   <% for comment in @schedule.comments %>
     <div class="comment">
+    <!--
       <% @user = User.find(comment.user_id) %>
       <strong><%= h(@user.username) %></strong>
       <em>on <%= comment.created_at.strftime('%b %d, %Y at %H:%M') %></em>
@@ -31,28 +37,22 @@
         | <%= link_to "Destroy", comment, :method => :delete, :confirm => "Are you sure?" %>
         <% end %>
       </p>
+    -->
+    <%= render :partial => comment %>
     </div>
   <% end %>
   </div>
 <% end %>
 
-  <!--
-  <h2>Comments</h2>
-  <div id="comments">
-	  <%= render :partial => @schedule.comments %>
-  </div>
-  -->
 
 <% if permitted_to? :create, @comment %>
   <h3>Add your comment:</h3>
-    <%= render :partial => 'comments/form' %>
-<!--  <% remote_form_for [@schedule, Comment.new] do |f| %>
+  <% remote_form_for [@schedule, Comment.new] do |f| %>
     <%= f.error_messages %>
     <p>
       <%= f.label :body %><br />
-      <%= f.text_area :body, :rows => '6', :cols => '64' %>
+      <%= f.text_area :body, :rows => '4' %>
     </p>
     <p><%= f.submit "Add Comment" %></p>
   <% end %>
--->
 <% end %>

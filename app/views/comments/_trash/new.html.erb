@@ -1,3 +1,6 @@
+<% title "New Comment" %>
+
+<%#= render :partial => 'form' %>
 <% form_for [@schedule, Comment.new] do |f| %>
   <%= f.error_messages %>
   <p>

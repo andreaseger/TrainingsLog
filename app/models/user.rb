@@ -1,9 +1,9 @@
 class User < ActiveRecord::Base
-  attr_accessible :username, :email, :password, :password_confirmation, :group_ids, :openid_identifier
+  attr_accessible :username, :email, :password, :password_confirmation, :group_ids, :openid_identifier, :login_count
   acts_as_authentic do |c|
     c.openid_required_fields = [:nickname, :email]
   end
-
+  
   has_many :schedules
   has_many :comments
   has_many :memberships

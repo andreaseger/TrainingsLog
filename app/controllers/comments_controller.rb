@@ -19,7 +19,7 @@ class CommentsController < ApplicationController
   end
   
   def update
-    @schedule = Schedule.find(params[:schedule_id])
+    @schedule = Schedule.find(@comment.schedule_id)
     if @comment.update_attributes(params[:comment])
       flash[:notice] = "Successfully updated comment."
       redirect_to schedule_url(@comment.schedule_id)
@@ -29,9 +29,15 @@ class CommentsController < ApplicationController
   end
   
   def destroy
-    @schedule = Schedule.find(params[:schedule_id])    
+    @schedule = Schedule.find(@comment.schedule_id)    
     @comment.destroy
     flash[:notice] = "Successfully destroyed comment."
-    redirect_to schedule_url(@comment.schedule_id)
+    redirect_to @schedule
+  end
+  
+  def index
+  end
+  
+  def show
   end
 end
