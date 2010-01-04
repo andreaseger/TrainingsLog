@@ -8,6 +8,7 @@ class User < ActiveRecord::Base
   has_many :comments
   has_many :memberships
   has_many :groups, :through => :memberships
+  validates_presence_of :username, :email, :password, :password_confirmation
 
   def role_symbols
     groups.map do |group|

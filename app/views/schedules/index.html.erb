@@ -2,7 +2,9 @@
 
 <% for schedule in @schedules do %>
 	<% div_for schedule do%>
+	  <% @user = User.find(schedule.user_id) %>
 		<h2><%=link_to_unless_current h(schedule.title),schedule%></h2>
+		<em><%= h(@user.username)%></em>
 		<%=simple_format h(schedule.body) %>
 	<% end %>
 <% end %>
@@ -11,4 +13,5 @@
 <p><%= link_to "New Schedule", new_schedule_path %></p>
 <% end %>
 
+<%= will_paginate @schedules %>
 

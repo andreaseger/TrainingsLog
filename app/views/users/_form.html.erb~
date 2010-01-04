@@ -1,3 +1,18 @@
+<% semantic_form_for @user do |f| %>
+  <% f.inputs do %>
+    <%= f.input :username %>
+    <%= f.input :email %>
+    <% if @user.openid_identifier.blank? %>
+      <%= f.input :password %>
+      <%= f.input :password_confirmation %>
+    <h2> Or use OpenID </h2>
+    <% end %>
+    <%= f.input :openid_identifier, :label => 'OpenID URL' %>  
+  <% end %>
+ <%= f.buttons %>
+<% end %>
+
+<!--
 <% form_for @user do |f| %>
   <%= f.error_messages %>
   <p>
@@ -8,14 +23,7 @@
     <%= f.label :email %><br />
     <%= f.text_field :email %>
   </p>
-  <p>
-    <%= f.label :groups %><br />
-    <% for group in Group.all %>
-      <%= check_box_tag "user[group_ids][]", group.id, @user.groups.include?(group) %>
-      <%=h group.name %><br />
-    <% end %>
-  </p>
-
+  
   <% if @user.openid_identifier.blank? %>
     <p>
       <%= f.label :password %><br />
@@ -37,3 +45,5 @@
   <p><%= f.submit "Submit" %></p>
 
 <% end %>
+
+-->

@@ -3,7 +3,7 @@
 <html>
   <head>
     <title><%= h(yield(:title) || "Untitled") %></title>
-    <%= stylesheet_link_tag 'application' %>
+    <%= stylesheet_link_tag 'application', 'formtastic', 'formtastic-changes', :cache => 'base' %>
     <%= javascript_include_tag :all %>
     <%= yield(:head) %>
   </head>
@@ -11,6 +11,7 @@
 
     <div id="container">
 	  	<div id="user_nav">
+        <%= link_to "Home", root_url %>
 			  <% if current_user %>
 			    <%= link_to "Edit Profile", edit_user_path(:current) %> |
 			    <%= link_to "Logout", logout_path %>

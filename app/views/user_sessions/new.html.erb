@@ -1,5 +1,16 @@
 <% title "Login" %>
 
+<% semantic_form_for @user_session do |f| %>
+  <% f.inputs do %>
+    <%= f.input :username %>
+    <%= f.input :password %>
+    <h2> Or use OpenID </h2>
+    <%= f.input :openid_identifier, :label => "OpenID URL", :required => false %>
+  <% end %>
+  <%= f.buttons %>
+<% end %>
+
+<!--
 <% form_for @user_session do |f| %>
   <%= f.error_messages %>
   <p>
@@ -18,4 +29,5 @@
   </p>
   <p><%= f.submit "Submit" %></p>
 <% end %>
+-->
 

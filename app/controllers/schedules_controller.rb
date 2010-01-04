@@ -2,15 +2,18 @@ class SchedulesController < ApplicationController
   filter_resource_access
 
   def index
-    @schedules = Schedule.all
+    debugger
+
+    @schedules = Schedule.paginate(:page => params[:page], :per_page => 10, :order => 'updated_at DESC')
+    #@schedules = Schedule.all
   end
-  
+
   def show
   end
-  
+
   def new
   end
-  
+
   def create
     @schedule.user = current_user
     if @schedule.save
@@ -20,10 +23,10 @@ class SchedulesController < ApplicationController
       render :action => 'new'
     end
   end
-  
+
   def edit
   end
-  
+
   def update
     if @schedule.update_attributes(params[:schedule])
       flash[:notice] = "Successfully updated schedule."
@@ -32,10 +35,11 @@ class SchedulesController < ApplicationController
       render :action => 'edit'
     end
   end
-  
+
   def destroy
     @schedule.destroy
     flash[:notice] = "Successfully destroyed schedule."
     redirect_to root_url
   end
 end
+

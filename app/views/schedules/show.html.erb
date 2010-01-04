@@ -1,10 +1,8 @@
 <% title @schedule.title %>
 
-<% @user = User.find(@schedule.user_id) do %>
-<p class="creator"><em>from <%=h @user.username %></em></p>
-<% end %>
-
 <% div_for @schedule do%>
+  <% @user = User.find(@schedule.user_id)%>
+  <p class="creator"><em>from <%=h @user.username %></em></p>
 	<%=simple_format h(@schedule.body) %>
 <% end %>
 
@@ -22,16 +20,26 @@
   <h2><%= pluralize(@schedule.comments.size, 'comment') %></h2>
 
   <div id="comments">
-  <% for comment in @schedule.comments %>
+  <% @comments = @schedule.comments.paginate(:page => params[:page], :per_page => 5, :order => 'created_at DESC') %>
+  <% for comment in @comments %>
     <div class="comment">
       <%= render :partial => comment %>
     </div>
   <% end %>
+  <%= will_paginate @comments %>
   </div>
 <% end %>
 
 
 <% if permitted_to? :create, @comment %>
+<br />
+  <% semantic_form_for [@schedule, Comment.new] do |f| %>
+    <% f.inputs do %>
+      <%= f.input :body, :as => :string, :label => 'Add your Comment'%>
+    <% end %>
+    <%= f.buttons%>
+  <% end %>
+  <!--
   <h3>Add your comment:</h3>
   <% remote_form_for [@schedule, Comment.new] do |f| %>
     <%= f.error_messages %>
@@ -41,4 +49,6 @@
     </p>
     <p><%= f.submit "Add Comment" %></p>
   <% end %>
+  -->
 <% end %>
+
