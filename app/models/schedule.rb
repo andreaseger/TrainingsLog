@@ -9,14 +9,14 @@ class Schedule < ActiveRecord::Base
   def self.search(search, page)
     paginate :per_page => 5, :page => page,
              :conditions => ['title like ?', "%#{search}%"],
-             :order => 'schedules.updated_at DESC, schedules.title'
+             :order => 'schedules.created_at DESC, schedules.title'
   end
 
   def self.withtag(tag, page)
     paginate :conditions => ["tags.name=?",tag],
              :joins => "INNER JOIN taggings ON schedules.id = taggings.taggable_id INNER JOIN tags ON taggings.tag_id = tags.id",
              :per_page => 5, :page => page,
-             :order => 'schedules.updated_at DESC'
+             :order => 'schedules.created_at DESC'
   end
 
 #  def self.searchtag2(tag, search, page)

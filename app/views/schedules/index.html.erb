@@ -2,40 +2,36 @@
 
 <div id='schedules'>
   <% for schedule in @schedules do %>
-	  <% div_for schedule do%>
-	    <% @user = User.find(schedule.user_id) %>
-		  <h2><%=link_to_unless_current h(schedule.title),schedule%></h2>
-		  <em><%= h(@user.username)%></em>
-		  <%=simple_format h(schedule.body) %>
-	  <% end %>
+    <% @user = User.find(schedule.user_id) %>
+	  <h2><%=link_to_unless_current h(schedule.title),schedule%></h2>
+	  <em class="creator"><%= h(@user.username)%></em>
+	  <p class="body"><%=simple_format h(schedule.body) %></p>
   <% end %>
 </div>
 
-<div id="floats">
-  <div id='filter_container'>
-    <div id="search">
-      <% form_tag schedules_path, :method => 'get' do %>
-        <%= text_field_tag :search, params[:search] %>
-        <%= submit_tag "Search", :title => nil %>
-      <% end %>
-    </div>
+<div id="organize">
+  <% if permitted_to? :create, Schedule.new %>
+    <%= link_to "New Schedule", new_schedule_path %>
+  <% end %>
 
-    <div id='tag_cloud'>
-      <p><strong>Tags: </strong><br />
-      <% tag_cloud(@tags, %w(css1 css2 css3 css4)) do |tag, css_class| %>
-        <%= link_to tag.name, params.merge(:tag => tag.name) ,:class => css_class %>
-        <%#= content_tag(:em,tag.name, :class => css_class)%>
-      <% end %></p>
-
-    </div>
-  </div>
-  <p><%= link_to 'clear Tags & Search', schedules_url %></p>
-  <div id="organize">
-    <% if permitted_to? :create, Schedule.new %>
-      <%= link_to "New Schedule", new_schedule_path %>
-    <% end %>
-
-    <%= will_paginate @schedules %>
-  </div>
+  <%= will_paginate @schedules %>
 </div>
+
+<div id='filter_container'>
+  <div id="search">
+    <% form_tag schedules_path, :method => 'get' do %>
+      <%= text_field_tag :search, params[:search] %>
+      <%= submit_tag "Search", :title => nil %>
+    <% end %>
+  </div>
+
+  <em id='tag_cloud'>
+    <strong>Tags:</strong><br />
+    <% tag_cloud(@tags, %w(css1 css2 css3 css4)) do |tag, css_class| %>
+      <%= link_to (tag.name).humanize, params.merge(:tag => tag.name).merge(:page => nil) ,:class => css_class %>
+      <%#= content_tag(:em,tag.name, :class => css_class)%>
+    <% end %>
+  </em>
+</div>
+<em class="reset"><%= link_to 'clear Tags & Search', schedules_url %></em>
 

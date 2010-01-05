@@ -85,19 +85,29 @@ a {
   padding: 18px 5px;
 }
 
+
+.creator {
+  font-style: italic;
+  color: #333;
+}
+.tags {
+  font-size: 12px;
+  color: #666;
+}
+
+#schedule h2 {
+  font-size: 16px;
+  margin-bottom: 2px;
+}
 #schedules h2 {
   font-size: 16px;
   margin-bottom: 2px;
 }
-
 #schedules h2 .comments {
   font-size: 12px;
   font-weight: normal;
 }
-#schedules .creator {
-  font-style: italic;
-  color: #333;
-}
+
 
 #comments {
   font-size: 12px;
@@ -111,30 +121,26 @@ a {
   border-bottom: solid 1px #999;
   margin: 15px 0;
 }
-/*#floats{*/
-/*    background-color:#ddd;*/
-/*}*/
-/*#filter_container{*/
-/*	padding: 10px 1% 10px 1%;*/
-/*	margin: 0px;*/
-/*	border: 0px;*/
-/*	width: 48%;*/
-/*}*/
 #tag_cloud{
-    position: absolute;
-    left: 50%;
-    width: 42%;
+    position: relative;
     padding: 5px 0;
 }
 #search{
-    float:left;
-    width:50%;
+    float: left;
+    width: 50%;
+    margin-bottom: 18px;
 }
 #organize{
-    clear:both;
-	padding: 10px 1% 10px 1%;
-	margin: 0px;
-	border: 0px;
+	padding-top: 5px;
+	padding-left: 1%;
+	padding-right: 1%;
+	padding-bottom: 6px;
+	margin: 0;
+	margin-bottom: 9px;
+	border: 0;
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+	border-bottom-color: #AAA;
 }
 
 #tag_cloud .css1 { font-size: 0.6em; }

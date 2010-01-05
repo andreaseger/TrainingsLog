@@ -1,12 +1,22 @@
 <% title @schedule.title %>
 
-<% div_for @schedule do%>
+<div id="schedule">
   <% @user = User.find(@schedule.user_id)%>
-  <p class="creator"><em>from <%=h @user.username %></em></p>
-	<%=simple_format h(@schedule.body) %>
-<% end %>
+    <em class="creator">
+      <strong>Author:</strong>
+      <%= h(@user.username) %>
+    </em><br />
+    <em class="tags">
+      <strong>Tags:</strong>
+      <% for @tag in @tags do %>
+        <%= content_tag(:em, (@tag.name).humanize)%>
+      <% end %>
+    </em>
 
-<p>
+<p class="body"><%=simple_format h(@schedule.body) %></p>
+</div>
+
+<em>
   <% if permitted_to? :edit, @schedule %>
 	<%= link_to "Edit", edit_schedule_path(@schedule.id) %> |
   <% end %>
@@ -14,7 +24,9 @@
 	<%= link_to "Destroy", @schedule, :confirm => 'Are you sure?', :method => :delete %> |
   <% end %>
 	<%= link_to "See All Schedules", schedules_path %>
-</p>
+</em>
+
+
 
 <% unless @schedule.comments.empty? %>
   <h2><%= pluralize(@schedule.comments.size, 'comment') %></h2>
@@ -36,7 +48,7 @@
   <% semantic_form_for Comment.new do |f| %>
     <% f.inputs do %>
       <%= f.input :schedule_id, :as => :hidden, :value => @schedule.id %>
-      <%= f.input :body, :as => :string, :label => 'Add your Comment'%>
+      <%= f.input :body, :as => :string, :label => 'Add your Comment', :required => false%>
     <% end %>
     <%= f.buttons%>
   <% end %>

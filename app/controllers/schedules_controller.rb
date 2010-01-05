@@ -8,14 +8,16 @@ class SchedulesController < ApplicationController
       if params[:tag] != nil
         params[:search] = nil
         @schedules = Schedule.withtag(params[:tag],params[:page])
-      else
+      elsif params[:search] != nil
         @schedules = Schedule.search(params[:search],params[:page])
+      else
+        @schedules = Schedule.paginate(:page => params[:page], :per_page => 5, :order => 'created_at DESC')
       end
-    #@schedules = Schedule.paginate(:page => params[:page], :per_page => 10, :order => 'updated_at DESC')
     #@schedules = Schedule.all
   end
 
   def show
+    @tags = @schedule.tags
   end
 
   def new
