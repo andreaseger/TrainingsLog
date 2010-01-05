@@ -3,12 +3,12 @@ class User < ActiveRecord::Base
   acts_as_authentic do |c|
     c.openid_required_fields = [:nickname, :email]
   end
-  
+
   has_many :schedules
   has_many :comments
   has_many :memberships
   has_many :groups, :through => :memberships
-  validates_presence_of :username, :email, :password, :password_confirmation
+  validates_presence_of :username, :email#, :password, :password_confirmation
 
   def role_symbols
     groups.map do |group|
@@ -25,3 +25,4 @@ class User < ActiveRecord::Base
 
 
 end
+

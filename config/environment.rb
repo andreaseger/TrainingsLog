@@ -26,6 +26,7 @@ Rails::Initializer.run do |config|
   config.gem "declarative_authorization", :source => "http://gemcutter.org"
   config.gem "formtastic", :source => "http://gemcutter.org"
   config.gem 'will_paginate', :version => '~> 2.3.11', :source => 'http://gemcutter.org'
+  config.gem "acts-as-taggable-on", :source => "http://gemcutter.org"
   #config.gem 'justinfrench-formtastic', :lib => 'formtastic', :source => 'http://gems.github.com'
 
   # Only load the plugins named here, in the order given (default is alphabetical).

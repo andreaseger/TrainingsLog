@@ -3,9 +3,11 @@ class UsersController < ApplicationController
   def new
     @user = User.new
   end
-  
+
   def create
     @user = User.new(params[:user])
+    #set default role to registered_user
+    @user.group_ids = ['2']
     @user.save do |result|
       if result
         flash[:notice] = "Registration successful."
@@ -17,7 +19,11 @@ class UsersController < ApplicationController
   end
 
   def update
-    @user = current_user
+    if params[:id] == "current"
+	    @user =  current_user
+    else
+	    @user = User.find(params[:id])
+    end
     @user.attributes = params[:user]
     @user.save do |result|
       if result
@@ -28,19 +34,17 @@ class UsersController < ApplicationController
       end
     end
   end
-	
+
 	def edit
-	  @user = current_user
+	  if params[:id] == "current"
+	    @user =  current_user
+    else
+	    @user = User.find(params[:id])
+    end
 	end
 
   def index
     @users = User.all
   end
-  
-  def show
-    @user = User.find(params[:id])
-  end
-
-
-
 end
+

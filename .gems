@@ -2,3 +2,7 @@ authlogic
 authlogic-oid
 declarative_authorization
 ruby-openid
+formtastic
+will_paginate
+acts-as-taggable-on
+

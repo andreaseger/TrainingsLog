@@ -1,5 +1,5 @@
 <% div_for user do%>
-	<h2><%=link_to_unless_current h(user.username),user%></h2>
+	<h2><%=link_to h(user.username), edit_user_path(user)%></h2>
 	<table>
 	  <tr>
 	    <td> email </td>
@@ -15,3 +15,4 @@
 	  </tr>
 	</table>
 <% end %>
+
