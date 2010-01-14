@@ -7,8 +7,9 @@ class CreateMemberships < ActiveRecord::Migration
       t.timestamps
     end
   end
-
+  add_index :memberships, [:group_id, :user_id], :unique => true
   def self.down
     drop_table :memberships
   end
 end
+

@@ -1,6 +1,8 @@
 class Schedule < ActiveRecord::Base
-  attr_accessible :title, :body, :user_id, :page, :tag_list
+  attr_accessible :title, :body, :user_id, :page, :tag_list, :item_ids
   has_many :comments, :dependent => :destroy
+  has_many :schedulings
+  has_many :items, :through => :schedulings
   belongs_to :user
   validates_presence_of :body, :title
   acts_as_taggable_on :tags
@@ -18,12 +20,5 @@ class Schedule < ActiveRecord::Base
              :per_page => 5, :page => page,
              :order => 'schedules.created_at DESC'
   end
-
-#  def self.searchtag2(tag, search, page)
-#    paginate :per_page => 10, :page => page,
-#             :join => 'tags',
-#             :conditions => ['tags like ? and title like ?', "%#{tag}%", "%#{search}%"],
-#             :order => 'tags, title'
-#  end
 end
 

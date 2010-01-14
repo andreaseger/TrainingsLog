@@ -1,8 +1,12 @@
 <% semantic_form_for @schedule do |f| %>
-  <% f.inputs do %>
-    <%= f.input :title %>
-    <%= f.input :body %>
-    <%= f.input :tag_list %>
+  <%= f.inputs :title, :body, :tag_list %>
+  <% @schedulings.each_with_index do |scheduling,index| %>
+    <% f.semantic_fields_for "schedulings[]",scheduling do |i| %>
+      <% i.inputs %>
+        <%= i.input :rank, :as => :hidden, :value => index %>
+        <%= i.input :wdh, :as => :numeric %>
+        <%= i.input :item, :label_method => 'description' %>
+    <% end %>
   <% end %>
  <%= f.buttons %>
 <% end %>

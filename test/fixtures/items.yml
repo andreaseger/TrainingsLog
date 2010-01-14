@@ -1,0 +1,11 @@
+one:
+  description: MyString
+  stroke_id: 1
+  tool_id: 1
+  distance: 1
+
+two:
+  description: MyString
+  stroke_id: 1
+  tool_id: 1
+  distance: 1

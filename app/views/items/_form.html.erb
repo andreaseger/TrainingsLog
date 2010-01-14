@@ -1,0 +1,11 @@
+<% semantic_form_for @item do |f| %>
+  <% f.inputs do %>
+    <%= f.input :stroke, :include_blank => false %>
+    <%= f.input :tool %>
+    <% @distance = (25..600).step(25) %>
+    <%= f.input :distance ,:as => :select, :collection => @distance, :include_blank => false %>
+    <%#= f.input :description %>
+  <% end %>
+  <%= f.buttons %>
+<% end %>
+

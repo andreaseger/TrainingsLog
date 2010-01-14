@@ -1,0 +1,26 @@
+<% title "Items" %>
+
+
+<% form_tag items_path, :method => 'get' do %>
+  <%= text_field_tag :search, params[:search] %>
+  <%= submit_tag "Search", :title => nil %>
+<% end %>
+
+<br />
+<table>
+  <tr>
+    <th>Description</th>
+  </tr>
+  <% for item in @items %>
+    <tr>
+      <td><%=h item.description %></td>
+      <td><%= link_to "Edit", edit_item_path(item) %></td>
+      <td><%= link_to "Destroy", item, :confirm => 'Are you sure?', :method => :delete %></td>
+    </tr>
+  <% end %>
+</table>
+
+<p><%= link_to "New Item", new_item_path %></p>
+
+<%= will_paginate @items %>
+

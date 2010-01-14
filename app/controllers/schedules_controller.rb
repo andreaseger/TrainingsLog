@@ -1,8 +1,6 @@
 class SchedulesController < ApplicationController
   filter_resource_access
 
-
-
   def index
       @tags = Schedule.tag_counts_on(:tags)
       if params[:tag] != nil
@@ -13,7 +11,6 @@ class SchedulesController < ApplicationController
       else
         @schedules = Schedule.paginate(:page => params[:page], :per_page => 5, :order => 'created_at DESC')
       end
-    #@schedules = Schedule.all
   end
 
   def show
@@ -21,13 +18,19 @@ class SchedulesController < ApplicationController
   end
 
   def new
+    @schedulings = Array.new
+    5.times{@schedulings << Scheduling.new}
   end
 
   def create
-    debugger
-
     @schedule.user = current_user
     if @schedule.save
+      params[:schedule][:schedulings].each do |scheduling|
+        scheduling.merge!(:schedule_id => @schedule.id)
+        debugger
+        Scheduling.create!(scheduling) unless scheduling.values.any?(&:blank?)
+      end
+
       flash[:notice] = "Successfully created schedule."
       redirect_to @schedule #schedules_url
     else
@@ -36,9 +39,18 @@ class SchedulesController < ApplicationController
   end
 
   def edit
+    @schedulings = Scheduling.find(params[:id])
   end
 
   def update
+    debugger
+    @schedulings = Scheduling.find(params[:id])
+    @schedulings.each do |scheduling|
+      params[:schedule][:schedulings][scheduling.id].merge!(scheduling.id)
+      scheduling.update_attributes(params[:schedule][:schedulings])
+    end
+    params[:schedule].delete(:schedulings)
+
     if @schedule.update_attributes(params[:schedule])
       flash[:notice] = "Successfully updated schedule."
       redirect_to @schedule #schedules_url
@@ -48,6 +60,10 @@ class SchedulesController < ApplicationController
   end
 
   def destroy
+    schedulings = Scheduling.find(params[:id])
+    @schedulings.each do |scheduling|
+      scheduling.destroy
+    end
     @schedule.destroy
     flash[:notice] = "Successfully destroyed schedule."
     redirect_to root_url

@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100104220401) do
+ActiveRecord::Schema.define(:version => 20100106144905) do
 
   create_table "comments", :force => true do |t|
     t.integer  "schedule_id"
@@ -21,6 +21,13 @@ ActiveRecord::Schema.define(:version => 20100104220401) do
 
   create_table "groups", :force => true do |t|
     t.string "name"
+  end
+
+  create_table "items", :force => true do |t|
+    t.string  "description"
+    t.integer "stroke_id"
+    t.integer "tool_id"
+    t.integer "distance"
   end
 
   create_table "memberships", :force => true do |t|
@@ -57,6 +64,17 @@ ActiveRecord::Schema.define(:version => 20100104220401) do
     t.integer  "user_id"
   end
 
+  create_table "schedulings", :force => true do |t|
+    t.integer "schedule_id"
+    t.integer "item_id"
+    t.integer "wdh"
+    t.integer "rank"
+  end
+
+  create_table "strokes", :force => true do |t|
+    t.string "name"
+  end
+
   create_table "taggings", :force => true do |t|
     t.integer  "tag_id"
     t.integer  "taggable_id"
@@ -71,6 +89,10 @@ ActiveRecord::Schema.define(:version => 20100104220401) do
   add_index "taggings", ["taggable_id", "taggable_type", "context"], :name => "index_taggings_on_taggable_id_and_taggable_type_and_context"
 
   create_table "tags", :force => true do |t|
+    t.string "name"
+  end
+
+  create_table "tools", :force => true do |t|
     t.string "name"
   end
 

@@ -5,6 +5,7 @@ class CreateGroups < ActiveRecord::Migration
     end
   end
 
+  add_index :groups, :name, :unique => true
   def self.down
     drop_table :groups
   end
