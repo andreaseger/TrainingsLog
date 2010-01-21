@@ -3,9 +3,10 @@ class CreateGroups < ActiveRecord::Migration
     create_table :groups do |t|
       t.string :name
     end
+  add_index :groups, :name, :unique => true
   end
 
-  add_index :groups, :name, :unique => true
+
   def self.down
     drop_table :groups
   end

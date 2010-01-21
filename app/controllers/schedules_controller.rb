@@ -15,11 +15,13 @@ class SchedulesController < ApplicationController
 
   def show
     @tags = @schedule.tags
+    debugger
+    @schedulings = @schedule.schedulings
   end
 
   def new
     @schedulings = Array.new
-    5.times{@schedulings << Scheduling.new}
+    8.times{@schedulings << Scheduling.new}
   end
 
   def create
@@ -39,12 +41,12 @@ class SchedulesController < ApplicationController
   end
 
   def edit
-    @schedulings = Scheduling.find(params[:id])
+    @schedulings = Scheduling.find(:schedule_id => params[:id])
   end
 
   def update
     debugger
-    @schedulings = Scheduling.find(params[:id])
+    @schedulings = Scheduling.find(:schedule_id => params[:id])
     @schedulings.each do |scheduling|
       params[:schedule][:schedulings][scheduling.id].merge!(scheduling.id)
       scheduling.update_attributes(params[:schedule][:schedulings])
@@ -60,7 +62,7 @@ class SchedulesController < ApplicationController
   end
 
   def destroy
-    schedulings = Scheduling.find(params[:id])
+    schedulings = Scheduling.find(:schedule_id => params[:id])
     @schedulings.each do |scheduling|
       scheduling.destroy
     end

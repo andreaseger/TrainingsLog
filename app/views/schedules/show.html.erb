@@ -12,8 +12,10 @@
         <%= content_tag(:em, (@tag.name).humanize)%>
       <% end %>
     </em>
-
 <p class="body"><%=simple_format h(@schedule.body) %></p>
+<%@schedulings.each do |scheduling| %>
+  <p><%= h(scheduling.wdh) %>*<%= h(scheduling.item.description) %></p>
+<% end %>
 </div>
 
 <em>

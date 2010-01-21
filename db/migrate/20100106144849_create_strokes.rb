@@ -3,9 +3,9 @@ class CreateStrokes < ActiveRecord::Migration
     create_table :strokes do |t|
       t.string :name
     end
+  add_index :strokes, :name, :unique => true
   end
 
-  add_index :strokes, :name, :unique => true
   def self.down
     drop_table :strokes
   end

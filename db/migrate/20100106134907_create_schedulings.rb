@@ -6,9 +6,9 @@ class CreateSchedulings < ActiveRecord::Migration
       t.integer :wdh
       t.integer :rank
     end
+  add_index :schedulings, [:schedule_id, :rank], :unique => true
   end
 
-  add_index :schedulings, [:schedule_id, :rank], :unique => true
   def self.down
     drop_table :schedulings
   end

@@ -39,6 +39,42 @@ Tool.create!(:name => 'Paddels & Poolboey')
 Tool.create!(:name => 'Paddels & Fins')
 
 
+
+dist = [25,50,75,100,150,200,300,400,500]
+0.upto(5){ |t|
+  1.upto(4){ |s|
+    dist.each{ |d|
+      if t == 0 then
+        @item = Item.new(:stroke_id => s, :tool_id => nil, :distance => d)
+        @stroke = Stroke.find(s)
+        @item.description = @item.distance.to_s + 'm ' + @stroke.name
+        @item.save
+      else
+        @item = Item.new(:stroke_id => s, :tool_id => t, :distance => d)
+        @stroke = Stroke.find(s)
+        @tool = Tool.find(t)
+        @item.description = @item.distance.to_s + 'm ' + @stroke.name + ', ' + @tool.name
+        @item.save
+      end
+    }
+  }
+}
+[100,200,400].each{ |d|
+  @item = Item.new(:stroke_id => 5, :tool_id => nil, :distance => d)
+  @stroke = Stroke.find(@item.stroke_id)
+  @item.description = @item.distance.to_s + 'm ' + @stroke.name
+  @item.save
+}
+
+@item = Item.new(:stroke_id => 6, :tool_id => nil, :distance => 400)
+@stroke = Stroke.find(@item.stroke_id)
+@item.description = @item.distance.to_s + 'm ' + @stroke.name
+@item.save
+@item = Item.new(:stroke_id => 7, :tool_id => nil, :distance => 300)
+@stroke = Stroke.find(@item.stroke_id)
+@item.description = @item.distance.to_s + 'm ' + @stroke.name
+@item.save
+
 #3.times do (
 #Schedule.create!(:title =>'Nullam leo sapien', :body => 'Pellentesque quis lorem libero, sit amet tincidunt lacus. Nunc justo eros, dignissim et pretium ac, faucibus ut ligula. Nam sed nunc felis, in fringilla dolor. Nam eget diam placerat velit hendrerit venenatis. Ut id nisi mauris. Maecenas posuere imperdiet nisi sed tincidunt. Integer ultrices tortor vel tellus gravida interdum sed nec lorem. Duis at accumsan orci. Quisque auctor elit ut tortor faucibus consequat. Morbi ut lectus nulla, quis dapibus justo. Nunc arcu nulla, faucibus nec auctor eu, gravida ac risus. Proin nec lorem augue, eget congue ligula. Quisque vitae neque velit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eleifend congue metus, blandit lobortis dolor feugiat in. Mauris dictum, urna ut adipiscing euismod, mauris quam facilisis purus, quis rhoncus ante orci ac magna. Sed dictum placerat orci eu blandit. Morbi aliquet nisi eu orci convallis pretium. Aliquam erat volutpat.', :tag_list => 'hase, bär, hund, pferd', :user_id => '1' )
 
