@@ -29,7 +29,6 @@ class SchedulesController < ApplicationController
     if @schedule.save
       params[:schedule][:schedulings].each do |scheduling|
         scheduling.merge!(:schedule_id => @schedule.id)
-        debugger
         Scheduling.create!(scheduling) unless scheduling.values.any?(&:blank?)
       end
 
@@ -41,12 +40,11 @@ class SchedulesController < ApplicationController
   end
 
   def edit
-    @schedulings = Scheduling.find(:schedule_id => params[:id])
+    @schedulings = @schedule.schedulings
   end
 
   def update
-    debugger
-    @schedulings = Scheduling.find(:schedule_id => params[:id])
+    @schedulings = @schedule.schedulings
     @schedulings.each do |scheduling|
       params[:schedule][:schedulings][scheduling.id].merge!(scheduling.id)
       scheduling.update_attributes(params[:schedule][:schedulings])
