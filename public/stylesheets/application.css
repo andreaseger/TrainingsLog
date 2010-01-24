@@ -158,3 +158,23 @@ input#user_openid_identifier, input#user_session_openid_identifier {
   padding-left: 18px;
 }
 
+
+
+/*modifies the look of the forms of the Schedulings and Collections*/
+
+#collections{
+    list-style-type: none;
+    margin-bottom: 5px;
+    border-bottom: 2px solid #DDD;
+    border-left: 2px solid #DDD;
+    padding: 2px;
+}
+#schedulings{
+    margin-left: 30px;
+    margin-top: 5px;
+    margin-bottom: 2px;
+    border-bottom: 2px solid #DDD;
+    border-left: 2px solid #DDD;
+    padding: 2px;
+}
+

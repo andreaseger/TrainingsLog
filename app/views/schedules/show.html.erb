@@ -13,9 +13,35 @@
       <% end %>
     </em>
 <p class="body"><%=simple_format h(@schedule.body) %></p>
-<%@schedulings.each do |scheduling| %>
-  <p><%= h(scheduling.wdh) %>*<%= h(scheduling.item.description) %></p>
+
+<ul>
+<% for collection in @schedule.collections %>
+  <% if collection.wdh != 1 %>
+  <li>
+    <%= h(collection.wdh) %> *
+    <ul>
+  <% end %>
+  <% for scheduling in collection.schedulings %>
+    <li>
+    <% if scheduling.wdh != 1 %>
+      <%= h(scheduling.wdh) %> *
+    <% end %>
+    <%= h(scheduling.item.description) %>
+    <% if !scheduling.content.blank? %>
+      (<%= h(scheduling.content) %>)
+    <% end %>
+    </li>
+  <% end %>
+  <% if !collection.content.blank? %>
+    (<%= h(collection.content) %>)
+  <% end %>
+  <% if collection.wdh != 1 %>
+      </ul>
+  </li>
+  <% end %>
 <% end %>
+</ul>
+
 </div>
 
 <em>

@@ -11,5 +11,6 @@ class Item < ActiveRecord::Base
              :conditions => ['description like ?', "%#{search}%"],
              :order => 'description'
   end
+
 end
 

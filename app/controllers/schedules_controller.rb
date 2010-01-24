@@ -15,23 +15,16 @@ class SchedulesController < ApplicationController
 
   def show
     @tags = @schedule.tags
-    debugger
-    @schedulings = @schedule.schedulings
   end
 
   def new
-    @schedulings = Array.new
-    8.times{@schedulings << Scheduling.new}
+    3.times {@schedule.schedulings.build}
   end
 
   def create
     @schedule.user = current_user
+    debugger
     if @schedule.save
-      params[:schedule][:schedulings].each do |scheduling|
-        scheduling.merge!(:schedule_id => @schedule.id)
-        Scheduling.create!(scheduling) unless scheduling.values.any?(&:blank?)
-      end
-
       flash[:notice] = "Successfully created schedule."
       redirect_to @schedule #schedules_url
     else
@@ -40,17 +33,10 @@ class SchedulesController < ApplicationController
   end
 
   def edit
-    @schedulings = @schedule.schedulings
   end
 
   def update
-    @schedulings = @schedule.schedulings
-    @schedulings.each do |scheduling|
-      params[:schedule][:schedulings][scheduling.id].merge!(scheduling.id)
-      scheduling.update_attributes(params[:schedule][:schedulings])
-    end
-    params[:schedule].delete(:schedulings)
-
+    debugger
     if @schedule.update_attributes(params[:schedule])
       flash[:notice] = "Successfully updated schedule."
       redirect_to @schedule #schedules_url

@@ -1,12 +1,12 @@
 class CreateSchedulings < ActiveRecord::Migration
   def self.up
     create_table :schedulings do |t|
-      t.integer :schedule_id
+      t.integer :collection_id
       t.integer :item_id
-      t.integer :wdh
-      t.integer :rank
+      t.integer :wdh, :default => 1
+      t.string  :content
     end
-  add_index :schedulings, [:schedule_id, :rank], :unique => true
+  #add_index :schedulings, [:collection_id, :rank], :unique => true
   end
 
   def self.down

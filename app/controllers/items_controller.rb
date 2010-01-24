@@ -8,8 +8,6 @@ class ItemsController < ApplicationController
       end
   end
 
-
-
   def new
     @item = Item.new
   end

@@ -9,7 +9,13 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100106144905) do
+ActiveRecord::Schema.define(:version => 20100124154525) do
+
+  create_table "collections", :force => true do |t|
+    t.integer "wdh"
+    t.integer "schedule_id"
+    t.string  "content"
+  end
 
   create_table "comments", :force => true do |t|
     t.integer  "schedule_id"
@@ -71,13 +77,11 @@ ActiveRecord::Schema.define(:version => 20100106144905) do
   end
 
   create_table "schedulings", :force => true do |t|
-    t.integer "schedule_id"
+    t.integer "collection_id"
     t.integer "item_id"
     t.integer "wdh"
-    t.integer "rank"
+    t.string  "content"
   end
-
-  add_index "schedulings", ["schedule_id", "rank"], :name => "index_schedulings_on_schedule_id_and_rank", :unique => true
 
   create_table "strokes", :force => true do |t|
     t.string "name"

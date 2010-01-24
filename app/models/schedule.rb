@@ -1,8 +1,12 @@
 class Schedule < ActiveRecord::Base
-  attr_accessible :title, :body, :user_id, :page, :tag_list, :item_ids
+  #attr_accessible :title, :body, :user_id, :page, :tag_list, :item_ids
   has_many :comments, :dependent => :destroy
-  has_many :schedulings
+  has_many :collections, :dependent => :destroy
+  accepts_nested_attributes_for :collections, :reject_if => lambda { |a| a[:wdh].blank? }, :allow_destroy => true
+
+  has_many :schedulings, :through => :collections
   has_many :items, :through => :schedulings
+
   belongs_to :user
   validates_presence_of :body, :title
   acts_as_taggable_on :tags

@@ -1,0 +1,9 @@
+<div id="schedulings" class="fields">
+  <% f.inputs %>
+  <%= f.input :wdh, :as => :numeric, :value => 1 %>
+  <%= f.input :item, :label_method => 'description' %>
+  <%= f.input :content %>
+  <%= link_to_remove_fields "remove", f %>
+  <br />
+</div>
+
