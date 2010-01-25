@@ -4,9 +4,6 @@ class CommentsController < ApplicationController
   end
 
   def create
-  	#@schedule = Schedule.find(params[:schedule_id])
-    #@comment = @schedule.comments.build(params[:comment])
-
     @comment.user = current_user
     @comment.save
     respond_to do |format|
@@ -19,7 +16,6 @@ class CommentsController < ApplicationController
   end
 
   def update
-    #@schedule = Schedule.find(@comment.schedule_id)
     if @comment.update_attributes(params[:comment])
       flash[:notice] = "Successfully updated comment."
       redirect_to schedule_url(@comment.schedule_id)

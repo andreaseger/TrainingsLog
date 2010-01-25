@@ -1,0 +1,11 @@
+- title "Login"
+- semantic_form_for @user_session do |f|
+  - f.inputs do
+    = f.input :username
+    = f.input :password
+    %h2
+      Or use OpenID
+      = f.input :openid_identifier, :label => "OpenID URL", :required => false
+  - f.buttons do
+    = f.commit_button :label => 'Login'
+

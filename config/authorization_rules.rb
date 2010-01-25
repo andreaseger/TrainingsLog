@@ -1,6 +1,6 @@
 authorization do
   role :admin do
-    has_permission_on [:schedules, :comments, :users], :to => [:index, :show, :new, :create, :edit, :update, :destroy]
+    has_permission_on [:schedules, :comments, :users, :items], :to => [:index, :show, :new, :create, :edit, :update, :destroy]
   end
 
   role :guest do
@@ -18,6 +18,8 @@ authorization do
     has_permission_on :users, :to => [:edit, :update] do
       if_attribute :user => is { user }
     end
+
+    has_permission_on :items, :to => :index
   end
 
   role :moderator do
@@ -31,6 +33,7 @@ authorization do
     has_permission_on :schedules, :to => [:edit, :update] do
       if_attribute :user => is { user }
     end
+    has_permission_on :items, :to => [:new, :create, :edit, :destroy, :update]
   end
 end
 

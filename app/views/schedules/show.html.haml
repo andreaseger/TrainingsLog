@@ -1,0 +1,69 @@
+- title @schedule.title
+#schedule
+  - @user = User.find(@schedule.user_id)
+  %em.creator
+    %strong
+      Author:
+    = h(@user.username)
+  %br
+  %em.tags
+    %strong
+      Tags:
+    - for @tag in @tags do
+      = content_tag(:em, (@tag.name).humanize)
+  %p.body
+    = simple_format h(@schedule.body)
+  %ul
+    - for collection in @schedule.collections
+      - if collection.wdh != 1
+        %li
+          = h(collection.wdh)
+          *
+          - unless collection.content.blank?
+            (
+            = h(collection.content)
+            )
+          %ul
+            - for scheduling in collection.schedulings
+              %li
+                - if scheduling.wdh != 1
+                  = h(scheduling.wdh)
+                  *
+                = h(scheduling.item.description)
+                - unless scheduling.content.blank?
+                  (
+                  = h(scheduling.content)
+                  )
+      - else
+        - unless collection.content.blank?
+          (
+          = h(collection.content)
+          )
+        - for scheduling in collection.schedulings
+          %li
+            - if scheduling.wdh != 1
+              = h(scheduling.wdh)
+              *
+            = h(scheduling.item.description)
+            - unless scheduling.content.blank?
+              (
+              = h(scheduling.content)
+              )
+
+%em
+  - if permitted_to? :edit, @schedule
+    = link_to "Edit", edit_schedule_path(@schedule.id)
+    |
+  - if permitted_to? :destroy, @schedule
+    = link_to "Destroy", @schedule, :confirm => 'Are you sure?', :method => :delete
+    |
+  = link_to "See All Schedules", schedules_path
+- unless @schedule.comments.empty?
+  %h2= pluralize(@schedule.comments.size, 'comment')
+  #comments
+    - @comments = @schedule.comments.paginate(:page => params[:page], :per_page => 5, :order => 'created_at DESC')
+    - for comment in @comments
+      .comment= render :partial => comment
+    = will_paginate @comments
+= render :partial => 'schedules/partials/comments_form'
+

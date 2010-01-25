@@ -11,3 +11,16 @@
   <br />
 </div>
 
+
+<!--
+#collections.fields
+  - f.inputs
+    = f.input :wdh, :as => :numeric, :value => 1
+    = f.input :content
+    - f.semantic_fields_for :schedulings do |builder|
+      = render "scheduling_fields", :f => builder
+      = link_to_add_fields "Add Scheduling", f, :schedulings
+  = link_to_remove_fields "remove", f
+%br
+-->
+

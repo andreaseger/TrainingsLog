@@ -1,0 +1,22 @@
+- div_for comment do
+  - @user = User.find(comment.user_id)
+  %strong
+    = h(@user.username)
+  %em
+    on
+    = comment.updated_at.strftime('%b %d, %Y at %H:%M')
+  = simple_format comment.body
+  %p
+    - if permitted_to? :edit, comment
+      = link_to "Edit", edit_comment_path(comment)
+    - if permitted_to? :destroy, comment
+      |
+      = link_to "Destroy", comment, :method => :delete, :confirm => "Are you sure?"
+  /
+    <haml:silent> div_for comment do </haml:silent>
+    <p>
+    <strong>Posted <haml:loud> time_ago_in_words(comment.created_at)</haml:loud> ago</strong><br />
+    <haml:loud> h(comment.body)</haml:loud>
+    </p>
+    <haml:silent> end </haml:silent>
+

@@ -1,0 +1,20 @@
+- div_for user do
+  %h2
+    = link_to h(user.username), edit_user_path(user)
+  %table
+    %tr
+      %td
+        email
+      %td
+        = h(user.email)
+    %tr
+      %td
+        created
+      %td
+        = h(user.created_at)
+    %tr
+      %td
+        login counter
+      %td
+        = h(user.login_count)
+

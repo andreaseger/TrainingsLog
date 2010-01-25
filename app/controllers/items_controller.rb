@@ -1,5 +1,5 @@
 class ItemsController < ApplicationController
-
+  filter_resource_access
   def index
       if params[:search] != nil
         @items = Item.search(params[:search],params[:page])

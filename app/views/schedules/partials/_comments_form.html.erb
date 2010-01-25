@@ -1,0 +1,22 @@
+<% if permitted_to? :create, Comment.new %>
+<br />
+  <% semantic_form_for Comment.new do |f| %>
+    <% f.inputs do %>
+      <%= f.input :schedule_id, :as => :hidden, :value => @schedule.id %>
+      <%= f.input :body, :as => :string, :label => 'Add your Comment', :required => false%>
+    <% end %>
+    <%= f.buttons %>
+  <% end %>
+<% end %>
+
+<!--
+  - if permitted_to? :create, Comment.new
+    %br
+    - semantic_form_for Comment.new do |f|
+      - f.inputs do
+        = f.input :schedule_id, :as => :hidden, :value => @schedule.id
+        = f.input :body, :as => :string, :label => 'Add your Comment', :required => false
+      - f.buttons do
+        = f.commit_button :label => 'Post'
+-->
+
