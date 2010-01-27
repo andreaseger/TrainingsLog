@@ -1,5 +1,0 @@
-class GroupsController < ApplicationController
-  def create
-    @group = Group.save
-  end
-end

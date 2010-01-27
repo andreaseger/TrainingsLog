@@ -1,5 +1,0 @@
-<% title "User" %>
-
-<% for user in @users do %>
-  <%= render :partial =>user%>
-<% end %>
