@@ -1,0 +1,169 @@
+!primary_color = #4B7399
+
+
+// Import the formtastic sass stylesheets
+//@import partials/formtastic_base.sass
+//@import partials/skintastic.sass
+@import formtastic.sass
+
+body
+  :background-color = !primary_color
+  :font
+    :family Verdana, Helvetica, Arial
+    :size 14px
+
+a
+  :color #0000FF
+  img
+    :border none
+
+.clear
+  :clear both
+  :height 0
+  :overflow hidden
+
+#container
+  :width 75%
+  :margin 0 auto
+  :background #fff
+  :padding 20px 40px
+  :border solid 1px black
+  :margin-top 20px
+
+#flash_notice,
+#flash_error
+  :padding 5px 8px
+  :margin 10px 0
+
+#flash_notice
+  :background-color #CFC
+  :border solid 1px #6C6
+
+#flash_error
+  :background-color #FCC
+  :border solid 1px #C66
+
+.fieldWithErrors
+  :display inline
+
+#errorExplanation
+  :width 400px
+  :border 2px solid #CF0000
+  :padding 0
+  :padding-bottom 12px
+  :margin-bottom 20px
+  :background-color #f0f0f0
+  h2
+    :text-align left
+    :padding 5px 5px 5px 15px
+    :margin 0
+    :font
+      :weight bold
+      :size 12px
+    :background-color #c00
+    :color #fff
+  p
+    :color #333
+    :margin-bottom 0
+    :padding 8px
+  ul
+    :margin 2px 24px
+    li
+      :font-size 12px
+      :list-style disc
+
+#user_nav
+  :float right
+  :font-size 12px
+  :padding 18px 5px
+
+.creator
+  :font-style italic
+  :color #333
+
+.tags
+  :font-size 12px
+  :color #666
+
+#schedule
+  h2
+    :font-size 16px
+    :margin-bottom 2px
+
+#schedules
+  h2
+    :font-size 16px
+    :margin-bottom 2px
+    .comments
+      :font-size 12px
+      :font-weight normal
+
+
+#comments
+  :font-size 12px
+  :background-color #DDD
+  :padding 0 20px
+  :width 325px
+  :border solid 1px #333
+
+
+.comment
+  :border-bottom solid 1px #999
+  :margin 15px 0
+
+#search
+  :float left
+  :width 50%
+  :margin-bottom 18px
+
+#organize
+  :padding-top 5px
+  :padding-left 1%
+  :padding-right 1%
+  :padding-bottom 6px
+  :margin 0
+  :margin-bottom 9px
+  :border 0
+  :border-bottom-style solid
+  :border-bottom-width 1px
+  :border-bottom-color #AAA
+
+#tag_cloud
+  :position relative
+  :padding 5px 0
+  .css1
+    :font-size 0.6em
+  .css2
+    :font-size 0.8em
+  .css3
+    :font-size 1.0em
+  .css4
+    :font-size 1.2em
+
+
+/* embeds the openid image in the text field */
+input#user_openid_identifier,
+input#user_session_openid_identifier
+  :background url(http://openid.net/images/login-bg.gif) no-repeat
+  :background-color #fff
+  :background-position 0 50%
+  :color #000
+  :padding-left 18px
+
+/*modifies the look of the forms of the Schedulings and Collections*/
+
+#collections
+  :list-style-type none
+  :margin-bottom 5px
+  :border-bottom 2px solid #DDD
+  :border-left 2px solid #DDD
+  :padding 2px
+
+#schedulings
+  :margin-left 30px
+  :margin-top 5px
+  :margin-bottom 2px
+  :border-bottom 2px solid #DDD
+  :border-left 2px solid #DDD
+  :padding 2px
+

@@ -1,6 +1,8 @@
 class Collection < ActiveRecord::Base
   #attr_accessible :wdh, :schedule_id, :content
+  belongs_to :schedule
   has_many :schedulings, :dependent => :destroy
-  accepts_nested_attributes_for :schedulings, :reject_if => lambda { |a| a[:item_id].blank? }, :allow_destroy => true
+  validates_presence_of :wdh#, :schedulings
+  accepts_nested_attributes_for :schedulings, :allow_destroy => true
 end
 

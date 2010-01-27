@@ -1,26 +1,29 @@
 - title "Schedules"
-#schedules
-  - for schedule in @schedules do
-    - @user = User.find(schedule.user_id)
-    %h2
-      = link_to_unless_current h(schedule.title),schedule
-    %em.creator
-      = h(@user.username)
-    %p.body
-      = simple_format h(truncate(schedule.body,100))
-#organize
-  - if permitted_to? :create, Schedule.new
-    = link_to "New Schedule", new_schedule_path
-  = will_paginate @schedules
-#filter_container
+#index
+  #schedules
+    - for schedule in @schedules do
+      - @user = User.find(schedule.user_id)
+      %h2
+        = link_to_unless_current h(schedule.title),schedule
+      %em.creator
+        = h(@user.username)
+      %p.content
+        = simple_format h(truncate(schedule.body,200))
+
+  #paginate
+    - if permitted_to? :create, Schedule.new
+      = link_to "New Schedule", new_schedule_path
+    = will_paginate @schedules
+
+
   #search
     - form_tag schedules_path, :method => 'get' do
       = text_field_tag :search, params[:search]
       = submit_tag "Search", :title => nil
-  %em#tag_cloud
+    %em= link_to 'clear Tags & Search', schedules_url
+
+  #tag_cloud
     %strong
       Tags:
-    %br= render :partial => 'schedules/partials/tagcloud'
-%em.reset
-  = link_to 'clear Tags & Search', schedules_url
+    = render :partial => 'schedules/partials/tagcloud'
 

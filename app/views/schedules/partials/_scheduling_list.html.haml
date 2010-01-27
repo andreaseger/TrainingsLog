@@ -1,0 +1,11 @@
+- for scheduling in collection.schedulings
+  %li.scheduling_item
+    - if scheduling.wdh != 1
+      = h(scheduling.wdh)
+      *
+    = h(scheduling.item.description)
+    - unless scheduling.content.blank?
+      (
+      = h(scheduling.content)
+      )
+

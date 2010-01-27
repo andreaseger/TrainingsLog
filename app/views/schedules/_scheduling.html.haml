@@ -1,0 +1,24 @@
+.fields
+  = f.input :wdh, :as => :numeric, :input_html => { :size => 5 }
+  = f.input :item, :label_method => 'description'
+  = f.input :content, :input_html => { :size => 30 }
+  = remove_child_link "remove", f
+
+
+
+
+
+-#  %p
+-#    = f.label :wdh
+-#    %br
+-#    = f.text_field :wdh
+-#  %p
+-#    = f.label :item_id
+-#    = f.collection_select :item_id, Item.find(:all), :id, :description
+-#  %p
+-#    = f.label :content
+-#    %br
+-#    = f.text_field :content
+-#  %p
+-#    = remove_child_link "remove", f
+

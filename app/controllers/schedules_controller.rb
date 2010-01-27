@@ -18,12 +18,19 @@ class SchedulesController < ApplicationController
   end
 
   def new
-    3.times {@schedule.schedulings.build}
+
   end
 
   def create
-    @schedule.user = current_user
     debugger
+    @schedule.user = current_user
+#    params[:schedule][:collections_attributes].delete("new_collections")
+
+#    params[:schedule][:collections_attributes].each_value {|value|
+#      value[:schedulings_attributes].delete_if{ |key,val|
+#        key.to_s. include?("new_")
+#      }
+#    }
     if @schedule.save
       flash[:notice] = "Successfully created schedule."
       redirect_to @schedule #schedules_url
