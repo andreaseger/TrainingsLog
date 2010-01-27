@@ -20,14 +20,12 @@ Rails::Initializer.run do |config|
   # config.gem "hpricot", :version => '0.6', :source => "http://code.whytheluckystiff.net"
   # config.gem "sqlite3-ruby", :lib => "sqlite3"
   # config.gem "aws-s3", :lib => "aws/s3"
-  config.gem 'compass', :version => '>= 0.8.17'
   config.gem 'haml', :version => '>=2.2.16'
-#  config.gem 'compass', :version => '>= 0.8.17'
-#  config.gem 'haml', :version => '>=2.2.16'
+  config.gem 'compass', :version => '>= 0.8.17'
 
   config.gem "authlogic"
-	config.gem "authlogic-oid", :lib => "authlogic_openid"
-	config.gem "ruby-openid", :lib => "openid"
+  config.gem "authlogic-oid", :lib => "authlogic_openid"
+  config.gem "ruby-openid", :lib => "openid"
   config.gem "declarative_authorization", :source => "http://gemcutter.org"
   config.gem "formtastic", :source => "http://gemcutter.org"
   config.gem 'will_paginate', :version => '~> 2.3.11', :source => 'http://gemcutter.org'

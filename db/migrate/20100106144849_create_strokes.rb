@@ -3,7 +3,7 @@ class CreateStrokes < ActiveRecord::Migration
     create_table :strokes do |t|
       t.string :name
     end
-  add_index :strokes, :name, :unique => true
+  #add_index :strokes, :name, :unique => true
   end
 
   def self.down

@@ -12,7 +12,7 @@
 ActiveRecord::Schema.define(:version => 20100124154525) do
 
   create_table "collections", :force => true do |t|
-    t.integer "wdh"
+    t.integer "wdh",         :default => 1
     t.integer "schedule_id"
     t.string  "content"
   end
@@ -29,8 +29,6 @@ ActiveRecord::Schema.define(:version => 20100124154525) do
     t.string "name"
   end
 
-  add_index "groups", ["name"], :name => "index_groups_on_name", :unique => true
-
   create_table "items", :force => true do |t|
     t.string  "description"
     t.integer "stroke_id"
@@ -38,16 +36,12 @@ ActiveRecord::Schema.define(:version => 20100124154525) do
     t.integer "distance"
   end
 
-  add_index "items", ["stroke_id", "tool_id", "distance"], :name => "index_items_on_stroke_id_and_tool_id_and_distance", :unique => true
-
   create_table "memberships", :force => true do |t|
     t.integer  "group_id"
     t.integer  "user_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
-
-  add_index "memberships", ["group_id", "user_id"], :name => "index_memberships_on_group_id_and_user_id", :unique => true
 
   create_table "open_id_authentication_associations", :force => true do |t|
     t.binary  "server_url"
@@ -79,15 +73,13 @@ ActiveRecord::Schema.define(:version => 20100124154525) do
   create_table "schedulings", :force => true do |t|
     t.integer "collection_id"
     t.integer "item_id"
-    t.integer "wdh"
+    t.integer "wdh",           :default => 1
     t.string  "content"
   end
 
   create_table "strokes", :force => true do |t|
     t.string "name"
   end
-
-  add_index "strokes", ["name"], :name => "index_strokes_on_name", :unique => true
 
   create_table "taggings", :force => true do |t|
     t.integer  "tag_id"
@@ -109,8 +101,6 @@ ActiveRecord::Schema.define(:version => 20100124154525) do
   create_table "tools", :force => true do |t|
     t.string "name"
   end
-
-  add_index "tools", ["name"], :name => "index_tools_on_name", :unique => true
 
   create_table "users", :force => true do |t|
     t.string   "username"

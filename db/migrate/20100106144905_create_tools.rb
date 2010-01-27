@@ -3,7 +3,7 @@ class CreateTools < ActiveRecord::Migration
     create_table :tools do |t|
       t.string :name
     end
-  add_index :tools, :name, :unique => true
+  #add_index :tools, :name, :unique => true
   end
 
   def self.down

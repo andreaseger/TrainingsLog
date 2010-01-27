@@ -6,7 +6,7 @@ class CreateItems < ActiveRecord::Migration
       t.integer :tool_id
       t.integer :distance
     end
-  add_index :items, [:stroke_id, :tool_id, :distance], :unique => true
+  #add_index :items, [:stroke_id, :tool_id, :distance], :unique => true
   end
 
   def self.down
