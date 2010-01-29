@@ -1,22 +1,19 @@
 class ItemsController < ApplicationController
   filter_resource_access
+
   def index
-      if params[:search] != nil
-        @items = Item.search(params[:search],params[:page])
-      else
-        @items = Item.paginate(:page => params[:page], :per_page => 20, :order => 'description')
-      end
+    if params[:search] != nil
+      @items = Item.search(params[:search],params[:page])
+    else
+      @items = Item.paginate(:page => params[:page], :per_page => 20, :order => 'description')
+    end
   end
 
   def new
-    @item = Item.new
   end
 
   def create
-    @item = Item.new(params[:item])
-
     @stroke = Stroke.find(@item.stroke_id)
-
     if @item.tool_id == nil
       @item.description = @item.distance.to_s + 'm ' + @stroke.name
     else
@@ -33,15 +30,12 @@ class ItemsController < ApplicationController
   end
 
   def edit
-    @item = Item.find(params[:id])
   end
 
   def update
-    @item = Item.find(params[:id])
 
     custom = params[:item]
     @stroke = Stroke.find(custom[:stroke_id])
-
     description = 'foo'
     if custom[:tool_id] == nil
       description = custom[:distance] + 'm ' + @stroke.name

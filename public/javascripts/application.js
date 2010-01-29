@@ -17,11 +17,34 @@ jQuery.fn.submitWithAjax = function() {
 
 $(document).ready(function() {
   $("#new_comment").submitWithAjax();
+  $("#new_shout").submitWithAjax();
+  $('input.ui-datepicker').datepicker();
 })
 
 
 
 $(function() {
+  $('.add_copy_paste').live('click', function(){
+    var field   = '#' + $(this).attr('data-field');
+    var clipboard = $(this).attr('data-clipboard');
+    var regexp = new RegExp('\\b' + clipboard + '\\b', 'gi');
+    var tag_list = $(field).val();
+    if (!regexp.test(tag_list)){
+    	if (tag_list == ""){
+    		$(field).val(clipboard);
+    	} else {
+    		regexp = new RegExp(',\\s{0,1}$', 'gi');
+    		if (regexp.test(tag_list)){
+    			$(field).val(tag_list + clipboard);
+    		} else {
+    			$(field).val(tag_list + ', ' + clipboard);
+    		}
+	    }
+    }
+    
+    return false;
+  });
+  
   $('form a.add_child').live('click', function() {
     // Setup
     var assoc   = $(this).attr('data-association');           // Name of child
@@ -35,8 +58,12 @@ $(function() {
     //2 var context = ($(this).siblings('input:last').attr('name') || '').replace(new RegExp('\[[a-z]+\]$'), '');
 
     // This had to be changed because I use formtastic which puts the inputs under a 'li' tag
-    var context = ($(this).parents('.fields').children('li:first').children('input').attr('name') || '').replace(new RegExp('\[[a-z]+\]$'), '')
-
+    if(assoc == "schedulings") {
+      var context = ($(this).parents('.fields').children('div').children('li:first').children('input').attr('name') || '').replace(new RegExp('\[[a-z]+\]$'), '');
+    } else {
+      var context = ($(this).parents('.fields').children('li:first').children('input').attr('name') || '').replace(new RegExp('\[[a-z]+\]$'), '');
+    }
+    
     // context will be something like this for a brand new form:
     // project[tasks_attributes][1255929127459][assignments_attributes][1255929128105]
     // or for an edit form:

@@ -1,4 +1,4 @@
 <% tag_cloud(@tags, %w(xxs xs s l xl xxl)) do |tag, css_class| %>
-  <%= link_to (tag.name).humanize, params.merge(:tag => tag.name).merge(:page => nil) ,:class => css_class %>
+  <%= link_to tag.name, params.merge(:tag => tag.name).merge(:page => nil) ,:class => css_class %>
 <% end %>
 

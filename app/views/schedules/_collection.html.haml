@@ -1,32 +1,13 @@
 #collection.fields
-  = f.input :content
-  = f.input :wdh, :as => :numeric, :input_html => { :size => 5 }
-  %h3
-    Schedulings
+  #collection_fields
+    = f.input :content
+    = f.input :wdh, :as => :numeric, :input_html => { :size => 5 }
+
   #children_fields
+    %h3
+      Schedulings
     - f.semantic_fields_for :schedulings do |schedulings_form|
       = render :partial => "scheduling", :locals =>{ :f => schedulings_form }
     %p
       = add_child_link "Add Scheduling", :schedulings
     = new_child_fields_template(f, :schedulings)
-
-
-
-
--#  %p
--#    = f.label :wdh
--#    %br
--#    = f.text_field :wdh
--#  %p
--#    = f.label :content
--#    %br
--#    = f.text_field :content
--#  %h3
--#    Schedulings
--#  #children_fields
--#    - f.fields_for :schedulings do |schedulings_form|
--#      = render :partial => "scheduling", :locals => {:f => schedulings_form }
--#    %p
--#      = add_child_link "Add Scheduling", :schedulings
--#    = new_child_fields_template(f, :schedulings)
-

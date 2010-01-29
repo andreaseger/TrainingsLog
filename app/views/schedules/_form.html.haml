@@ -1,36 +1,23 @@
--#- form_for @schedule do |f|
--#  = f.error_messages
--#  %p
--#    = f.label :title
--#    %br
--#    = f.text_field :title
--#  %p
--#    = f.label :body
--#    %br
--#    = f.text_area :body
--#  %p
--#    = f.label :tag_list
--#    %br
--#    = f.text_field :tag_list
--#  %h3
--#    Collections
--#  - f.fields_for :collections do |collection_form|
--#    = render :partial => "collection", :locals => {:f => collection_form }
--#  = add_child_link "Add Collection", :collections
--#  = new_child_fields_template(f, :collections)
--#  %p
--#    = f.submit "Submit"
-
-
-
 - semantic_form_for @schedule do |f|
   - f.inputs do
     = f.input :title
     = f.input :body, :label => "Description", :input_html => { :rows => 10 }
-    = f.input :tag_list
-  %h3
-    Collections
-  #collections
+
+    %li#schedule_course_input
+      = f.label :course, "Course\n<abbr title=\"required\">*</abbr>"
+      - for course in Schedule::COURSES
+        = radio_button_tag "schedule[course][]", course, @schedule.course && (@schedule.course == course)
+        = h(course.humanize+'m')
+      = hidden_field_tag "schedule[course][]", ""
+    = f.input :tag_list 
+    #tag_list
+      - Tag.all.each do |tag|
+        = add_copy_paste_link(tag.name, "schedule_tag_list")
+
+  
+  #collections  
+    %h3
+      Collections
     - f.semantic_fields_for :collections do |collection_form|
       = render :partial => "collection", :locals => { :f => collection_form }
     = add_child_link "Add Collection", :collections
@@ -41,4 +28,3 @@
 -# nur die beiden zeilen wurden eingebaut
 = yield :collections_fields_template
 = yield :schedulings_fields_template
-

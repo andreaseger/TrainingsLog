@@ -18,19 +18,12 @@ class SchedulesController < ApplicationController
   end
 
   def new
-
   end
 
   def create
-    debugger
+  	params[:schedule][:tag_list].downcase!
+  	debugger
     @schedule.user = current_user
-#    params[:schedule][:collections_attributes].delete("new_collections")
-
-#    params[:schedule][:collections_attributes].each_value {|value|
-#      value[:schedulings_attributes].delete_if{ |key,val|
-#        key.to_s. include?("new_")
-#      }
-#    }
     if @schedule.save
       flash[:notice] = "Successfully created schedule."
       redirect_to @schedule #schedules_url
@@ -44,6 +37,7 @@ class SchedulesController < ApplicationController
 
   def update
     debugger
+  	params[:schedule][:tag_list].downcase!
     if @schedule.update_attributes(params[:schedule])
       flash[:notice] = "Successfully updated schedule."
       redirect_to @schedule #schedules_url
@@ -54,9 +48,9 @@ class SchedulesController < ApplicationController
 
   def destroy
     schedulings = Scheduling.find(:schedule_id => params[:id])
-    @schedulings.each do |scheduling|
-      scheduling.destroy
-    end
+    #@schedulings.each do |scheduling|
+    #  scheduling.destroy
+    #end
     @schedule.destroy
     flash[:notice] = "Successfully destroyed schedule."
     redirect_to root_url

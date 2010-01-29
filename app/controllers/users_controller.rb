@@ -7,7 +7,7 @@ class UsersController < ApplicationController
   def create
     @user = User.new(params[:user])
     #set default role to registered_user
-    @user.group_ids = ['2']
+    @user.roles = ["registered_user"]
     @user.save do |result|
       if result
         flash[:notice] = "Registration successful."

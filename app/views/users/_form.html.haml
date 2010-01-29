@@ -3,7 +3,13 @@
     = f.input :username
     = f.input :email
     - if has_role?(:admin)
-      = f.input :groups, :as => :check_boxes
+      %li
+        = f.label :roles
+        - for role in User::ROLES
+          = check_box_tag "user[roles][]", role, @user.roles.include?(role)
+          = h role.humanize
+        = hidden_field_tag "user[roles][]", ""
+    -#= f.input :roles, :as => :check_boxes, :collection => User::ROLES
     - unless current_user != @user && !has_role?(:guest)
       - if @user.openid_identifier.blank?
         = f.input :password

@@ -2,36 +2,45 @@
 #show
   #schedule
     - @user = User.find(@schedule.user_id)
-    %em.creator
+    %p.creator
       %strong
         Author:
       = h(@user.username)
-    %br
-    %em.tags
+    
+    %p.date
+      %strong
+        Date:
+      = @schedule.created_at.strftime('%b %d, %Y')
+    %p.tags
       %strong
         Tags:
       - for @tag in @tags do
-        = content_tag(:em, (@tag.name).humanize)
+        = content_tag(:em, @tag.name)
 
     %p.content
       = simple_format h(@schedule.body)
 
-    %ul
+    %ul#schedule_list
       - for collection in @schedule.collections
         - if collection.wdh == 1 && collection.content.blank?
           = render :partial => 'schedules/partials/scheduling_list', :locals => {:collection => collection}
         - else
-          %li.collection_item
-            - unless collection.wdh == 1
-              = h(collection.wdh)
-              *
-            - unless collection.content.blank?
-              (
-              = h(collection.content)
-              )
+          %li
+            .collection_item
+              - unless collection.wdh == 1
+                = h(collection.wdh)
+                *
+              - unless collection.content.blank?
+                (
+                = h(collection.content)
+                )
             %ul
               = render :partial => 'schedules/partials/scheduling_list', :locals => {:collection => collection}
-
+      %li.full_distance
+        %strong &#8721;
+        %em
+          = h(@schedule.full_distance)
+  %br
   %ul.controls
     - if permitted_to? :edit, @schedule
       %li= link_to "Edit", edit_schedule_path(@schedule.id)
@@ -42,15 +51,29 @@
     %li= link_to "See All Schedules", schedules_path
 
   #comments_area
-    - unless @schedule.comments.empty?
-      %h2#comments_count= pluralize(@schedule.comments.size, 'comment')
+    #comments_count
+      - unless @schedule.comments.empty?
+        %h2= pluralize(@schedule.comments.size, 'comment')
     #comments
       = render :partial => @schedule.comments
-
-      -#
-        - @comments = @schedule.comments.paginate(:page => params[:page], :per_page => 5, :order => 'created_at DESC')
-        - for comment in @comments
-          = render :partial => comment
-        = will_paginate @comment
-    = render :partial => 'schedules/partials/comments_form'
-
+    - if permitted_to? :create, Comment.new
+      - semantic_form_for Comment.new do |f|
+        - f.inputs do
+          = f.input :schedule_id, :as => :hidden, :value => @schedule.id
+          = f.input :body, :as => :string, :label => 'Add your Comment', :required => false
+        - f.buttons do
+          = f.commit_button :label => 'Post'
+    
+  #trainings_shoutbox
+    #shout_count
+      - unless @schedule.shouts.empty?
+        %h2= pluralize(@schedule.shouts.size, 'shout')
+    #shouts
+      = render :partial => @schedule.shouts
+    - if permitted_to? :create, Shout.new
+      - semantic_form_for Shout.new do |f|
+        - f.inputs do
+          = f.input :schedule_id, :as => :hidden, :value => @schedule.id
+          = f.input :trained_at, :as => :datepicker, :format => "%d %B %Y"
+        - f.buttons do
+          = f.commit_button :label => 'Shout my Training'

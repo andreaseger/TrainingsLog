@@ -7,15 +7,15 @@
 #   Major.create(:name => 'Daley', :city => cities.first)
 
 
-Group.create!(:name => 'Admin')
-Group.create!(:name => 'RegisteredUser')
-Group.create!(:name => 'Moderator')
-Group.create!(:name => 'Author')
+#Group.create!(:name => 'Admin')
+#Group.create!(:name => 'RegisteredUser')
+#Group.create!(:name => 'Moderator')
+#Group.create!(:name => 'Author')
 
 
-User.create!(:username=>'sch1zo',:email=>'sch1zo@online.de',:password=>'secret',:password_confirmation => 'secret',:group_ids=>['1'])
-User.create!(:username=>'foobar',:email=>'foobar@online.de',:password=>'haus',:password_confirmation => 'haus',:group_ids=>['2'])
-User.create!(:username=>'baz',:email=>'baz@online.de',:password=>'haus',:password_confirmation => 'haus',:group_ids=>['4'])
+User.create!(:username=>'sch1zo',:email=>'sch1zo@online.de',:password=>'secret',:password_confirmation => 'secret',:roles=>['admin'])
+User.create!(:username=>'foobar',:email=>'foobar@online.de',:password=>'haus',:password_confirmation => 'haus',:roles=>['registered_user'])
+User.create!(:username=>'baz',:email=>'baz@online.de',:password=>'haus',:password_confirmation => 'haus',:roles=>['author'])
 
 
 Stroke.create!(:name =>'Freestyle');

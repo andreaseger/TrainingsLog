@@ -8,13 +8,10 @@
     /[if lt IE 8]
       = stylesheet_link_tag 'compiled/ie.css', :media => 'screen, projection'
 
-    -#= stylesheet_link_tag 'formtastic'
-
-
-    -#= stylesheet_link_tag 'compiled/application.css', :media => 'screen, projection'
-
-    = javascript_include_tag 'jquery', 'application'
-
+    = stylesheet_link_tag 'jquery-ui-1.8rc1.custom.css'
+    = stylesheet_link_tag 'autocomplete.css'
+    = javascript_include_tag 'jquery', 'jquery.ui.datepicker', 'application'
+    
     = yield(:head)
   %body
     #container

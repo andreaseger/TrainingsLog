@@ -25,6 +25,23 @@ body
   form.formtastic
     +formtastic(100%, 20%, 70%, 4%, "left")
     +no-bullets
+    input,
+    textarea
+      :margin-left 2px
+      :margin-bottom 3px
+    #tag_list
+      :margin-left 22%
+    input#user_openid_identifier,
+    input#user_session_openid_identifier
+      :background url(http://openid.net/images/login-bg.gif) no-repeat
+      :background-color #fff
+      :background-position 0 50%
+      :color #000
+      :padding-left 18px
+    #schedule_course_input
+      :margin-bottom 3px
+      :margin-left 2px
+      
   #container
     +container
     :padding 10px
@@ -42,30 +59,25 @@ body
         :position absolute
         :top 1em
         :right 0px
-    input#user_openid_identifier,
-    input#user_session_openid_identifier
-      :background url(http://openid.net/images/login-bg.gif) no-repeat
-      :background-color #fff
-      :background-position 0 50%
-      :color #000
-      :padding-left 18px
+
     #content
       +column(!blueprint_grid_columns)
       .creator
         :font-style italic
         :color #333
+      .date
+        :color #555
       .tags
-        :color #666
+        :color #777
       .controls
         +horizontal-list
-      .date
-        :font-size 0.7em
+
       #index
         #schedules
           h2
             :font-size 16px
             :margin-bottom 2px
-          //.content
+        //.content
         #paginate
           +column(16,true)
         #search
@@ -76,30 +88,61 @@ body
           +tag-cloud(1em)
       #show
         #schedule
-          ul
+          .creator,
+          .date
+            :margin-bottom 0
+          #schedule_list
+            
+            
             +no-bullets
-          li
-            .scheduling_item
-              :margin-left 25px
-
+            li
+              .collection_item
+                :font-style italic
+            .full_distance
+              +column(5,true)
+              :border-top
+                :width 2px
+                :color #333
+                :style solid
+              :font-size 1.2em
         #comments_area
+          +column(10)
           h2
             :margin-bottom 12px
-          +column(12)
           :font-size 12px
           :padding 0 20px
           //:border solid 1px #999
           .comment
             :border-bottom solid 1px #999
             :margin 15px 0
+            .date
+              :color #000
+              :font-size 0.7em
+        #trainings_shoutbox
+          +column(10,true)
+          h2
+            :margin-bottom 12px
+          :font-size 12px
+          :padding 0 20px
+          //:border solid 1px #999
+          .shout
+            :border-bottom solid 1px #999
+            :margin 10px 0
+
+      //schedules/_form
       #collections
-        +column(19,true)
-        :padding-left 5%
-        #collection.fields
+        +column(20,true)
+        :padding-left 3%
+        h3
+          :margin-left 6%
+        #collection
           :border-bottom solid 1px #999
           :margin 5px
-        #children_fields
-          .fields
-            +horizontal-list
-          :margin-left 25px
+          #collection_fields
+            +float-form-left(100%, 20%, 70%, 4%,"buttons-left")
+          
+          #children_fields
+            .fields
+              +horizontal-list
+            :margin-left 8%
 

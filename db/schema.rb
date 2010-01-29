@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100124154525) do
+ActiveRecord::Schema.define(:version => 20100129131357) do
 
   create_table "collections", :force => true do |t|
     t.integer "wdh",         :default => 1
@@ -68,6 +68,7 @@ ActiveRecord::Schema.define(:version => 20100124154525) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.integer  "user_id"
+    t.integer  "course"
   end
 
   create_table "schedulings", :force => true do |t|
@@ -75,6 +76,14 @@ ActiveRecord::Schema.define(:version => 20100124154525) do
     t.integer "item_id"
     t.integer "wdh",           :default => 1
     t.string  "content"
+  end
+
+  create_table "shouts", :force => true do |t|
+    t.integer  "user_id"
+    t.integer  "schedule_id"
+    t.date     "trained_at"
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
 
   create_table "strokes", :force => true do |t|
@@ -112,6 +121,7 @@ ActiveRecord::Schema.define(:version => 20100124154525) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "openid_identifier"
+    t.integer  "roles_mask"
   end
 
 end
