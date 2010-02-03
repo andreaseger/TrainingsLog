@@ -1,4 +1,6 @@
 - semantic_form_for @static do |f|
-  = f.inputs :title, :permalink
-    =f.input :content, :hint => "Text will be formatted with "<< link_to(" RedCloth", "http://redcloth.org/")
+  - f.inputs do
+    = f.input :name
+    = f.input :permalink
+    = f.input :content, :hint => "Text will be formatted with "<< link_to(" RedCloth", "http://redcloth.org/")
   = f.buttons
