@@ -1,6 +1,10 @@
 - title @schedule.title
 #show
   #schedule
+    %em.course_flag
+      = h(@schedule.course)
+      m
+  
     - @user = User.find(@schedule.user_id)
     %p.creator
       %strong
@@ -18,7 +22,7 @@
         = content_tag(:em, @tag.name)
 
     %p.content
-      = simple_format h(@schedule.body)
+      = RedCloth.new(@schedule.body).to_html
 
     %ul#schedule_list
       - for collection in @schedule.collections

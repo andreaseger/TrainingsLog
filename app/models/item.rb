@@ -5,7 +5,6 @@ class Item < ActiveRecord::Base
   has_many :schedulings
   has_many :schedules, :through => :schedulings
   validates_presence_of :stroke, :distance
-  
 
   def self.search(search, page)
     paginate :per_page => 20, :page => page,

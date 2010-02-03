@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100129131357) do
+ActiveRecord::Schema.define(:version => 20100201233357) do
 
   create_table "collections", :force => true do |t|
     t.integer "wdh",         :default => 1
@@ -82,6 +82,14 @@ ActiveRecord::Schema.define(:version => 20100129131357) do
     t.integer  "user_id"
     t.integer  "schedule_id"
     t.date     "trained_at"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "statics", :force => true do |t|
+    t.string   "name"
+    t.string   "permalink"
+    t.text     "content"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

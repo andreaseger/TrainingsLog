@@ -2,10 +2,18 @@ class ItemsController < ApplicationController
   filter_resource_access
 
   def index
-    if params[:search] != nil
-      @items = Item.search(params[:search],params[:page])
-    else
-      @items = Item.paginate(:page => params[:page], :per_page => 20, :order => 'description')
+    respond_to do |format|
+      format.html{
+        if params[:search] != nil
+          @items = Item.search(params[:search],params[:page])
+        else
+          @items = Item.paginate(:page => params[:page], :per_page => 20, :order => 'description')
+        end
+      }
+      format.js {
+        @items = Item.find(:all, :conditions => ["description LIKE ?", '%'+params[:q] + '%' ], :limit => 20, :order => 'distance, stroke_id')
+        render :text => @items.map{ |c| "#{c.display_name}|#{c.id}\n" }
+      }
     end
   end
 

@@ -1,9 +1,10 @@
 authorization do
   role :admin do
-    has_permission_on [:schedules, :comments, :users, :items, :shouts], :to => [:autocomplete, :index, :show, :new, :create, :edit, :update, :destroy]
+    has_permission_on [:schedules, :comments, :users, :items, :shouts, :statics], :to => [:index, :show, :new, :create, :edit, :update, :destroy]
   end
 
   role :guest do
+  	has_permission_on :statics, :to => [:show]
     has_permission_on :users, :to =>[:new, :create]
     has_permission_on :schedules, :to => [:index, :show]
   end

@@ -7,9 +7,9 @@ RAILS_GEM_VERSION = '2.3.5' unless defined? RAILS_GEM_VERSION
 require File.join(File.dirname(__FILE__), 'boot')
 
 Rails::Initializer.run do |config|
+  
   config.gem 'haml', :version => '>=2.2.16'
   config.gem 'compass', :version => '>= 0.8.17'
-
   config.gem "authlogic"
   config.gem "authlogic-oid", :lib => "authlogic_openid"
   config.gem "ruby-openid", :lib => "openid"
@@ -17,7 +17,7 @@ Rails::Initializer.run do |config|
   config.gem "formtastic", :source => "http://gemcutter.org"
   config.gem 'will_paginate', :version => '~> 2.3.11', :source => 'http://gemcutter.org'
   config.gem "acts-as-taggable-on", :source => "http://gemcutter.org"
-
+  config.gem "RedCloth"
 
   config.time_zone = 'Berlin'
   
