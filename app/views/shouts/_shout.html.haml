@@ -1,0 +1,11 @@
+- div_for shout do
+  - @user = User.find(shout.user_id)
+  %strong.creator
+    = h(@user.username)
+  %em.date
+    on
+    = shout.trained_at.strftime('%b %d, %Y')
+  %ul.controls
+    - if permitted_to? :destroy, shout
+      %li= link_to "Destroy", shout, :method => :delete, :confirm => "Are you sure?"
+

@@ -1,0 +1,3 @@
+$("#shouts_count").html("<%= pluralize(@shout.schedule.shouts.count, 'shout') %>");
+$("#shouts").append("<%= escape_javascript(render(:partial => @shout)) %>");
+$("#new_shout")[0].reset();

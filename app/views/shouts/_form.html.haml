@@ -1,0 +1,5 @@
+- semantic_form_for @shout do |f|
+  - f.inputs do
+      = f.input :user_id, :as => :hidden, :value => current_user.id
+      = f.input :schedule_id, :as => :hidden, :value => @schedule.id
+      = f.input :trained_at, :as => :calendar#, :format => '%d %b %Y'

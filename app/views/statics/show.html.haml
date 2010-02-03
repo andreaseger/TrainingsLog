@@ -1,0 +1,11 @@
+- title @static.name
+
+= RedCloth.new(@static.content).to_html
+
+%ul.controls
+  - if permitted_to? :edit, @static
+    %li= link_to "Edit", edit_static_path(@static)
+  - if permitted_to? :destroy, @static
+    %li= link_to "Destroy", @static, :confirm => 'Are you sure?', :method => :delete
+  - if permitted_to? :index, @static
+    %li= link_to "View All", statics_path

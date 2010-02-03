@@ -1,0 +1,9 @@
+one:
+  user_id: 1
+  schedule_id: 1
+  trained_at: 2010-01-29
+
+two:
+  user_id: 1
+  schedule_id: 1
+  trained_at: 2010-01-29

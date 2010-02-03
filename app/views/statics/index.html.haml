@@ -1,0 +1,17 @@
+- title "Statics"
+
+%table
+  %tr
+    %th Name
+    %th Permalink
+    %th Content
+  - for static in @statics
+    %tr
+      %td= h static.name
+      %td= h static.permalink
+      %td= h static.content
+      %td= link_to 'Show', static
+      %td= link_to 'Edit', edit_static_path(static)
+      %td= link_to 'Destroy', static, :confirm => 'Are you sure?', :method => :delete
+
+%p= link_to "New Static", new_static_path
