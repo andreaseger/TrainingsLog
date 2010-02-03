@@ -7,4 +7,4 @@ will_paginate
 acts-as-taggable-on
 haml --version '>= 2.2.17'
 compass --version '>= 0.8.17'
-
+RedCloth
