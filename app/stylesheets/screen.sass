@@ -53,12 +53,17 @@ body
     #header
       :position relative
       h1
-        :margin-top 18px
+        +replace-text("swimlog-v1.png")
+        :width 777px
+        :height 125px
+      //h2
+        :margin-top 2px
       #user_nav
-        +horizontal-list
+        //+horizontal-list
+        +no-bullets
         :position absolute
         :top 1em
-        :right 0px
+        :right 10px
 
     #content
       +column(!blueprint_grid_columns)
