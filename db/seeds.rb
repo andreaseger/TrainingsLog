@@ -13,11 +13,11 @@
 #Group.create!(:name => 'Author')
 
 
-User.create!(:username=>'sch1zo',:email=>'sch1zo@online.de',:password=>'secret',:password_confirmation => 'secret',:roles=>['admin'])
-User.create!(:username=>'foobar',:email=>'foobar@online.de',:password=>'haus',:password_confirmation => 'haus',:roles=>['registered_user'])
-User.create!(:username=>'baz',:email=>'baz@online.de',:password=>'haus',:password_confirmation => 'haus',:roles=>['author'])
+#User.create!(:username=>'sch1zo',:email=>'sch1zo@online.de',:password=>'secret',:password_confirmation => 'secret',:roles=>['admin'])
+#User.create!(:username=>'foobar',:email=>'foobar@online.de',:password=>'haus',:password_confirmation => 'haus',:roles=>['registered_user'])
+#User.create!(:username=>'baz',:email=>'baz@online.de',:password=>'haus',:password_confirmation => 'haus',:roles=>['author'])
 
-Static.create!(:name => 'About', :permalink =>'about', :content => '\"Impressum\":impressum\r\n\r\n Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.')
+Static.create!(:name => 'About', :permalink =>'about', :content => '\"Impressum\":impressum\r\n\r\nLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.')
 Static.create!(:name => 'Impressum', :permalink =>'impressum', :content => 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.')
 
 Stroke.create!(:name =>'Freestyle');

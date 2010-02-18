@@ -1,15 +1,25 @@
 class User < ActiveRecord::Base
   attr_accessible :username, :email, :password, :password_confirmation, :roles, :roles_mask, :openid_identifier, :login_count
+#  acts_as_authentic do |c|
+#    c.openid_required_fields = [:nickname, :email]
+#  end
+
   acts_as_authentic do |c|
     c.openid_required_fields = [:nickname, :email]
+    c.validations_scope = :username, :email
+    c.require_password_confirmation = false
   end
 
+  include AuthHelpers::Model::Confirmable
+  include AuthHelpers::Model::Recoverable
+  include AuthHelpers::Model::Updatable
+
+  validates_presence_of :username, :email#, :password, :password_confirmation
+ 
   has_many :schedules
   has_many :comments
   #has_many :memberships
   #has_many :groups, :through => :memberships
-
-  validates_presence_of :username, :email#, :password, :password_confirmation
   
   named_scope :with_role, lambda { |role| {:conditions => "roles_mask & #{2**ROLES.index(role.to_s)} > 0"} }
   ROLES = %w[admin registered_user moderator author]
